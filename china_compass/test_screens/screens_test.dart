@@ -69,11 +69,22 @@ void main() {
     await _shot('1_home');
   });
 
-  testWidgets('wide desktop window', (t) async {
+  testWidgets('desktop home', (t) async {
     await _app(t);
-    t.view.physicalSize = const Size(1280 * 2, 800 * 2);
+    t.view.physicalSize = const Size(1440 * 2, 1000 * 2);
     await t.pumpAndSettle();
-    await _shot('0_desktop');
+    await _shot('d1_home');
+  });
+
+  testWidgets('desktop path and guide', (t) async {
+    await _app(t);
+    t.view.physicalSize = const Size(1440 * 2, 1000 * 2);
+    await t.pumpAndSettle();
+    await t.tap(find.text('Travel').last);
+    await t.pumpAndSettle();
+    await _shot('d2_travel');
+    await _push(t, const GuideScreen(guideId: 'entry'));
+    await _shot('d3_guide');
   });
 
   testWidgets('home in Spanish', (t) async {

@@ -13,6 +13,8 @@ import 'services/sync_store.dart';
 import 'state/app_state.dart';
 import 'theme.dart';
 import 'widgets/floating_nav.dart';
+import 'widgets/layout.dart';
+import 'widgets/side_nav.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,13 +52,6 @@ class ChinaCompassApp extends StatelessWidget {
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       // Let sliders be dragged with a mouse or trackpad too (web and desktop).
       scrollBehavior: const MaterialScrollBehavior().copyWith(dragDevices: PointerDeviceKind.values.toSet()),
-      // On tablets and desktop browsers, show the app as a centered phone-width column.
-      builder: (context, child) => ColoredBox(
-        color: Theme.of(context).colorScheme.surfaceContainer,
-        child: Center(
-          child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 560), child: child),
-        ),
-      ),
       home: state.content == null
           ? Scaffold(body: Center(child: Text(state.t('loadError'))))
           : const Shell(),
@@ -98,28 +93,39 @@ class _ShellState extends State<Shell> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     final state = AppScope.of(context);
+    final items = [
+      FloatingNavItem(icon: Icons.explore_outlined, activeIcon: Icons.explore_rounded, label: state.t('tabHome')),
+      FloatingNavItem(icon: Icons.flight_outlined, activeIcon: Icons.flight_rounded, label: state.t('tabTravel')),
+      FloatingNavItem(icon: Icons.school_outlined, activeIcon: Icons.school_rounded, label: state.t('tabStudy')),
+      FloatingNavItem(
+          icon: Icons.temple_buddhist_outlined, activeIcon: Icons.temple_buddhist_rounded, label: state.t('tabLife')),
+      FloatingNavItem(icon: Icons.person_outline_rounded, activeIcon: Icons.person_rounded, label: state.t('tabProfile')),
+    ];
+    void select(int i) => setState(() => _tab = i);
+    final pages = IndexedStack(
+      index: _tab,
+      children: [
+        HomeScreen(onOpenPersona: (id) => select(_personaTabs.indexOf(id) + 1)),
+        for (final id in _personaTabs) PersonaScreen(personaId: id),
+        const ProfileScreen(),
+      ],
+    );
+
+    // Wide windows (tablet, desktop): navigation on the left.
+    if (isWideWindow(context)) {
+      return Scaffold(
+        body: Row(
+          children: [
+            SideNav(items: items, index: _tab, onTap: select),
+            Expanded(child: pages),
+          ],
+        ),
+      );
+    }
     return Scaffold(
       extendBody: true, // content scrolls behind the floating tab bar
-      body: IndexedStack(
-        index: _tab,
-        children: [
-          HomeScreen(onOpenPersona: (id) => setState(() => _tab = _personaTabs.indexOf(id) + 1)),
-          for (final id in _personaTabs) PersonaScreen(personaId: id),
-          const ProfileScreen(),
-        ],
-      ),
-      bottomNavigationBar: FloatingNavBar(
-        index: _tab,
-        onTap: (i) => setState(() => _tab = i),
-        items: [
-          FloatingNavItem(icon: Icons.explore_outlined, activeIcon: Icons.explore_rounded, label: state.t('tabHome')),
-          FloatingNavItem(icon: Icons.flight_outlined, activeIcon: Icons.flight_rounded, label: state.t('tabTravel')),
-          FloatingNavItem(icon: Icons.school_outlined, activeIcon: Icons.school_rounded, label: state.t('tabStudy')),
-          FloatingNavItem(
-              icon: Icons.temple_buddhist_outlined, activeIcon: Icons.temple_buddhist_rounded, label: state.t('tabLife')),
-          FloatingNavItem(icon: Icons.person_outline_rounded, activeIcon: Icons.person_rounded, label: state.t('tabProfile')),
-        ],
-      ),
+      body: pages,
+      bottomNavigationBar: FloatingNavBar(index: _tab, onTap: select, items: items),
     );
   }
 }

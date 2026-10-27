@@ -6,6 +6,7 @@ import '../theme.dart';
 import '../widgets/common.dart';
 import '../widgets/icons.dart';
 import '../widgets/language_switcher.dart';
+import '../widgets/layout.dart';
 import '../widgets/photo_card.dart';
 import 'search_screen.dart';
 
@@ -41,126 +42,176 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SafeArea(
         bottom: false,
-        child: ListView(
-          padding: const EdgeInsets.only(bottom: 120),
-          children: [
-            // Header: title with an accent bar, language and search on the right.
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 16, 16, 0),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Accent bar as tall as the title, however many lines it takes.
-                  Expanded(
-                    child: IntrinsicHeight(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Container(
-                            width: 4,
-                            margin: const EdgeInsets.only(top: 4, bottom: 4, right: 14),
-                            decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(2)),
-                          ),
-                          Expanded(child: Text(state.t('heroTitle'), style: theme.textTheme.headlineLarge)),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  const LanguageButton(),
-                  const SizedBox(width: 8),
-                  _RoundButton(
-                    icon: Icons.search_rounded,
-                    tooltip: state.t('search'),
-                    onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SearchScreen())),
-                  ),
-                ],
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            // Enough room: all paths side by side instead of a slider.
+            final wide = constraints.maxWidth >= 700;
+            return ListView(
+              padding: centeredInsets(
+                constraints.maxWidth,
+                maxWidth: overviewWidth,
+                top: wide ? 16 : 0,
+                bottom: wide ? 40 : 120,
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(38, 10, 24, 0),
-              child: Text(state.t('heroText'),
-                  style: theme.textTheme.bodyMedium?.copyWith(color: scheme.onSurfaceVariant, height: 1.5)),
-            ),
-            const SizedBox(height: 20),
-
-            // Tabs synced with the photo slider.
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  for (var i = 0; i < personas.length; i++)
-                    Padding(
-                      padding: const EdgeInsets.only(right: 22),
-                      child: InkWell(
-                        borderRadius: BorderRadius.circular(8),
-                        onTap: () => _goTo(i),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6),
-                          child: Column(
+              children: [
+                // Header: title with an accent bar, language and search on the right.
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 16, 16, 0),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Accent bar as tall as the title, however many lines it takes.
+                      Expanded(
+                        child: IntrinsicHeight(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              Text(
-                                state.t('tab${personas[i].id[0].toUpperCase()}${personas[i].id.substring(1)}'),
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: i == _page ? FontWeight.w700 : FontWeight.w500,
-                                  color: i == _page ? scheme.onSurface : scheme.onSurfaceVariant,
-                                ),
+                              Container(
+                                width: 4,
+                                margin: const EdgeInsets.only(top: 4, bottom: 4, right: 14),
+                                decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(2)),
                               ),
-                              const SizedBox(height: 5),
-                              AnimatedContainer(
-                                duration: const Duration(milliseconds: 200),
-                                width: i == _page ? 6 : 0,
-                                height: 6,
-                                decoration: const BoxDecoration(color: accent, shape: BoxShape.circle),
-                              ),
+                              Expanded(child: Text(state.t('heroTitle'), style: theme.textTheme.headlineLarge)),
                             ],
                           ),
                         ),
                       ),
-                    ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 10),
-            SizedBox(
-              height: 400,
-              child: PageView.builder(
-                controller: _pager,
-                padEnds: false,
-                itemCount: personas.length,
-                onPageChanged: (p) => setState(() => _page = p),
-                itemBuilder: (context, i) => Padding(
-                  padding: EdgeInsets.only(left: 20, right: i == personas.length - 1 ? 20 : 0),
-                  child: _PathCard(persona: personas[i], onTap: () => widget.onOpenPersona(personas[i].id)),
-                ),
-              ),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SectionLabel(state.t('startHere')),
-                  GroupedCard(
-                    dividerIndent: 74,
-                    children: [
-                      for (final id in content.featured)
-                        if (content.findGuide(id) case final found?) GuideRow(guide: found.guide),
+                      const SizedBox(width: 8),
+                      const LanguageButton(),
+                      const SizedBox(width: 8),
+                      _RoundButton(
+                        icon: Icons.search_rounded,
+                        tooltip: state.t('search'),
+                        onTap: () =>
+                            Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SearchScreen())),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 24),
-                  Text(
-                    state.t('disclaimer', {'date': content.updated}),
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.bodySmall?.copyWith(color: scheme.onSurfaceVariant, height: 1.5),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(38, 10, 24, 0),
+                  child: Text(
+                    state.t('heroText'),
+                    style: theme.textTheme.bodyMedium?.copyWith(color: scheme.onSurfaceVariant, height: 1.5),
                   ),
-                ],
-              ),
-            ),
-          ],
+                ),
+                const SizedBox(height: 20),
+
+                // Tabs synced with the photo slider (phones only).
+                if (!wide)
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      children: [
+                        for (var i = 0; i < personas.length; i++)
+                          Padding(
+                            padding: const EdgeInsets.only(right: 22),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(8),
+                              onTap: () => _goTo(i),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 6),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      state.t('tab${personas[i].id[0].toUpperCase()}${personas[i].id.substring(1)}'),
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: i == _page ? FontWeight.w700 : FontWeight.w500,
+                                        color: i == _page ? scheme.onSurface : scheme.onSurfaceVariant,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 5),
+                                    AnimatedContainer(
+                                      duration: const Duration(milliseconds: 200),
+                                      width: i == _page ? 6 : 0,
+                                      height: 6,
+                                      decoration: const BoxDecoration(color: accent, shape: BoxShape.circle),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                const SizedBox(height: 10),
+                if (wide)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+                    child: SizedBox(
+                      height: 440,
+                      child: Row(
+                        children: [
+                          for (var i = 0; i < personas.length; i++) ...[
+                            if (i > 0) const SizedBox(width: 16),
+                            Expanded(
+                              child: _PathCard(persona: personas[i], onTap: () => widget.onOpenPersona(personas[i].id)),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  )
+                else
+                  SizedBox(
+                    height: 400,
+                    child: PageView.builder(
+                      controller: _pager,
+                      padEnds: false,
+                      itemCount: personas.length,
+                      onPageChanged: (p) => setState(() => _page = p),
+                      itemBuilder: (context, i) => Padding(
+                        padding: EdgeInsets.only(left: 20, right: i == personas.length - 1 ? 20 : 0),
+                        child: _PathCard(persona: personas[i], onTap: () => widget.onOpenPersona(personas[i].id)),
+                      ),
+                    ),
+                  ),
+
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      SectionLabel(state.t('startHere')),
+                      if (wide)
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            for (final (i, id) in content.featured.indexed) ...[
+                              if (i > 0) const SizedBox(width: 12),
+                              if (content.findGuide(id) case final found?)
+                                Expanded(
+                                  child: Card(
+                                    clipBehavior: Clip.antiAlias,
+                                    child: GuideRow(guide: found.guide),
+                                  ),
+                                ),
+                            ],
+                          ],
+                        )
+                      else
+                        GroupedCard(
+                          dividerIndent: 74,
+                          children: [
+                            for (final id in content.featured)
+                              if (content.findGuide(id) case final found?) GuideRow(guide: found.guide),
+                          ],
+                        ),
+                      const SizedBox(height: 24),
+                      Text(
+                        state.t('disclaimer', {'date': content.updated}),
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.bodySmall?.copyWith(color: scheme.onSurfaceVariant, height: 1.5),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            );
+          },
         ),
       ),
     );
@@ -215,24 +266,42 @@ class _PathCard extends StatelessWidget {
                 right: 16,
                 child: Row(
                   children: [
-                    Glass(
-                      padding: const EdgeInsets.fromLTRB(8, 6, 12, 6),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(iconFor(persona.id), color: Colors.white, size: 18),
-                          const SizedBox(width: 6),
-                          Text(state.t('guidesCount', {'n': persona.guides.length}),
-                              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 13)),
-                        ],
+                    // Takes the free space, so the progress chip sits at the right edge.
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Glass(
+                          padding: const EdgeInsets.fromLTRB(8, 6, 12, 6),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(iconFor(persona.id), color: Colors.white, size: 18),
+                              const SizedBox(width: 6),
+                              Flexible(
+                                child: Text(
+                                  state.t('guidesCount', {'n': persona.guides.length}),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
-                    const Spacer(),
+                    const SizedBox(width: 8),
                     if (p.total > 0)
                       Glass(
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        child: Text('${p.done}/${p.total}',
-                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 13)),
+                        child: Text(
+                          '${p.done}/${p.total}',
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 13),
+                        ),
                       ),
                   ],
                 ),
@@ -245,30 +314,46 @@ class _PathCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(persona.title,
-                        style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white, fontSize: 28)),
+                    Text(
+                      persona.title,
+                      style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white, fontSize: 28),
+                    ),
                     const SizedBox(height: 6),
-                    Text(persona.tagline,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(color: Colors.white.withValues(alpha: 0.85), fontSize: 14, height: 1.4)),
+                    Text(
+                      persona.tagline,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(color: Colors.white.withValues(alpha: 0.85), fontSize: 14, height: 1.4),
+                    ),
                     const SizedBox(height: 16),
                     Row(
                       children: [
-                        Container(
-                          padding: const EdgeInsets.fromLTRB(18, 11, 12, 11),
-                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(999)),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(state.t('explore'),
-                                  style: const TextStyle(color: ink, fontWeight: FontWeight.w700, fontSize: 14)),
-                              const SizedBox(width: 6),
-                              const Icon(Icons.arrow_forward_rounded, color: ink, size: 18),
-                            ],
+                        // Takes the free space, so the progress ring sits at the right edge.
+                        Expanded(
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Container(
+                              padding: const EdgeInsets.fromLTRB(18, 11, 12, 11),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(999)),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      state.t('explore'),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(color: ink, fontWeight: FontWeight.w700, fontSize: 14),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 6),
+                                  const Icon(Icons.arrow_forward_rounded, color: ink, size: 18),
+                                ],
+                              ),
+                            ),
                           ),
                         ),
-                        const Spacer(),
+                        const SizedBox(width: 8),
                         if (p.total > 0)
                           SizedBox(
                             width: 40,

@@ -6,6 +6,7 @@ import '../state/app_state.dart';
 import '../widgets/blocks.dart';
 import '../widgets/common.dart';
 import '../widgets/language_switcher.dart';
+import '../widgets/layout.dart';
 import 'login_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
     final state = AppScope.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(state.t('tabProfile')), actions: const [LanguageButton(), SizedBox(width: 10)]),
-      body: ListView(
+      body: CenteredListView(
         padding: const EdgeInsets.fromLTRB(16, 4, 16, 120),
         children: [
           if (state.signedIn) ..._signedIn(context, state) else _SignedOut(state: state),

@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../services/auth_service.dart';
 import '../state/app_state.dart';
+import '../widgets/layout.dart';
 
 /// Passwordless login: step 1 asks for the email, step 2 for the 6-digit code.
 /// Pops with `true` when the user is signed in.
@@ -21,6 +22,10 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   static final _emailPattern = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
   static const _resendSeconds = 30;
+
+  // Supabase lets the project choose the code length (6 to 10 digits).
+  static const _minCode = 6;
+  static const _maxCode = 10;
 
   final _emailCtrl = TextEditingController();
   final _codeCtrl = TextEditingController();
@@ -75,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> _verify() async {
     final code = _codeCtrl.text.trim();
-    if (code.length != 6 || _busy) return;
+    if (code.length < _minCode || _busy) return;
     final state = AppScope.of(context);
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
@@ -106,7 +111,8 @@ class _LoginScreenState extends State<LoginScreen> {
         leading: IconButton(icon: const Icon(Icons.close_rounded), onPressed: () => Navigator.pop(context, false)),
       ),
       body: SafeArea(
-        child: ListView(
+        child: CenteredListView(
+          maxWidth: 480,
           padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
           children: [
             Align(
@@ -163,13 +169,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 autofocus: true,
                 keyboardType: TextInputType.number,
                 autofillHints: const [AutofillHints.oneTimeCode],
-                inputFormatters: [FilteringTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(6)],
+                inputFormatters: [FilteringTextInputFormatter.digitsOnly, LengthLimitingTextInputFormatter(_maxCode)],
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: 12),
-                decoration: InputDecoration(hintText: '••••••', labelText: state.t('codeLabel')),
-                onChanged: (v) {
-                  if (v.length == 6) _verify();
-                },
+                style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w700, letterSpacing: 8),
+                decoration: InputDecoration(labelText: state.t('codeLabel')),
+                textInputAction: TextInputAction.done,
+                onSubmitted: (_) => _verify(),
               ),
               _error(state),
               const SizedBox(height: 20),

@@ -6,6 +6,7 @@ import '../widgets/blocks.dart';
 import '../widgets/common.dart';
 import '../widgets/icons.dart';
 import '../widgets/language_switcher.dart';
+import '../widgets/layout.dart';
 
 class GuideScreen extends StatelessWidget {
   const GuideScreen({super.key, required this.guideId, this.appQuery});
@@ -44,7 +45,7 @@ class GuideScreen extends StatelessWidget {
           const SizedBox(width: 10),
         ],
       ),
-      body: ListView(
+      body: CenteredListView(
         padding: const EdgeInsets.only(bottom: 40),
         children: [
           Padding(

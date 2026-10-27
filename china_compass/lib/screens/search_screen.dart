@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../state/app_state.dart';
 import '../widgets/common.dart';
+import '../widgets/layout.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -39,7 +40,7 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
         ),
       ),
-      body: ListView(
+      body: CenteredListView(
         padding: const EdgeInsets.all(16),
         children: [
           if (terms.isNotEmpty && hits.isEmpty)

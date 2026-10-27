@@ -7,9 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-Future<AppState> _pumpApp(WidgetTester tester, String lang, {double height = 812}) async {
-  await tester.binding.setSurfaceSize(Size(375, height));
-  addTearDown(() => tester.binding.setSurfaceSize(null));
+Future<AppState> _pumpApp(WidgetTester tester, String lang, {double height = 812, double width = 375}) async {
+  // Set the window size (what the app sees via MediaQuery), not just the drawing area.
+  tester.view.devicePixelRatio = 1.0;
+  tester.view.physicalSize = Size(width, height);
+  addTearDown(tester.view.reset);
   SharedPreferences.setMockInitialValues({'lang': lang});
   late AppState state;
   await tester.runAsync(() async {
@@ -46,6 +48,26 @@ void main() {
       for (final guide in state.content!.allGuides) {
         await _openGuide(tester, guide.id);
         expect(tester.takeException(), isNull, reason: 'guide ${guide.id} ($lang)');
+        tester.state<NavigatorState>(find.byType(Navigator).first).pop();
+        await tester.pumpAndSettle();
+      }
+    });
+  }
+
+  for (final width in [768.0, 1024.0, 1440.0]) {
+    testWidgets('wide layout at ${width.toInt()} px: every page renders without overflow', (tester) async {
+      final state = await _pumpApp(tester, 'en', width: width, height: 12000);
+      final wide = width >= 900;
+      expect(find.text('China Compass'), wide ? findsOneWidget : findsNothing, reason: 'side navigation title');
+      expect(find.byType(PageView), findsNothing, reason: 'paths side by side from tablet width on');
+      for (final tab in ['Travel', 'Study', 'Life', 'Profile']) {
+        await tester.tap(find.text(tab).last);
+        await tester.pumpAndSettle();
+        expect(tester.takeException(), isNull, reason: '$tab tab at $width');
+      }
+      for (final guide in state.content!.allGuides) {
+        await _openGuide(tester, guide.id);
+        expect(tester.takeException(), isNull, reason: '${guide.id} at $width');
         tester.state<NavigatorState>(find.byType(Navigator).first).pop();
         await tester.pumpAndSettle();
       }
@@ -163,11 +185,16 @@ void main() {
     expect(find.text('Check your inbox'), findsOneWidget);
 
     // Wrong code first, then the demo code shown on screen.
-    await _settleAsync(tester, () async => tester.enterText(find.byType(TextField).last, '000000'));
+    // Codes can be 6 to 10 digits long (set in Supabase), so longer codes must fit.
+    await tester.enterText(find.byType(TextField).last, '12345678');
+    expect(find.text('12345678'), findsOneWidget);
+    await tester.enterText(find.byType(TextField).last, '000000');
+    await _settleAsync(tester, () async => tester.tap(find.text('Verify')));
     expect(find.text('That code is not correct or has expired.'), findsOneWidget);
     final banner = tester.widget<Text>(find.textContaining('Your code is')).data!;
     final code = RegExp(r'\d{6}').firstMatch(banner)![0]!;
-    await _settleAsync(tester, () async => tester.enterText(find.byType(TextField).last, code));
+    await tester.enterText(find.byType(TextField).last, code);
+    await _settleAsync(tester, () async => tester.tap(find.text('Verify')));
 
     expect(state.signedIn, isTrue);
     expect(state.saved, contains('step:entry:before-fly:0'));
