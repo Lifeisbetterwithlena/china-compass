@@ -1,0 +1,2045 @@
+{
+  "updated": "October 2026",
+  "featured": [
+    "entry",
+    "payments",
+    "scholarships"
+  ],
+  "personas": [
+    {
+      "id": "travel",
+      "emoji": "✈️",
+      "title": "Traveling to China",
+      "tagline": "Visa, internet, payments and apps, sorted before you land",
+      "intro": "China is easy to travel once your phone is set up, and hard if it isn't. Work through these guides in order, ideally a week or two before your flight.",
+      "guides": [
+        {
+          "id": "entry",
+          "emoji": "🛂",
+          "title": "Visa & entry",
+          "summary": "Do you need a visa? Visa-free stays, transit rules and arrival.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Do you need a visa?",
+              "paragraphs": [
+                "China has opened up a lot. Citizens of **50 countries** can currently enter **visa-free for up to 30 days** for tourism, business, visiting friends and family, exchanges or transit. This includes most of Europe and, since **17 February 2026, the UK and Canada**. Another 29 countries have mutual visa-exemption agreements with China. Most of these rules currently run until **31 December 2026**, so check whether they've been extended before you book.",
+                "If your country isn't covered, or you plan to stay longer than 30 days, you need a visa: a tourist visa (**L visa**), or a student visa (**X visa**) for studying."
+              ]
+            },
+            {
+              "type": "visa_regions",
+              "heading": "Which rule applies to you?",
+              "items": [
+                {
+                  "id": "europe",
+                  "name": "Europe",
+                  "countries": [
+                    {
+                      "code": "AD",
+                      "name": "Andorra",
+                      "rule": "free30",
+                      "source": "https://es.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AT",
+                      "name": "Austria",
+                      "rule": "free30",
+                      "source": "https://at.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BE",
+                      "name": "Belgium",
+                      "rule": "free30",
+                      "source": "https://be.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BG",
+                      "name": "Bulgaria",
+                      "rule": "free30",
+                      "source": "https://bg.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "HR",
+                      "name": "Croatia",
+                      "rule": "free30",
+                      "source": "https://hr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "CY",
+                      "name": "Cyprus",
+                      "rule": "free30",
+                      "source": "https://cy.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "DK",
+                      "name": "Denmark",
+                      "rule": "free30",
+                      "source": "https://dk.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "EE",
+                      "name": "Estonia",
+                      "rule": "free30",
+                      "source": "https://ee.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "FI",
+                      "name": "Finland",
+                      "rule": "free30",
+                      "source": "https://fi.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "FR",
+                      "name": "France",
+                      "rule": "free30",
+                      "source": "https://fr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "DE",
+                      "name": "Germany",
+                      "rule": "free30",
+                      "source": "https://de.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "GR",
+                      "name": "Greece",
+                      "rule": "free30",
+                      "source": "https://gr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "HU",
+                      "name": "Hungary",
+                      "rule": "free30",
+                      "source": "https://hu.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "IS",
+                      "name": "Iceland",
+                      "rule": "free30",
+                      "source": "https://is.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "IE",
+                      "name": "Ireland",
+                      "rule": "free30",
+                      "source": "https://ie.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "IT",
+                      "name": "Italy",
+                      "rule": "free30",
+                      "source": "https://it.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "LV",
+                      "name": "Latvia",
+                      "rule": "free30",
+                      "source": "https://lv.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "LI",
+                      "name": "Liechtenstein",
+                      "rule": "free30",
+                      "source": "https://ch.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "LU",
+                      "name": "Luxembourg",
+                      "rule": "free30",
+                      "source": "https://lu.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MT",
+                      "name": "Malta",
+                      "rule": "free30",
+                      "source": "https://mt.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MC",
+                      "name": "Monaco",
+                      "rule": "free30",
+                      "source": "https://fr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "ME",
+                      "name": "Montenegro",
+                      "rule": "free30",
+                      "source": "https://me.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "NL",
+                      "name": "Netherlands",
+                      "rule": "free30",
+                      "source": "https://nl.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MK",
+                      "name": "North Macedonia",
+                      "rule": "free30",
+                      "source": "https://mk.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "NO",
+                      "name": "Norway",
+                      "rule": "free30",
+                      "source": "https://no.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "PL",
+                      "name": "Poland",
+                      "rule": "free30",
+                      "source": "https://pl.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "PT",
+                      "name": "Portugal",
+                      "rule": "free30",
+                      "source": "https://pt.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "RO",
+                      "name": "Romania",
+                      "rule": "free30",
+                      "source": "https://ro.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "RU",
+                      "name": "Russia",
+                      "rule": "free30",
+                      "source": "https://ru.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SK",
+                      "name": "Slovakia",
+                      "rule": "free30",
+                      "source": "https://sk.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SI",
+                      "name": "Slovenia",
+                      "rule": "free30",
+                      "source": "https://si.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "ES",
+                      "name": "Spain",
+                      "rule": "free30",
+                      "source": "https://es.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SE",
+                      "name": "Sweden",
+                      "rule": "free30",
+                      "source": "https://se.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "CH",
+                      "name": "Switzerland",
+                      "rule": "free30",
+                      "source": "https://ch.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "GB",
+                      "name": "United Kingdom",
+                      "rule": "free30",
+                      "source": "https://gb.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AL",
+                      "name": "Albania",
+                      "rule": "mutual",
+                      "source": "https://al.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BY",
+                      "name": "Belarus",
+                      "rule": "mutual",
+                      "source": "https://by.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BA",
+                      "name": "Bosnia and Herzegovina",
+                      "rule": "mutual",
+                      "source": "https://ba.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SM",
+                      "name": "San Marino",
+                      "rule": "mutual",
+                      "source": "https://it.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "RS",
+                      "name": "Serbia",
+                      "rule": "mutual",
+                      "source": "https://rs.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "CZ",
+                      "name": "Czechia",
+                      "rule": "transit",
+                      "source": "https://cz.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "LT",
+                      "name": "Lithuania",
+                      "rule": "transit",
+                      "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+                    },
+                    {
+                      "code": "UA",
+                      "name": "Ukraine",
+                      "rule": "transit",
+                      "source": "https://ua.china-embassy.gov.cn/eng/"
+                    }
+                  ]
+                },
+                {
+                  "id": "americas",
+                  "name": "North & South America",
+                  "countries": [
+                    {
+                      "code": "CA",
+                      "name": "Canada",
+                      "rule": "free30",
+                      "source": "https://ca.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AR",
+                      "name": "Argentina",
+                      "rule": "free30",
+                      "source": "https://ar.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BR",
+                      "name": "Brazil",
+                      "rule": "free30",
+                      "source": "https://br.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "CL",
+                      "name": "Chile",
+                      "rule": "free30",
+                      "source": "https://cl.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "PE",
+                      "name": "Peru",
+                      "rule": "free30",
+                      "source": "https://pe.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "UY",
+                      "name": "Uruguay",
+                      "rule": "free30",
+                      "source": "https://uy.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AG",
+                      "name": "Antigua and Barbuda",
+                      "rule": "mutual",
+                      "source": "https://ag.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BS",
+                      "name": "Bahamas",
+                      "rule": "mutual",
+                      "source": "https://bs.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BB",
+                      "name": "Barbados",
+                      "rule": "mutual",
+                      "source": "https://bb.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "DM",
+                      "name": "Dominica",
+                      "rule": "mutual",
+                      "source": "https://dm.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "GD",
+                      "name": "Grenada",
+                      "rule": "mutual",
+                      "source": "https://gd.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SR",
+                      "name": "Suriname",
+                      "rule": "mutual",
+                      "source": "https://sr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "US",
+                      "name": "United States",
+                      "rule": "transit",
+                      "source": "https://us.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MX",
+                      "name": "Mexico",
+                      "rule": "transit",
+                      "source": "https://mx.china-embassy.gov.cn/eng/"
+                    }
+                  ]
+                },
+                {
+                  "id": "asia",
+                  "name": "Asia & Oceania",
+                  "countries": [
+                    {
+                      "code": "AU",
+                      "name": "Australia",
+                      "rule": "free30",
+                      "source": "https://au.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "NZ",
+                      "name": "New Zealand",
+                      "rule": "free30",
+                      "source": "https://nz.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "JP",
+                      "name": "Japan",
+                      "rule": "free30",
+                      "source": "https://jp.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "KR",
+                      "name": "South Korea",
+                      "rule": "free30",
+                      "source": "https://kr.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BN",
+                      "name": "Brunei",
+                      "rule": "free15",
+                      "source": "https://bn.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SG",
+                      "name": "Singapore",
+                      "rule": "mutual",
+                      "source": "https://sg.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "TH",
+                      "name": "Thailand",
+                      "rule": "mutual",
+                      "source": "https://th.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MY",
+                      "name": "Malaysia",
+                      "rule": "mutual",
+                      "source": "https://my.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MV",
+                      "name": "Maldives",
+                      "rule": "mutual",
+                      "source": "https://mv.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "KZ",
+                      "name": "Kazakhstan",
+                      "rule": "mutual",
+                      "source": "https://kz.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "UZ",
+                      "name": "Uzbekistan",
+                      "rule": "mutual",
+                      "source": "https://uz.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "GE",
+                      "name": "Georgia",
+                      "rule": "mutual",
+                      "source": "https://ge.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AM",
+                      "name": "Armenia",
+                      "rule": "mutual",
+                      "source": "https://am.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AZ",
+                      "name": "Azerbaijan",
+                      "rule": "mutual",
+                      "source": "https://az.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "FJ",
+                      "name": "Fiji",
+                      "rule": "mutual",
+                      "source": "https://fj.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "WS",
+                      "name": "Samoa",
+                      "rule": "mutual",
+                      "source": "https://ws.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "TO",
+                      "name": "Tonga",
+                      "rule": "mutual",
+                      "source": "https://to.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SB",
+                      "name": "Solomon Islands",
+                      "rule": "mutual",
+                      "source": "https://sb.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "ID",
+                      "name": "Indonesia",
+                      "rule": "transit",
+                      "source": "https://id.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "KG",
+                      "name": "Kyrgyzstan",
+                      "rule": "transit",
+                      "source": "https://kg.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "VN",
+                      "name": "Vietnam",
+                      "rule": "transit",
+                      "source": "https://vn.china-embassy.gov.cn/eng/"
+                    }
+                  ]
+                },
+                {
+                  "id": "mea",
+                  "name": "Middle East & Africa",
+                  "countries": [
+                    {
+                      "code": "SA",
+                      "name": "Saudi Arabia",
+                      "rule": "free30",
+                      "source": "https://sa.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "OM",
+                      "name": "Oman",
+                      "rule": "free30",
+                      "source": "https://om.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "KW",
+                      "name": "Kuwait",
+                      "rule": "free30",
+                      "source": "https://kw.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "BH",
+                      "name": "Bahrain",
+                      "rule": "free30",
+                      "source": "https://bh.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "AE",
+                      "name": "United Arab Emirates",
+                      "rule": "mutual",
+                      "source": "https://ae.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "QA",
+                      "name": "Qatar",
+                      "rule": "mutual",
+                      "source": "https://qa.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "MU",
+                      "name": "Mauritius",
+                      "rule": "mutual",
+                      "source": "https://mu.china-embassy.gov.cn/eng/"
+                    },
+                    {
+                      "code": "SC",
+                      "name": "Seychelles",
+                      "rule": "mutual",
+                      "source": "https://sc.china-embassy.gov.cn/eng/"
+                    }
+                  ]
+                }
+              ],
+              "intro": "No visa-free entry for your country? You may still stay up to **10 days** without a visa if you fly on to a third country, e.g. Germany → Shanghai → Tokyo. You must enter and leave through a designated port.",
+              "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+            },
+            {
+              "type": "checklist",
+              "heading": "Before you fly",
+              "items": [
+                {
+                  "text": "Passport valid for at least 6 months, with blank pages"
+                },
+                {
+                  "text": "Checked your visa-free eligibility or got your visa",
+                  "note": "Confirm on the website of the Chinese embassy in your country"
+                },
+                {
+                  "text": "Booked your first nights of accommodation",
+                  "note": "Hotels register you with the police automatically. Staying with friends? You must register at the local police station within 24 hours."
+                },
+                {
+                  "text": "Printed or saved your return or onward ticket"
+                },
+                {
+                  "text": "Bought travel health insurance"
+                },
+                {
+                  "text": "Filled in the electronic arrival card online",
+                  "note": "The arrival card is now fully electronic, and paper cards are no longer handed out. Fill it in before you land: [online arrival card](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                }
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Have your hotel address in **Chinese characters** saved on your phone. You need it for the arrival card, and taxi drivers rarely read English."
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Visa-free policies (National Immigration Administration)",
+                  "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+                },
+                {
+                  "label": "Electronic arrival card (NIA)",
+                  "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home"
+                },
+                {
+                  "label": "National Immigration Administration (English)",
+                  "url": "https://en.nia.gov.cn/"
+                },
+                {
+                  "label": "Chinese Visa Application Service Center",
+                  "url": "https://www.visaforchina.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "internet",
+          "emoji": "📶",
+          "title": "Internet & VPN",
+          "summary": "What's blocked, and how to stay connected.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "The Great Firewall",
+              "paragraphs": [
+                "Many foreign services don't work on Chinese networks (hotel Wi-Fi, local SIM cards). Blocked services include:"
+              ],
+              "bullets": [
+                "Google (Search, Gmail, Maps, Drive, YouTube)",
+                "WhatsApp, Instagram, Facebook, X/Twitter, Telegram",
+                "Many news sites, and some AI tools"
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Usually fine without a VPN: Apple services (iMessage, iCloud, Apple Maps), Microsoft/Outlook, Booking.com, Airbnb, and of course all Chinese apps."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Your options",
+              "bullets": [
+                "**Roaming or a travel eSIM (easiest for short trips).** Mobile data from a foreign SIM or eSIM is routed abroad, so Google and WhatsApp usually just work. Choose an eSIM provider that explicitly supports China.",
+                "**VPN.** Install and test it **before** you arrive, because VPN websites and app store pages are blocked inside China. Reliability changes often; ask people who are already there which one works right now.",
+                "**Local SIM card (China Mobile, China Unicom, China Telecom).** Cheap and fast, needed for long stays. Bring your passport, because SIMs are registered to your real name."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Using unapproved VPNs is a legal grey area in China. Enforcement against individual visitors is rare, but don't advertise it, and stay away from sensitive political content."
+            },
+            {
+              "type": "checklist",
+              "heading": "Checklist",
+              "items": [
+                {
+                  "text": "Chose roaming, a China-compatible eSIM or a VPN"
+                },
+                {
+                  "text": "Installed and tested the VPN at home (if using one)"
+                },
+                {
+                  "text": "Downloaded offline Google Maps or Apple Maps as backup"
+                },
+                {
+                  "text": "Told family to reach you on WeChat as well as WhatsApp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "payments",
+          "emoji": "💳",
+          "title": "Alipay & WeChat Pay",
+          "summary": "China is nearly cashless. Set up mobile payment before you go.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "Almost everything, from street food to the metro, is paid by scanning a QR code. Foreign Visa and Mastercard cards can now be linked directly to both apps, so you don't need a Chinese bank account."
+              ]
+            },
+            {
+              "type": "app",
+              "app": {
+                "id": "alipay",
+                "name": "Alipay",
+                "desc": "The easiest way for visitors to pay. Link a Visa or Mastercard, pay by QR code, and use mini-programs for metro, DiDi and more.",
+                "badges": [
+                  "Must-have",
+                  "Foreign cards OK"
+                ],
+                "url": "https://apps.apple.com/app/id333206289",
+                "stores": [
+                  "us",
+                  "de",
+                  "es"
+                ]
+              },
+              "items": [
+                {
+                  "text": "Download Alipay and sign up with your foreign phone number"
+                },
+                {
+                  "text": "Verify your identity with your passport",
+                  "note": "Under Account → Identity verification. Higher limits need full verification."
+                },
+                {
+                  "text": "Add your Visa or Mastercard"
+                },
+                {
+                  "text": "Try the Transport mini-program for metro QR codes in your city"
+                }
+              ]
+            },
+            {
+              "type": "app",
+              "app": {
+                "id": "wechat",
+                "name": "WeChat",
+                "desc": "Messaging, payments, mini-programs and contact sharing. Everyone in China uses it. A foreign number may need an existing user to verify you.",
+                "badges": [
+                  "Must-have",
+                  "English UI"
+                ],
+                "url": "https://apps.apple.com/app/id414478124",
+                "stores": [
+                  "us",
+                  "de",
+                  "es"
+                ]
+              },
+              "items": [
+                {
+                  "text": "Create a WeChat account (see the Essential apps guide)"
+                },
+                {
+                  "text": "Go to Me → Services → Wallet → Cards and add your foreign card"
+                },
+                {
+                  "text": "Verify your identity with your passport when asked"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Fees & limits",
+              "bullets": [
+                "Foreign card payments **up to ¥200** are usually free; above that a small fee (around 3%) may apply.",
+                "There are per-transaction and monthly limits for foreign cards. For big purchases (e.g. a rent deposit) you may need a bank transfer or cash.",
+                "Tell your bank you are traveling to China so payments aren't blocked."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Bring some cash anyway (a few hundred RMB). It helps in rural areas and for older vendors, and as backup if your card is declined. Bank of China ATMs accept most foreign cards."
+            },
+            {
+              "type": "phrases",
+              "heading": "Useful at the counter",
+              "items": [
+                {
+                  "meaning": "Can I pay with Alipay?",
+                  "zh": "可以用支付宝吗？",
+                  "pinyin": "Kěyǐ yòng Zhīfùbǎo ma?"
+                },
+                {
+                  "meaning": "I'll scan you / You scan me",
+                  "zh": "我扫你 / 你扫我",
+                  "pinyin": "Wǒ sǎo nǐ / Nǐ sǎo wǒ"
+                },
+                {
+                  "meaning": "Can I pay with cash?",
+                  "zh": "可以付现金吗？",
+                  "pinyin": "Kěyǐ fù xiànjīn ma?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apps",
+          "emoji": "📱",
+          "title": "Essential apps",
+          "summary": "WeChat, Amap, DiDi and the apps locals actually use.",
+          "minutes": 6,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "These are the apps you'll actually use. Swipe through each category and install the must-haves before you fly."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Messaging & payments"
+            },
+            {
+              "type": "app",
+              "app": {
+                "id": "wechat",
+                "name": "WeChat",
+                "desc": "Messaging, payments, mini-programs and contact sharing. Everyone in China uses it. A foreign number may need an existing user to verify you.",
+                "badges": [
+                  "Must-have",
+                  "English UI"
+                ],
+                "url": "https://apps.apple.com/app/id414478124",
+                "stores": [
+                  "us",
+                  "de",
+                  "es"
+                ]
+              },
+              "items": [
+                {
+                  "text": "Install WeChat and sign up with your phone number"
+                },
+                {
+                  "text": "Get your account verified",
+                  "note": "With a foreign number, an **existing WeChat user** may need to scan a QR code to verify you. Ask a friend before you travel."
+                }
+              ]
+            },
+            {
+              "type": "app",
+              "app": {
+                "id": "alipay",
+                "name": "Alipay",
+                "desc": "The easiest way for visitors to pay. Link a Visa or Mastercard, pay by QR code, and use mini-programs for metro, DiDi and more.",
+                "badges": [
+                  "Must-have",
+                  "Foreign cards OK"
+                ],
+                "url": "https://apps.apple.com/app/id333206289",
+                "stores": [
+                  "us",
+                  "de",
+                  "es"
+                ]
+              },
+              "items": [
+                {
+                  "text": "Install Alipay and sign up with your phone number"
+                },
+                {
+                  "text": "Link your card (see the Alipay & WeChat Pay guide)"
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Maps & getting around",
+              "items": [
+                {
+                  "id": "amap",
+                  "name": "Amap (Gaode Maps)",
+                  "desc": "China's best map: live metro, bus and walking directions, and taxi booking. Search with Chinese characters for best results.",
+                  "badges": [
+                    "Must-have",
+                    "English UI"
+                  ],
+                  "url": "https://apps.apple.com/app/id461703208",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "didi",
+                  "name": "DiDi",
+                  "desc": "China's Uber. English mode, automatic chat translation with the driver, and payment with a foreign card. Also available inside Alipay.",
+                  "badges": [
+                    "English UI",
+                    "Foreign cards OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id554499054",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "tripcom",
+                  "name": "Trip.com",
+                  "desc": "Book high-speed trains, flights and hotels in English. Easiest way for foreigners to buy train tickets.",
+                  "badges": [
+                    "English UI",
+                    "Foreign cards OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id681752345",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "railway12306",
+                  "name": "Railway 12306",
+                  "desc": "The official China Railway app. No booking fees and an English version, but registration is a little more work.",
+                  "badges": [
+                    "Official",
+                    "English UI"
+                  ],
+                  "url": "https://apps.apple.com/app/id564818797",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Food & restaurants",
+              "items": [
+                {
+                  "id": "meituan",
+                  "name": "Meituan",
+                  "desc": "Food delivery, groceries, hotel and restaurant deals. Delivery usually arrives in about 30 minutes. Chinese only.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id423084029",
+                  "stores": [
+                    "us"
+                  ]
+                },
+                {
+                  "id": "eleme",
+                  "name": "Taobao Instant Commerce (Ele.me)",
+                  "desc": "Formerly Ele.me, now renamed. Food and grocery delivery, Meituan's main competitor. Also available inside Alipay.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id507161324",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "dianping",
+                  "name": "Dianping",
+                  "desc": "China's Yelp: ratings, photos and reviews for restaurants, cafés and sights. Great for finding where locals actually eat.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id351091731",
+                  "stores": [
+                    "us"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Language & translation",
+              "items": [
+                {
+                  "id": "pleco",
+                  "name": "Pleco",
+                  "desc": "The best Chinese–English dictionary. Look up characters by drawing them, or point your camera at text.",
+                  "badges": [
+                    "English UI",
+                    "Works offline"
+                  ],
+                  "url": "https://apps.apple.com/app/id341922306",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "baidutranslate",
+                  "name": "Baidu Translate",
+                  "desc": "Camera, voice and text translation that works without a VPN. Apple Translate is a good alternative: download Chinese for offline use.",
+                  "badges": [
+                    "No VPN needed"
+                  ],
+                  "url": "https://apps.apple.com/app/id605670941",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Shopping & inspiration",
+              "items": [
+                {
+                  "id": "taobao",
+                  "name": "Taobao",
+                  "desc": "Buy almost anything online, often delivered the next day to a parcel locker or pick-up station. You get the pick-up code by SMS.",
+                  "badges": [
+                    "Chinese mostly"
+                  ],
+                  "url": "https://apps.apple.com/app/id387682726",
+                  "stores": [
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "jd",
+                  "name": "JD.com",
+                  "desc": "Online shopping with its own fast delivery network. Good for electronics and anything where you want guaranteed originals.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id414245413",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "rednote",
+                  "name": "RedNote (Xiaohongshu)",
+                  "desc": "Where young Chinese people look for travel tips, cafés, hidden spots and reviews. Think Instagram meets Pinterest.",
+                  "badges": [
+                    "Chinese mostly"
+                  ],
+                  "url": "https://apps.apple.com/app/id741292507",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Install before you fly",
+              "items": [
+                {
+                  "text": "Amap (or Apple Maps set up)"
+                },
+                {
+                  "text": "DiDi"
+                },
+                {
+                  "text": "Trip.com or 12306"
+                },
+                {
+                  "text": "A translation app with offline Chinese"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "getting-around",
+          "emoji": "🚄",
+          "title": "Getting around",
+          "summary": "Metro, high-speed rail and taxis.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Metro",
+              "paragraphs": [
+                "Big-city metros are clean, cheap (usually ¥2–10) and signed in English. Pay with the metro QR code in Alipay or WeChat, or buy single tickets at machines. Expect a security bag scan at every entrance."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "High-speed rail (高铁)",
+              "paragraphs": [
+                "The fastest way between cities. Book on Trip.com or 12306 with your passport details; **your passport is your ticket**. Arrive 30–45 minutes early, because stations are huge and there is a security check."
+              ],
+              "bullets": [
+                "G trains are the fastest, then D trains.",
+                "Tickets sell out around holidays (especially Spring Festival and the first week of October). Book as early as possible.",
+                "Your seat type is printed on the booking: 二等座 second class, 一等座 first class, 商务座 business class."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Taxis",
+              "paragraphs": [
+                "Use DiDi or hail an official taxi on the street. Show the destination in Chinese characters. Drivers don't expect tips."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Avoid unofficial drivers waiting at airport and train station exits who approach you. Use the official taxi line or DiDi."
+            },
+            {
+              "type": "phrases",
+              "heading": "Phrases",
+              "items": [
+                {
+                  "meaning": "Please take me here",
+                  "zh": "请带我去这里",
+                  "pinyin": "Qǐng dài wǒ qù zhèlǐ"
+                },
+                {
+                  "meaning": "Where is the metro station?",
+                  "zh": "地铁站在哪里？",
+                  "pinyin": "Dìtiě zhàn zài nǎlǐ?"
+                },
+                {
+                  "meaning": "Stop here, please",
+                  "zh": "请在这里停",
+                  "pinyin": "Qǐng zài zhèlǐ tíng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phrases",
+          "emoji": "🗣️",
+          "title": "Survival Chinese",
+          "summary": "The 15 phrases you'll actually use.",
+          "minutes": 3,
+          "blocks": [
+            {
+              "type": "tip",
+              "text": "Mandarin has four tones, and getting them wrong can change the meaning. Don't stress, because people are patient and pointing at the characters on your screen always works."
+            },
+            {
+              "type": "phrases",
+              "heading": "Basics",
+              "items": [
+                {
+                  "meaning": "Hello",
+                  "zh": "你好",
+                  "pinyin": "Nǐ hǎo"
+                },
+                {
+                  "meaning": "Thank you",
+                  "zh": "谢谢",
+                  "pinyin": "Xièxie"
+                },
+                {
+                  "meaning": "Sorry / Excuse me",
+                  "zh": "不好意思",
+                  "pinyin": "Bù hǎoyìsi"
+                },
+                {
+                  "meaning": "I don't understand",
+                  "zh": "我听不懂",
+                  "pinyin": "Wǒ tīng bù dǒng"
+                },
+                {
+                  "meaning": "Do you speak English?",
+                  "zh": "你会说英语吗？",
+                  "pinyin": "Nǐ huì shuō Yīngyǔ ma?"
+                },
+                {
+                  "meaning": "Yes / No (correct / not correct)",
+                  "zh": "对 / 不对",
+                  "pinyin": "Duì / Bú duì"
+                }
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Shopping & food",
+              "items": [
+                {
+                  "meaning": "How much is it?",
+                  "zh": "多少钱？",
+                  "pinyin": "Duōshǎo qián?"
+                },
+                {
+                  "meaning": "Too expensive!",
+                  "zh": "太贵了！",
+                  "pinyin": "Tài guì le!"
+                },
+                {
+                  "meaning": "I want this",
+                  "zh": "我要这个",
+                  "pinyin": "Wǒ yào zhège"
+                },
+                {
+                  "meaning": "Not spicy, please",
+                  "zh": "不要辣",
+                  "pinyin": "Bú yào là"
+                },
+                {
+                  "meaning": "I'm vegetarian",
+                  "zh": "我吃素",
+                  "pinyin": "Wǒ chī sù"
+                },
+                {
+                  "meaning": "The bill, please",
+                  "zh": "买单",
+                  "pinyin": "Mǎidān"
+                }
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Getting help",
+              "items": [
+                {
+                  "meaning": "Where is the toilet?",
+                  "zh": "厕所在哪里？",
+                  "pinyin": "Cèsuǒ zài nǎlǐ?"
+                },
+                {
+                  "meaning": "Help!",
+                  "zh": "救命！",
+                  "pinyin": "Jiùmìng!"
+                },
+                {
+                  "meaning": "I need a doctor",
+                  "zh": "我需要看医生",
+                  "pinyin": "Wǒ xūyào kàn yīshēng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safety",
+          "emoji": "🩺",
+          "title": "Safety & health",
+          "summary": "Emergency numbers, hospitals and everyday safety.",
+          "minutes": 3,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Emergency numbers",
+              "bullets": [
+                "**110**: police",
+                "**120**: ambulance",
+                "**119**: fire",
+                "**12367**: National Immigration Administration hotline (visa questions, multilingual)"
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Staying safe",
+              "paragraphs": [
+                "China's big cities are very safe, even at night. The most common problems are tourist scams: the \"tea ceremony\" or \"art student\" invitation that ends with a huge bill, and unofficial taxis."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Health",
+              "bullets": [
+                "Don't drink tap water. Boiled or bottled water is everywhere, and hotels provide kettles.",
+                "Big cities have international clinics with English-speaking doctors (more expensive, often accept travel insurance).",
+                "Public hospitals are cheap and good but busy, and you register and pay at the counter or by WeChat before seeing a doctor.",
+                "Bring your own medication with the prescription. Some common Western medicines are hard to find."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Checklist",
+              "items": [
+                {
+                  "text": "Saved emergency numbers in your phone"
+                },
+                {
+                  "text": "Saved your embassy's address and phone number"
+                },
+                {
+                  "text": "Travel insurance documents on your phone"
+                },
+                {
+                  "text": "Packed medication with prescriptions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "emoji": "🎓",
+      "title": "Studying in China",
+      "tagline": "Programs, scholarships, applications, X1 visa and residence permit",
+      "intro": "From finding the right program to getting your residence permit after arrival. Applications for September usually open between November and January, so start early.",
+      "guides": [
+        {
+          "id": "programs",
+          "emoji": "🔎",
+          "title": "Find the right program",
+          "summary": "Language course, exchange or full degree? English or Chinese?",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Types of programs",
+              "bullets": [
+                "**Chinese language program (语言进修)**: one semester to two years of intensive Mandarin, no prior Chinese needed. Great as a first step.",
+                "**Exchange semester**: through a partnership between your home university and a Chinese university. Ask your international office first, because it's usually the easiest route.",
+                "**Bachelor's, Master's or PhD**: full degree programs, taught in Chinese or English."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "English or Chinese?",
+              "paragraphs": [
+                "Many top universities offer English-taught Master's programs (business, engineering, international relations, Chinese studies). Chinese-taught programs usually require **HSK 4** for Bachelor's and **HSK 5** for Master's, and are often cheaper with more scholarship options."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Choosing a university",
+              "bullets": [
+                "**C9 League**: China's top universities (e.g. Peking, Tsinghua, Fudan, Zhejiang, Shanghai Jiao Tong).",
+                "**Double First-Class (双一流)** universities: the government's list of strong universities and disciplines.",
+                "Think about the city as much as the ranking: Beijing and Shanghai are international and expensive; Chengdu, Hangzhou, Xi'an or Kunming are cheaper and you'll use more Chinese."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Research checklist",
+              "items": [
+                {
+                  "text": "Decided on program type and language of instruction"
+                },
+                {
+                  "text": "Asked your home university about partner universities in China"
+                },
+                {
+                  "text": "Shortlisted 3–5 universities on their international student websites"
+                },
+                {
+                  "text": "Checked language requirements (HSK, IELTS or TOEFL)"
+                },
+                {
+                  "text": "Noted each application deadline"
+                }
+              ]
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Campus China (official study-in-China portal)",
+                  "url": "https://www.campuschina.org/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scholarships",
+          "emoji": "🏅",
+          "title": "Scholarships",
+          "summary": "CSC, provincial, university and Confucius Institute scholarships.",
+          "minutes": 6,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "China offers more scholarships to international students than most people expect. Many cover tuition, housing and a monthly stipend."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Chinese Government Scholarship (CSC)",
+              "paragraphs": [
+                "The biggest one. It covers tuition, a dorm room, medical insurance and a monthly stipend (roughly ¥2,500 for Bachelor's, ¥3,000 for Master's, ¥3,500 for PhD). There are two main routes:"
+              ],
+              "bullets": [
+                "**Type A (bilateral)**: apply through the Chinese embassy or a government agency in your home country. Deadlines are often early (December–March).",
+                "**Type B (university program)**: apply directly to a Chinese university that has CSC places. Each university sets its own deadline, usually January–April.",
+                "You can apply to up to three universities through the CSC system."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Other scholarships",
+              "bullets": [
+                "**International Chinese Language Teachers Scholarship (Confucius Institute)**: for language study and teaching Chinese. Apply through a Confucius Institute or a recommending institution.",
+                "**Provincial and city scholarships**: e.g. Beijing, Shanghai, Jiangsu or Zhejiang Government Scholarships, often partial funding.",
+                "**University scholarships**: most universities have their own, sometimes automatic for strong applicants.",
+                "**Home-country funding**: e.g. DAAD in Germany, or exchange grants from your own university."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "For Type B, emailing a professor in your field and getting an **acceptance or pre-admission letter** (导师接收函) can greatly improve your chances, especially for Master's and PhD."
+            },
+            {
+              "type": "checklist",
+              "heading": "Scholarship checklist",
+              "items": [
+                {
+                  "text": "Checked the CSC Type A deadline at your local Chinese embassy"
+                },
+                {
+                  "text": "Found universities offering CSC Type B places in your field"
+                },
+                {
+                  "text": "Checked provincial or city scholarships for your target cities"
+                },
+                {
+                  "text": "Contacted potential supervisors (for Master's or PhD)"
+                },
+                {
+                  "text": "Created an account on the CSC online application system"
+                }
+              ]
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "CSC scholarship info (Campus China)",
+                  "url": "https://www.campuschina.org/"
+                },
+                {
+                  "label": "International Chinese Language Teachers Scholarship",
+                  "url": "https://cis.chinese.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apply",
+          "emoji": "📝",
+          "title": "How to apply",
+          "summary": "Documents, timeline and admission.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Typical timeline (for September start)",
+              "bullets": [
+                "**Oct–Dec**: research programs, prepare documents, take HSK or IELTS",
+                "**Dec–Apr**: application and scholarship deadlines",
+                "**May–Jul**: admission results; you receive the admission letter and **JW201 or JW202 form**",
+                "**Jul–Aug**: apply for your student visa, book flights",
+                "**Late Aug–Sep**: arrival, registration, residence permit"
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Documents you'll usually need",
+              "items": [
+                {
+                  "text": "Passport scan (valid for at least 1 more year)"
+                },
+                {
+                  "text": "Highest diploma, certified or notarized (with English or Chinese translation)"
+                },
+                {
+                  "text": "Academic transcripts, certified"
+                },
+                {
+                  "text": "Study plan or research proposal",
+                  "note": "About 800+ words for Bachelor's, 1,500+ for Master's or PhD"
+                },
+                {
+                  "text": "Two recommendation letters (from professors or associate professors)"
+                },
+                {
+                  "text": "Language certificate (HSK, or IELTS or TOEFL for English programs)"
+                },
+                {
+                  "text": "Foreigner Physical Examination Form",
+                  "note": "Must be completed by a doctor with all fields, stamp and photo. Valid for 6 months."
+                },
+                {
+                  "text": "Non-criminal record certificate (required by many universities)"
+                },
+                {
+                  "text": "Passport photo with white background"
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Requirements differ between universities and scholarships. Always follow the list on your target university's international student admission page."
+            }
+          ]
+        },
+        {
+          "id": "student-visa",
+          "emoji": "🛂",
+          "title": "Student visa (X1 / X2)",
+          "summary": "Which visa you need and how to get it.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "X1 or X2?",
+              "bullets": [
+                "**X1 visa**: for study **longer than 180 days** (degrees, full-year programs). Valid for a single entry; within 30 days of arrival you convert it into a residence permit.",
+                "**X2 visa**: for study **up to 180 days** (one semester, summer school). No residence permit needed."
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Some short language or summer programs can be attended visa-free if you're eligible, but check with the university first. For credit-bearing study, use a student visa."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Apply for your X visa",
+              "items": [
+                {
+                  "text": "Received the original admission letter from your university"
+                },
+                {
+                  "text": "Received the JW201 or JW202 form (X1 only)"
+                },
+                {
+                  "text": "Filled in the online visa application form"
+                },
+                {
+                  "text": "Booked an appointment at the Chinese Visa Application Service Center"
+                },
+                {
+                  "text": "Brought passport, photo, admission letter, JW form and visa form"
+                },
+                {
+                  "text": "Gave fingerprints if required, and paid the fee"
+                },
+                {
+                  "text": "Collected your visa and checked the details"
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Keep the **original JW202 form and admission letter** safe and bring them to China. You need them again for registration and the residence permit."
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Chinese Visa Application Service Center",
+                  "url": "https://www.visaforchina.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "residence-permit",
+          "emoji": "🪪",
+          "title": "Residence permit",
+          "summary": "What to do in your first 30 days with an X1 visa.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "With an X1 visa you must apply for a **residence permit for study** (学习类居留许可) within **30 days of entering China**. Your university's international office usually guides you through every step, often in groups."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "First 30 days, step by step",
+              "items": [
+                {
+                  "text": "Register your accommodation within 24 hours",
+                  "note": "Living in the dorm? The university does it for you. Off-campus? Go to the local police station with your landlord's documents and your passport."
+                },
+                {
+                  "text": "Register at your university and get your student ID or campus card"
+                },
+                {
+                  "text": "Do the health check (or get your home-country exam verified)",
+                  "note": "At the local International Travel Healthcare Center. Some cities accept your Foreigner Physical Examination Form after verification."
+                },
+                {
+                  "text": "Collect documents: passport, photos, JW202, admission letter, accommodation registration form, health certificate"
+                },
+                {
+                  "text": "Submit the application at the Exit-Entry Administration Bureau (出入境管理局)"
+                },
+                {
+                  "text": "Collect your passport with the permit",
+                  "note": "Processing usually takes around 7–15 working days. Your passport is held during this time."
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Plan travel around this: you can't leave China while your passport is being processed. Missing the 30-day deadline can lead to fines."
+            },
+            {
+              "type": "text",
+              "heading": "After you get it",
+              "bullets": [
+                "The permit allows multiple entries until it expires, so you can travel home in the holidays.",
+                "If you move, re-register your address within 24 hours.",
+                "Renew it before it expires if your program continues."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "campus-life",
+          "emoji": "🏫",
+          "title": "Campus life & settling in",
+          "summary": "Dorms, phone number, bank account, part-time work.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Housing",
+              "paragraphs": [
+                "Most universities have international student dorms (single or double rooms). They are cheap and convenient, and make your registration easier. Off-campus apartments give you more freedom but come with deposits (often 1 month plus 3 months up front) and more paperwork."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Canteens and the campus card",
+              "paragraphs": [
+                "University canteens (食堂) are cheap (a full meal is often ¥10–20) and surprisingly good. You pay with your campus card or a QR code. The card often also works for the library, gym and laundry."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Settle-in checklist",
+              "items": [
+                {
+                  "text": "Get a Chinese phone number (bring your passport)",
+                  "note": "Many apps and services require a Chinese +86 number"
+                },
+                {
+                  "text": "Open a Chinese bank account (e.g. Bank of China or ICBC branch near campus)",
+                  "note": "Needed for scholarship stipends and to use WeChat Pay and Alipay without limits"
+                },
+                {
+                  "text": "Link your Chinese bank card to WeChat Pay and Alipay"
+                },
+                {
+                  "text": "Join your class and international student WeChat groups"
+                },
+                {
+                  "text": "Buy or activate student health insurance (often required)"
+                },
+                {
+                  "text": "Register for Chinese language classes or a language exchange partner"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Working while studying",
+              "paragraphs": [
+                "International students may only do part-time work or internships with **approval from their university** and a note added to their residence permit by the Exit-Entry office. Working without this, including teaching English privately, can lead to fines or losing your permit."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "WeChat groups are where everything happens: course announcements, second-hand sales, sports clubs, trips. Ask classmates to add you on day one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "emoji": "🏮",
+      "title": "Life & culture",
+      "tagline": "What everyday life in China is really like",
+      "intro": "Beyond the checklists: how people live, eat, celebrate and think, and what surprised foreigners most when they arrived.",
+      "guides": [
+        {
+          "id": "reality",
+          "emoji": "🌆",
+          "title": "Expectations vs. reality",
+          "summary": "What life in China is really like.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "What surprises most people",
+              "bullets": [
+                "**It's incredibly convenient.** Food delivery in 30 minutes, trains every few minutes, packages next day, everything paid by phone.",
+                "**It's very safe.** Walking alone at night in big cities is normal.",
+                "**Things change fast.** Shops, apps and even rules can change within months. Locals adapt quickly, and you'll learn to as well.",
+                "**China is not one place.** Shanghai, a village in Yunnan and Harbin in winter feel like different countries. Food, dialects and lifestyle vary a lot."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "What takes getting used to",
+              "bullets": [
+                "**The language barrier.** Outside international areas few people speak English. Translation apps help a lot, and learning even some Chinese changes your experience.",
+                "**Attention.** In smaller cities people may stare or ask for photos. It's almost always friendly curiosity.",
+                "**Digital life.** You need WeChat for everything, and your favorite apps don't work without a VPN.",
+                "**ID checks and cameras.** You'll show your passport for trains, hotels, some museums and SIM cards. It quickly becomes routine.",
+                "**Crowds.** Especially on public holidays. Popular sights can be packed."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "The best way to understand China is to make Chinese friends. Language exchanges, university clubs and WeChat groups are a great start. Most people are curious and happy to help."
+            }
+          ]
+        },
+        {
+          "id": "etiquette",
+          "emoji": "🤝",
+          "title": "Etiquette & social norms",
+          "summary": "Face, relationships, gifts and dinner table manners.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Two key ideas",
+              "bullets": [
+                "**Face (面子 miànzi)**: someone's dignity and reputation. Avoid criticizing people in front of others or putting them in situations where they can't say yes. Indirect communication is common, and \"maybe\" or \"it's a bit difficult\" often means no.",
+                "**Relationships (关系 guānxi)**: networks of trust and favors. Relationships take time and are built over meals, help and staying in touch."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "At the dinner table",
+              "bullets": [
+                "Dishes are shared. The host usually orders, and it's polite to try a bit of everything.",
+                "Don't stick your chopsticks upright in rice, because it resembles incense at funerals.",
+                "When toasting, clink your glass slightly **lower** than an older person's or your host's as a sign of respect.",
+                "People often \"fight\" to pay the bill. Offering is polite; next time it's your turn to invite."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Gifts and everyday manners",
+              "bullets": [
+                "Give and receive gifts, business cards and documents **with both hands**.",
+                "Good gifts: something from your home country, fruit, tea. Avoid clocks (送钟 sounds like attending a funeral), and sets of four (四 sounds like death).",
+                "Gifts are often not opened in front of the giver.",
+                "No tipping: it's not expected in restaurants or taxis.",
+                "Common questions like your age, salary or whether you're married are a sign of interest, not rudeness."
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Polite phrases",
+              "items": [
+                {
+                  "meaning": "Cheers! (literally \"dry glass\")",
+                  "zh": "干杯！",
+                  "pinyin": "Gānbēi!"
+                },
+                {
+                  "meaning": "Please eat (inviting others to start)",
+                  "zh": "请慢用",
+                  "pinyin": "Qǐng màn yòng"
+                },
+                {
+                  "meaning": "You're too kind (reply to compliments)",
+                  "zh": "哪里哪里",
+                  "pinyin": "Nǎlǐ nǎlǐ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "emoji": "🥟",
+          "title": "Food culture",
+          "summary": "Regional cuisines, how to order, and what to try.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "\"Chinese food\" is many cuisines",
+              "bullets": [
+                "**Sichuan (川菜)**: numbing-spicy, with Sichuan pepper. Try mapo tofu and hot pot in Chengdu or Chongqing.",
+                "**Cantonese (粤菜)**: fresh and lightly seasoned. Try dim sum (早茶) in Guangzhou or Hong Kong.",
+                "**Hunan (湘菜)**: even hotter than Sichuan, with fresh chili.",
+                "**Northern food**: wheat instead of rice, so dumplings, noodles and buns. Try Peking duck in Beijing and biangbiang noodles in Xi'an.",
+                "**Shanghai and Jiangnan**: sweeter flavors. Try xiaolongbao (soup dumplings)."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "How ordering works",
+              "bullets": [
+                "Many restaurants have a **QR code on the table**: scan with WeChat or Alipay, order and pay on your phone. Use your camera translation app on the menu.",
+                "Picture menus are common; pointing is completely fine.",
+                "Hot water or tea is served by default. Ask for ice (加冰 jiā bīng) if you want cold drinks."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Look for busy places full of locals, and check Dianping ratings. Breakfast street food (jianbing, baozi, soy milk and youtiao) is cheap, fast and delicious."
+            },
+            {
+              "type": "phrases",
+              "heading": "Ordering",
+              "items": [
+                {
+                  "meaning": "A little spicy",
+                  "zh": "微辣",
+                  "pinyin": "Wēi là"
+                },
+                {
+                  "meaning": "What do you recommend?",
+                  "zh": "你推荐什么？",
+                  "pinyin": "Nǐ tuījiàn shénme?"
+                },
+                {
+                  "meaning": "I'm allergic to peanuts",
+                  "zh": "我对花生过敏",
+                  "pinyin": "Wǒ duì huāshēng guòmǐn"
+                },
+                {
+                  "meaning": "Take away, please",
+                  "zh": "打包",
+                  "pinyin": "Dǎbāo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "holidays",
+          "emoji": "🧧",
+          "title": "Festivals & holidays",
+          "summary": "The big holidays, and when not to travel.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "The main holidays",
+              "bullets": [
+                "**Spring Festival / Chinese New Year (春节)**: January or February. The biggest holiday: family reunions, red envelopes (红包), fireworks. Many shops close, and the world's largest migration happens around it.",
+                "**Lantern Festival (元宵节)**: 15 days after New Year. Lanterns and sweet rice balls (tangyuan).",
+                "**Qingming Festival (清明节)**: early April. Tomb sweeping, honoring ancestors.",
+                "**Labor Day (劳动节)**: 1 May, a multi-day holiday with heavy travel.",
+                "**Dragon Boat Festival (端午节)**: May or June. Dragon boat races and zongzi (sticky rice in leaves).",
+                "**Mid-Autumn Festival (中秋节)**: September or October. Mooncakes and family gatherings under the full moon.",
+                "**National Day Golden Week (国庆节)**: 1–7 October. A full week off for most people, and the busiest travel time of the year."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Avoid traveling during Spring Festival, the 1 May holiday and Golden Week if you can. Trains and flights sell out weeks ahead, prices go up and famous sights are extremely crowded."
+            },
+            {
+              "type": "text",
+              "heading": "Make-up working days",
+              "paragraphs": [
+                "China often moves weekends to create longer holidays, so you may have to work or attend classes on a Saturday or Sunday (调休 tiáoxiū). Check the official holiday calendar each year."
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Greetings",
+              "items": [
+                {
+                  "meaning": "Happy New Year (Spring Festival)",
+                  "zh": "新年快乐",
+                  "pinyin": "Xīnnián kuàilè"
+                },
+                {
+                  "meaning": "Wishing you prosperity",
+                  "zh": "恭喜发财",
+                  "pinyin": "Gōngxǐ fācái"
+                },
+                {
+                  "meaning": "Happy Mid-Autumn Festival",
+                  "zh": "中秋快乐",
+                  "pinyin": "Zhōngqiū kuàilè"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "daily-life",
+          "emoji": "🛒",
+          "title": "Everyday life",
+          "summary": "Shopping, delivery, renting and the doctor.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "apps",
+              "heading": "Shopping & groceries",
+              "items": [
+                {
+                  "id": "taobao",
+                  "name": "Taobao",
+                  "desc": "Buy almost anything online, often delivered the next day to a parcel locker or pick-up station. You get the pick-up code by SMS.",
+                  "badges": [
+                    "Chinese mostly"
+                  ],
+                  "url": "https://apps.apple.com/app/id387682726",
+                  "stores": [
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "jd",
+                  "name": "JD.com",
+                  "desc": "Online shopping with its own fast delivery network. Good for electronics and anything where you want guaranteed originals.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id414245413",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "pinduoduo",
+                  "name": "Pinduoduo",
+                  "desc": "Very cheap group-buying. Great prices on everyday items and fruit, quality varies.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id1044283059",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "hema",
+                  "name": "Hema (Freshippo)",
+                  "desc": "Alibaba's supermarket: fresh groceries delivered in under an hour, or shop in its stores.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id1063183999",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                },
+                {
+                  "id": "meituan",
+                  "name": "Meituan",
+                  "desc": "Food delivery, groceries, hotel and restaurant deals. Delivery usually arrives in about 30 minutes. Chinese only.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id423084029",
+                  "stores": [
+                    "us"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Convenience stores (FamilyMart, Lawson, 7-Eleven) are everywhere and sell hot meals."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Renting an apartment",
+              "bullets": [
+                "Typical payment: \"押一付三\" (yā yī fù sān): one month's deposit plus three months' rent up front.",
+                "Make sure the landlord can provide the documents you need to register at the police station.",
+                "Check water, electricity, gas and internet fees before signing; these are often paid through WeChat or Alipay."
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Apps for finding a place",
+              "items": [
+                {
+                  "id": "lianjia",
+                  "name": "Lianjia",
+                  "desc": "One of the biggest real-estate agencies. Search rentals with photos and floor plans; agents charge a fee.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id405882753",
+                  "stores": []
+                },
+                {
+                  "id": "ziroom",
+                  "name": "Ziroom",
+                  "desc": "Furnished rooms and apartments with monthly payment options. Popular with young professionals and students.",
+                  "badges": [
+                    "Chinese only"
+                  ],
+                  "url": "https://apps.apple.com/app/id685872176",
+                  "stores": [
+                    "us",
+                    "de",
+                    "es"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Seeing a doctor",
+              "paragraphs": [
+                "For small issues, pharmacies (药店) can help with many medicines. In public hospitals you first register (挂号) for a department, often on the hospital's WeChat account, then wait for your number. Many large hospitals have an international department (国际部) with English-speaking staff."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Ask your landlord or a Chinese friend to help set up utilities and parcel delivery in Chinese apps the first time. After that, it's easy."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

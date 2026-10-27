@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Local tool settings
+.claude/
+
+# Flutter build output and caches (also covered by china_compass/.gitignore)
+china_compass/build/
+china_compass/.dart_tool/
+china_compass/test_screens/goldens/

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>China Compass</title>
+  <meta name="description" content="Your guide to traveling, studying and living in China.">
+  <meta name="theme-color" content="#c8102e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="back" id="back" aria-label="Back" hidden>‹</button>
+    <h1 id="title">China Compass</h1>
+    <button class="lang-btn" id="lang-btn" type="button">EN</button>
+    <a class="search-link" href="#/search" aria-label="Search">⌕</a>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#/" data-tab="home"><span>🧭</span><b data-i18n="tabHome">Home</b></a>
+    <a href="#/p/travel" data-tab="travel"><span>✈️</span><b data-i18n="tabTravel">Travel</b></a>
+    <a href="#/p/study" data-tab="study"><span>🎓</span><b data-i18n="tabStudy">Study</b></a>
+    <a href="#/p/life" data-tab="life"><span>🏮</span><b data-i18n="tabLife">Life</b></a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1418 @@
+{
+  "updated": "Oktober 2026",
+  "featured": [
+    "entry",
+    "payments",
+    "scholarships"
+  ],
+  "personas": [
+    {
+      "id": "travel",
+      "emoji": "✈️",
+      "title": "Reisen nach China",
+      "tagline": "Visum, Internet, Bezahlen und Apps, alles erledigt vor der Landung",
+      "intro": "Reisen in China ist einfach, wenn dein Handy eingerichtet ist, und schwierig, wenn nicht. Geh die Guides der Reihe nach durch, am besten ein bis zwei Wochen vor deinem Flug.",
+      "guides": [
+        {
+          "id": "entry",
+          "emoji": "🛂",
+          "title": "Visum & Einreise",
+          "summary": "Brauchst du ein Visum? Visumfreie Aufenthalte, Transitregeln und Ankunft.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Brauchst du ein Visum?",
+              "paragraphs": [
+                "China hat sich seit 2024 stark geöffnet. Bürger:innen vieler Länder, darunter fast ganz Europa (z. B. Deutschland, Österreich, die Schweiz, Frankreich, Italien, Spanien, die Niederlande), Australien, Neuseeland, Südkorea und Japan, können derzeit **bis zu 30 Tage visumfrei** einreisen, für Tourismus, Geschäftsreisen, Besuche oder kurze Austausche. Diese einseitige Regelung gilt aktuell bis zum **31. Dezember 2026**. Prüfe vor der Buchung, ob sie verlängert wurde.",
+                "Wenn dein Land nicht auf der Liste steht oder du länger bleibst, brauchst du ein Touristenvisum (**L-Visum**) von einer chinesischen Botschaft oder einem Visa-Antragszentrum."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "240 Stunden visumfreier Transit",
+              "paragraphs": [
+                "Reisende aus über 50 Ländern (darunter die USA, Großbritannien und Kanada) können bis zu **10 Tage (240 Stunden)** ohne Visum bleiben, wenn sie **in ein Drittland oder eine Drittregion weiterreisen**. Zum Beispiel: Deutschland → Shanghai → Tokio geht; Deutschland → Shanghai → Deutschland nicht.",
+                "Ein- und Ausreise müssen über bestimmte Grenzübergänge erfolgen (die meisten großen internationalen Flughäfen gehören dazu), und du musst in den erlaubten Provinzen bleiben. Sag der Airline beim Check-in, dass du den visumfreien Transit nutzt."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Vor dem Abflug",
+              "items": [
+                {
+                  "text": "Reisepass mindestens 6 Monate gültig, mit freien Seiten"
+                },
+                {
+                  "text": "Visumfreiheit geprüft oder Visum erhalten",
+                  "note": "Prüfe das auf der Website der chinesischen Botschaft in deinem Land"
+                },
+                {
+                  "text": "Erste Nächte der Unterkunft gebucht",
+                  "note": "Hotels melden dich automatisch bei der Polizei an. Du wohnst bei Freund:innen? Dann musst du dich innerhalb von 24 Stunden bei der örtlichen Polizeistation anmelden."
+                },
+                {
+                  "text": "Rück- oder Weiterflugticket ausgedruckt oder gespeichert"
+                },
+                {
+                  "text": "Reisekrankenversicherung abgeschlossen"
+                },
+                {
+                  "text": "Elektronische Ankunftskarte online ausgefüllt",
+                  "note": "Die Ankunftskarte ist jetzt komplett elektronisch, Papierkarten gibt es nicht mehr. Füll sie vor der Landung aus: [Online-Ankunftskarte](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                }
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Speichere deine Hoteladresse in **chinesischen Schriftzeichen** auf dem Handy. Du brauchst sie für die Ankunftskarte, und Taxifahrer:innen lesen selten Englisch."
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Elektronische Ankunftskarte (NIA)",
+                  "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home"
+                },
+                {
+                  "label": "National Immigration Administration (Englisch)",
+                  "url": "https://en.nia.gov.cn/"
+                },
+                {
+                  "label": "Chinesisches Visa-Antragszentrum",
+                  "url": "https://www.visaforchina.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "internet",
+          "emoji": "📶",
+          "title": "Internet & VPN",
+          "summary": "Was gesperrt ist und wie du online bleibst.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Die Great Firewall",
+              "paragraphs": [
+                "Viele ausländische Dienste funktionieren in chinesischen Netzen nicht (Hotel-WLAN, lokale SIM-Karten). Gesperrt sind unter anderem:"
+              ],
+              "bullets": [
+                "Google (Suche, Gmail, Maps, Drive, YouTube)",
+                "WhatsApp, Instagram, Facebook, X/Twitter, Telegram",
+                "Viele Nachrichtenseiten und einige KI-Tools"
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Meist ohne VPN nutzbar: Apple-Dienste (iMessage, iCloud, Apple Karten), Microsoft/Outlook, Booking.com, Airbnb und natürlich alle chinesischen Apps."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Deine Optionen",
+              "bullets": [
+                "**Roaming oder Reise-eSIM (am einfachsten für kurze Reisen).** Mobile Daten einer ausländischen SIM oder eSIM werden über das Ausland geleitet, deshalb funktionieren Google und WhatsApp meist einfach. Wähle einen eSIM-Anbieter, der China ausdrücklich unterstützt.",
+                "**VPN.** Installiere und teste es **vor** der Ankunft, denn VPN-Websites und App-Store-Seiten sind in China gesperrt. Was zuverlässig funktioniert, ändert sich oft. Frag Leute vor Ort, welches gerade läuft.",
+                "**Lokale SIM-Karte (China Mobile, China Unicom, China Telecom).** Günstig und schnell, für längere Aufenthalte nötig. Nimm deinen Reisepass mit, SIM-Karten werden auf deinen Namen registriert."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Nicht genehmigte VPNs sind in China rechtlich eine Grauzone. Gegen einzelne Besucher:innen wird selten vorgegangen, aber sprich nicht offen darüber und halte dich von politisch sensiblen Inhalten fern."
+            },
+            {
+              "type": "checklist",
+              "heading": "Checkliste",
+              "items": [
+                {
+                  "text": "Roaming, China-taugliche eSIM oder VPN ausgewählt"
+                },
+                {
+                  "text": "VPN zu Hause installiert und getestet (falls genutzt)"
+                },
+                {
+                  "text": "Offline-Karten in Google Maps oder Apple Karten als Backup geladen"
+                },
+                {
+                  "text": "Familie gesagt, dass du auch über WeChat erreichbar bist"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "payments",
+          "emoji": "💳",
+          "title": "Alipay & WeChat Pay",
+          "summary": "China ist fast bargeldlos. Richte mobiles Bezahlen vor der Reise ein.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "Fast alles, vom Streetfood bis zur U-Bahn, wird per QR-Code bezahlt. Ausländische Visa- und Mastercard-Karten lassen sich inzwischen direkt in beiden Apps hinterlegen, ein chinesisches Bankkonto brauchst du also nicht."
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Die zwei Bezahl-Apps",
+              "items": [
+                {
+                  "id": "alipay",
+                  "name": "Alipay",
+                  "zh": "支付宝",
+                  "desc": "Für Besucher:innen der einfachste Weg zu bezahlen. Visa oder Mastercard hinterlegen, per QR-Code zahlen, Miniprogramme für U-Bahn, DiDi und mehr.",
+                  "badges": [
+                    "Pflicht",
+                    "Ausländische Karten OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id333206289"
+                },
+                {
+                  "id": "wechat",
+                  "name": "WeChat",
+                  "zh": "微信",
+                  "desc": "Chatten, Bezahlen, Miniprogramme und Kontakte austauschen. Alle in China nutzen es. Mit ausländischer Nummer muss dich evtl. eine bestehende Person verifizieren.",
+                  "badges": [
+                    "Pflicht",
+                    "Englisch verfügbar"
+                  ],
+                  "url": "https://apps.apple.com/app/id414478124"
+                }
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Alipay einrichten (支付宝)",
+              "items": [
+                {
+                  "text": "Alipay herunterladen und mit deiner ausländischen Handynummer registrieren"
+                },
+                {
+                  "text": "Identität mit dem Reisepass bestätigen",
+                  "note": "Unter Konto → Identitätsprüfung. Höhere Limits erfordern eine vollständige Verifizierung."
+                },
+                {
+                  "text": "Visa- oder Mastercard hinzufügen"
+                },
+                {
+                  "text": "Das Transport-Miniprogramm für U-Bahn-QR-Codes in deiner Stadt ausprobieren"
+                }
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "WeChat Pay einrichten (微信支付)",
+              "items": [
+                {
+                  "text": "WeChat-Konto erstellen (siehe Guide „Wichtige Apps“)"
+                },
+                {
+                  "text": "Unter Ich → Dienste → Geldbörse → Karten deine ausländische Karte hinzufügen"
+                },
+                {
+                  "text": "Identität mit dem Reisepass bestätigen, wenn danach gefragt wird"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Gebühren & Limits",
+              "bullets": [
+                "Zahlungen mit ausländischen Karten **bis ¥200** sind meist gebührenfrei, darüber kann eine kleine Gebühr (etwa 3 %) anfallen.",
+                "Für ausländische Karten gibt es Limits pro Zahlung und pro Monat. Für große Beträge (z. B. eine Mietkaution) brauchst du eventuell eine Überweisung oder Bargeld.",
+                "Sag deiner Bank, dass du nach China reist, damit Zahlungen nicht blockiert werden."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Nimm trotzdem etwas Bargeld mit (ein paar hundert RMB). Das hilft auf dem Land, bei älteren Verkäufer:innen und falls deine Karte abgelehnt wird. Geldautomaten der Bank of China akzeptieren die meisten ausländischen Karten."
+            },
+            {
+              "type": "phrases",
+              "heading": "Nützlich an der Kasse",
+              "items": [
+                {
+                  "meaning": "Kann ich mit Alipay zahlen?",
+                  "zh": "可以用支付宝吗？",
+                  "pinyin": "Kěyǐ yòng Zhīfùbǎo ma?"
+                },
+                {
+                  "meaning": "Ich scanne dich / Du scannst mich",
+                  "zh": "我扫你 / 你扫我",
+                  "pinyin": "Wǒ sǎo nǐ / Nǐ sǎo wǒ"
+                },
+                {
+                  "meaning": "Kann ich bar zahlen?",
+                  "zh": "可以付现金吗？",
+                  "pinyin": "Kěyǐ fù xiànjīn ma?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apps",
+          "emoji": "📱",
+          "title": "Wichtige Apps",
+          "summary": "WeChat, Amap, DiDi und die Apps, die Einheimische wirklich nutzen.",
+          "minutes": 6,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "Das sind die Apps, die du wirklich nutzen wirst. Wisch durch jede Kategorie und installiere die Pflicht-Apps vor dem Abflug."
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Chatten & Bezahlen",
+              "items": [
+                {
+                  "id": "wechat",
+                  "name": "WeChat",
+                  "zh": "微信",
+                  "desc": "Chatten, Bezahlen, Miniprogramme und Kontakte austauschen. Alle in China nutzen es. Mit ausländischer Nummer muss dich evtl. eine bestehende Person verifizieren.",
+                  "badges": [
+                    "Pflicht",
+                    "Englisch verfügbar"
+                  ],
+                  "url": "https://apps.apple.com/app/id414478124"
+                },
+                {
+                  "id": "alipay",
+                  "name": "Alipay",
+                  "zh": "支付宝",
+                  "desc": "Für Besucher:innen der einfachste Weg zu bezahlen. Visa oder Mastercard hinterlegen, per QR-Code zahlen, Miniprogramme für U-Bahn, DiDi und mehr.",
+                  "badges": [
+                    "Pflicht",
+                    "Ausländische Karten OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id333206289"
+                }
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Bei der Registrierung für WeChat mit ausländischer Nummer muss dich manchmal **eine bestehende WeChat-Nutzerin oder ein bestehender Nutzer verifizieren**, indem sie oder er einen QR-Code scannt. Frag schon vor der Reise jemanden, der WeChat nutzt."
+            },
+            {
+              "type": "apps",
+              "heading": "Karten & Unterwegs",
+              "items": [
+                {
+                  "id": "amap",
+                  "name": "Amap (Gaode Maps)",
+                  "zh": "高德地图",
+                  "desc": "Chinas beste Karten-App: Live-Infos für U-Bahn, Bus und Fußwege, plus Taxibuchung. Am besten mit chinesischen Schriftzeichen suchen.",
+                  "badges": [
+                    "Pflicht",
+                    "Englisch verfügbar"
+                  ],
+                  "url": "https://apps.apple.com/app/id461703208"
+                },
+                {
+                  "id": "didi",
+                  "name": "DiDi",
+                  "zh": "滴滴出行",
+                  "desc": "Das chinesische Uber. Englischer Modus, automatische Chat-Übersetzung mit dem Fahrer oder der Fahrerin, Zahlung mit ausländischer Karte. Auch in Alipay verfügbar.",
+                  "badges": [
+                    "Englisch verfügbar",
+                    "Ausländische Karten OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id554499054"
+                },
+                {
+                  "id": "tripcom",
+                  "name": "Trip.com",
+                  "zh": "携程",
+                  "desc": "Hochgeschwindigkeitszüge, Flüge und Hotels auf Englisch buchen. Für Ausländer:innen der einfachste Weg zu Zugtickets.",
+                  "badges": [
+                    "Englisch verfügbar",
+                    "Ausländische Karten OK"
+                  ],
+                  "url": "https://apps.apple.com/app/id681752345"
+                },
+                {
+                  "id": "railway12306",
+                  "name": "Railway 12306",
+                  "zh": "铁路12306",
+                  "desc": "Die offizielle App der chinesischen Bahn. Keine Buchungsgebühren und eine englische Version, die Registrierung ist aber etwas aufwendiger.",
+                  "badges": [
+                    "Offiziell",
+                    "Englisch verfügbar"
+                  ],
+                  "url": "https://apps.apple.com/app/id564818797"
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Essen & Restaurants",
+              "items": [
+                {
+                  "id": "meituan",
+                  "name": "Meituan",
+                  "zh": "美团",
+                  "desc": "Essenslieferung, Lebensmittel, Hotel- und Restaurantangebote. Die Lieferung kommt meist in etwa 30 Minuten. Nur auf Chinesisch.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id423084029"
+                },
+                {
+                  "id": "eleme",
+                  "name": "Taobao Instant Commerce (Ele.me)",
+                  "zh": "淘宝闪购 / 饿了么",
+                  "desc": "Früher Ele.me, inzwischen umbenannt. Essens- und Lebensmittellieferung, Hauptkonkurrent von Meituan. Auch in Alipay verfügbar.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id507161324"
+                },
+                {
+                  "id": "dianping",
+                  "name": "Dianping",
+                  "zh": "大众点评",
+                  "desc": "Das chinesische Yelp: Bewertungen, Fotos und Rezensionen für Restaurants, Cafés und Sehenswürdigkeiten. Super, um zu finden, wo Einheimische wirklich essen.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id351091731"
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Sprache & Übersetzung",
+              "items": [
+                {
+                  "id": "pleco",
+                  "name": "Pleco",
+                  "zh": "Pleco",
+                  "desc": "Das beste Chinesisch-Englisch-Wörterbuch. Schriftzeichen durch Zeichnen nachschlagen oder die Kamera auf Text richten.",
+                  "badges": [
+                    "Englisch verfügbar",
+                    "Offline nutzbar"
+                  ],
+                  "url": "https://apps.apple.com/app/id341922306"
+                },
+                {
+                  "id": "baidutranslate",
+                  "name": "Baidu Translate",
+                  "zh": "百度翻译",
+                  "desc": "Übersetzung per Kamera, Sprache und Text, funktioniert ohne VPN. Apple Übersetzen ist eine gute Alternative: Chinesisch offline herunterladen.",
+                  "badges": [
+                    "Ohne VPN"
+                  ],
+                  "url": "https://apps.apple.com/app/id605670941"
+                }
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Shopping & Inspiration",
+              "items": [
+                {
+                  "id": "taobao",
+                  "name": "Taobao",
+                  "zh": "淘宝",
+                  "desc": "Fast alles online kaufen, oft am nächsten Tag an einen Paketschrank oder eine Abholstation geliefert. Den Abholcode bekommst du per SMS.",
+                  "badges": [
+                    "Meist Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id387682726"
+                },
+                {
+                  "id": "jd",
+                  "name": "JD.com",
+                  "zh": "京东",
+                  "desc": "Online-Shopping mit eigenem schnellen Liefernetz. Gut für Elektronik und alles, wo du sicher Originalware willst.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id414245413"
+                },
+                {
+                  "id": "rednote",
+                  "name": "RedNote (Xiaohongshu)",
+                  "zh": "小红书",
+                  "desc": "Hier suchen junge Chines:innen nach Reisetipps, Cafés, Geheimtipps und Bewertungen. Eine Mischung aus Instagram und Pinterest.",
+                  "badges": [
+                    "Meist Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id741292507"
+                }
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Vor dem Abflug installieren",
+              "items": [
+                {
+                  "text": "WeChat, registriert und verifiziert"
+                },
+                {
+                  "text": "Alipay, Karte hinterlegt"
+                },
+                {
+                  "text": "Amap (oder Apple Karten eingerichtet)"
+                },
+                {
+                  "text": "DiDi"
+                },
+                {
+                  "text": "Trip.com oder 12306"
+                },
+                {
+                  "text": "Eine Übersetzungs-App mit Chinesisch offline"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "getting-around",
+          "emoji": "🚄",
+          "title": "Unterwegs",
+          "summary": "U-Bahn, Hochgeschwindigkeitszüge und Taxis.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "U-Bahn",
+              "paragraphs": [
+                "Die U-Bahnen der großen Städte sind sauber, günstig (meist ¥2–10) und auf Englisch beschildert. Bezahl mit dem U-Bahn-QR-Code in Alipay oder WeChat oder kauf Einzeltickets am Automaten. Rechne an jedem Eingang mit einer Gepäckkontrolle."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Hochgeschwindigkeitszüge (高铁)",
+              "paragraphs": [
+                "Der schnellste Weg zwischen Städten. Buch über Trip.com oder 12306 mit deinen Passdaten; **dein Reisepass ist dein Ticket**. Sei 30–45 Minuten vorher da, die Bahnhöfe sind riesig und es gibt eine Sicherheitskontrolle."
+              ],
+              "bullets": [
+                "G-Züge sind am schnellsten, danach D-Züge.",
+                "Rund um Feiertage (besonders Frühlingsfest und die erste Oktoberwoche) sind Tickets schnell ausverkauft. Buch so früh wie möglich.",
+                "Deine Sitzklasse steht in der Buchung: 二等座 zweite Klasse, 一等座 erste Klasse, 商务座 Business Class."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Taxis",
+              "paragraphs": [
+                "Nutze DiDi oder halte ein offizielles Taxi auf der Straße an. Zeig das Ziel in chinesischen Schriftzeichen. Trinkgeld wird nicht erwartet."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Meide inoffizielle Fahrer, die dich an Ausgängen von Flughäfen und Bahnhöfen ansprechen. Nutz die offizielle Taxischlange oder DiDi."
+            },
+            {
+              "type": "phrases",
+              "heading": "Sätze",
+              "items": [
+                {
+                  "meaning": "Bitte bringen Sie mich hierhin",
+                  "zh": "请带我去这里",
+                  "pinyin": "Qǐng dài wǒ qù zhèlǐ"
+                },
+                {
+                  "meaning": "Wo ist die U-Bahn-Station?",
+                  "zh": "地铁站在哪里？",
+                  "pinyin": "Dìtiě zhàn zài nǎlǐ?"
+                },
+                {
+                  "meaning": "Bitte hier anhalten",
+                  "zh": "请在这里停",
+                  "pinyin": "Qǐng zài zhèlǐ tíng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phrases",
+          "emoji": "🗣️",
+          "title": "Chinesisch zum Überleben",
+          "summary": "Die 15 Sätze, die du wirklich brauchst.",
+          "minutes": 3,
+          "blocks": [
+            {
+              "type": "tip",
+              "text": "Mandarin hat vier Töne, und ein falscher Ton kann die Bedeutung ändern. Keine Sorge: Die Leute sind geduldig, und auf die Schriftzeichen auf deinem Bildschirm zeigen funktioniert immer."
+            },
+            {
+              "type": "phrases",
+              "heading": "Grundlagen",
+              "items": [
+                {
+                  "meaning": "Hallo",
+                  "zh": "你好",
+                  "pinyin": "Nǐ hǎo"
+                },
+                {
+                  "meaning": "Danke",
+                  "zh": "谢谢",
+                  "pinyin": "Xièxie"
+                },
+                {
+                  "meaning": "Entschuldigung",
+                  "zh": "不好意思",
+                  "pinyin": "Bù hǎoyìsi"
+                },
+                {
+                  "meaning": "Ich verstehe nicht",
+                  "zh": "我听不懂",
+                  "pinyin": "Wǒ tīng bù dǒng"
+                },
+                {
+                  "meaning": "Sprechen Sie Englisch?",
+                  "zh": "你会说英语吗？",
+                  "pinyin": "Nǐ huì shuō Yīngyǔ ma?"
+                },
+                {
+                  "meaning": "Ja / Nein (richtig / falsch)",
+                  "zh": "对 / 不对",
+                  "pinyin": "Duì / Bú duì"
+                }
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Einkaufen & Essen",
+              "items": [
+                {
+                  "meaning": "Wie viel kostet das?",
+                  "zh": "多少钱？",
+                  "pinyin": "Duōshǎo qián?"
+                },
+                {
+                  "meaning": "Zu teuer!",
+                  "zh": "太贵了！",
+                  "pinyin": "Tài guì le!"
+                },
+                {
+                  "meaning": "Ich möchte das hier",
+                  "zh": "我要这个",
+                  "pinyin": "Wǒ yào zhège"
+                },
+                {
+                  "meaning": "Bitte nicht scharf",
+                  "zh": "不要辣",
+                  "pinyin": "Bú yào là"
+                },
+                {
+                  "meaning": "Ich esse vegetarisch",
+                  "zh": "我吃素",
+                  "pinyin": "Wǒ chī sù"
+                },
+                {
+                  "meaning": "Die Rechnung, bitte",
+                  "zh": "买单",
+                  "pinyin": "Mǎidān"
+                }
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Hilfe holen",
+              "items": [
+                {
+                  "meaning": "Wo ist die Toilette?",
+                  "zh": "厕所在哪里？",
+                  "pinyin": "Cèsuǒ zài nǎlǐ?"
+                },
+                {
+                  "meaning": "Hilfe!",
+                  "zh": "救命！",
+                  "pinyin": "Jiùmìng!"
+                },
+                {
+                  "meaning": "Ich brauche einen Arzt",
+                  "zh": "我需要看医生",
+                  "pinyin": "Wǒ xūyào kàn yīshēng"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safety",
+          "emoji": "🩺",
+          "title": "Sicherheit & Gesundheit",
+          "summary": "Notrufnummern, Krankenhäuser und Sicherheit im Alltag.",
+          "minutes": 3,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Notrufnummern",
+              "bullets": [
+                "**110**: Polizei",
+                "**120**: Rettungsdienst",
+                "**119**: Feuerwehr",
+                "**12367**: Hotline der National Immigration Administration (Visafragen, mehrsprachig)"
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Sicher unterwegs",
+              "paragraphs": [
+                "Chinas Großstädte sind sehr sicher, auch nachts. Die häufigsten Probleme sind Touristenfallen: die Einladung zur „Teezeremonie“ oder von „Kunststudent:innen“, die mit einer riesigen Rechnung endet, und inoffizielle Taxis."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Gesundheit",
+              "bullets": [
+                "Trink kein Leitungswasser. Abgekochtes oder abgefülltes Wasser gibt es überall, und Hotels haben Wasserkocher.",
+                "Große Städte haben internationale Kliniken mit englischsprachigen Ärzt:innen (teurer, akzeptieren oft Reiseversicherungen).",
+                "Öffentliche Krankenhäuser sind günstig und gut, aber voll. Du meldest dich an und bezahlst am Schalter oder per WeChat, bevor du zum Arzt gehst.",
+                "Nimm deine eigenen Medikamente mit Rezept mit. Manche gängigen westlichen Medikamente sind schwer zu bekommen."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Checkliste",
+              "items": [
+                {
+                  "text": "Notrufnummern im Handy gespeichert"
+                },
+                {
+                  "text": "Adresse und Telefonnummer deiner Botschaft gespeichert"
+                },
+                {
+                  "text": "Unterlagen der Reiseversicherung auf dem Handy"
+                },
+                {
+                  "text": "Medikamente mit Rezept eingepackt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "emoji": "🎓",
+      "title": "Studieren in China",
+      "tagline": "Studiengänge, Stipendien, Bewerbung, X1-Visum und Aufenthaltstitel",
+      "intro": "Vom passenden Studiengang bis zum Aufenthaltstitel nach der Ankunft. Bewerbungen für den Start im September öffnen meist zwischen November und Januar, fang also früh an.",
+      "guides": [
+        {
+          "id": "programs",
+          "emoji": "🔎",
+          "title": "Den richtigen Studiengang finden",
+          "summary": "Sprachkurs, Austausch oder ganzes Studium? Englisch oder Chinesisch?",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Arten von Programmen",
+              "bullets": [
+                "**Chinesisch-Sprachprogramm (语言进修)**: ein Semester bis zwei Jahre intensives Mandarin, keine Vorkenntnisse nötig. Ein super erster Schritt.",
+                "**Austauschsemester**: über eine Partnerschaft deiner Heimatuni mit einer chinesischen Uni. Frag zuerst dein International Office, das ist meist der einfachste Weg.",
+                "**Bachelor, Master oder PhD**: komplette Studiengänge, auf Chinesisch oder Englisch."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Englisch oder Chinesisch?",
+              "paragraphs": [
+                "Viele Top-Unis bieten englischsprachige Master an (Wirtschaft, Ingenieurwesen, Internationale Beziehungen, China-Studien). Chinesischsprachige Programme verlangen meist **HSK 4** für den Bachelor und **HSK 5** für den Master, sind aber oft günstiger und haben mehr Stipendienoptionen."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Eine Uni auswählen",
+              "bullets": [
+                "**C9 League**: Chinas Spitzenunis (z. B. Peking, Tsinghua, Fudan, Zhejiang, Shanghai Jiao Tong).",
+                "**Double First-Class (双一流)**: die staatliche Liste starker Unis und Fächer.",
+                "Denk an die Stadt genauso wie an das Ranking: Peking und Shanghai sind international und teuer; in Chengdu, Hangzhou, Xi'an oder Kunming ist es günstiger und du sprichst mehr Chinesisch."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Recherche-Checkliste",
+              "items": [
+                {
+                  "text": "Programmart und Unterrichtssprache festgelegt"
+                },
+                {
+                  "text": "Heimatuni nach Partneruniversitäten in China gefragt"
+                },
+                {
+                  "text": "3–5 Unis auf ihren Websites für internationale Studierende ausgewählt"
+                },
+                {
+                  "text": "Sprachanforderungen geprüft (HSK, IELTS oder TOEFL)"
+                },
+                {
+                  "text": "Alle Bewerbungsfristen notiert"
+                }
+              ]
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Campus China (offizielles Portal für ein Studium in China)",
+                  "url": "https://www.campuschina.org/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scholarships",
+          "emoji": "🏅",
+          "title": "Stipendien",
+          "summary": "CSC-, Provinz-, Uni- und Konfuzius-Institut-Stipendien.",
+          "minutes": 6,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "China vergibt mehr Stipendien an internationale Studierende, als die meisten denken. Viele decken Studiengebühren, Unterkunft und ein monatliches Taschengeld ab."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Chinesisches Regierungsstipendium (CSC)",
+              "paragraphs": [
+                "Das größte Stipendium. Es deckt Studiengebühren, ein Wohnheimzimmer, Krankenversicherung und ein monatliches Stipendium ab (etwa ¥2.500 im Bachelor, ¥3.000 im Master, ¥3.500 im PhD). Es gibt zwei Hauptwege:"
+              ],
+              "bullets": [
+                "**Typ A (bilateral)**: Bewerbung über die chinesische Botschaft oder eine staatliche Stelle in deinem Heimatland. Die Fristen sind oft früh (Dezember–März).",
+                "**Typ B (Uni-Programm)**: Bewerbung direkt bei einer chinesischen Uni mit CSC-Plätzen. Jede Uni setzt eigene Fristen, meist Januar–April.",
+                "Über das CSC-System kannst du dich an bis zu drei Unis bewerben."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Weitere Stipendien",
+              "bullets": [
+                "**International Chinese Language Teachers Scholarship (Konfuzius-Institut)**: für Sprachstudium und Chinesisch als Fremdsprache. Bewerbung über ein Konfuzius-Institut oder eine empfehlende Einrichtung.",
+                "**Provinz- und Stadtstipendien**: z. B. Regierungsstipendien von Peking, Shanghai, Jiangsu oder Zhejiang, oft Teilförderung.",
+                "**Uni-Stipendien**: die meisten Unis haben eigene, für starke Bewerber:innen manchmal automatisch.",
+                "**Förderung aus dem Heimatland**: z. B. der DAAD in Deutschland oder Austauschstipendien deiner Uni."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Für Typ B kann es deine Chancen stark erhöhen, wenn du eine Professorin oder einen Professor in deinem Fach anschreibst und eine **Zusage oder Vorzulassung** (导师接收函) bekommst, besonders für Master und PhD."
+            },
+            {
+              "type": "checklist",
+              "heading": "Stipendien-Checkliste",
+              "items": [
+                {
+                  "text": "CSC-Typ-A-Frist bei der chinesischen Botschaft geprüft"
+                },
+                {
+                  "text": "Unis mit CSC-Typ-B-Plätzen in deinem Fach gefunden"
+                },
+                {
+                  "text": "Provinz- oder Stadtstipendien deiner Wunschstädte geprüft"
+                },
+                {
+                  "text": "Mögliche Betreuer:innen kontaktiert (für Master oder PhD)"
+                },
+                {
+                  "text": "Konto im CSC-Online-Bewerbungssystem angelegt"
+                }
+              ]
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Infos zum CSC-Stipendium (Campus China)",
+                  "url": "https://www.campuschina.org/"
+                },
+                {
+                  "label": "International Chinese Language Teachers Scholarship",
+                  "url": "https://cis.chinese.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apply",
+          "emoji": "📝",
+          "title": "So bewirbst du dich",
+          "summary": "Unterlagen, Zeitplan und Zulassung.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Typischer Zeitplan (für Start im September)",
+              "bullets": [
+                "**Okt–Dez**: Programme recherchieren, Unterlagen vorbereiten, HSK oder IELTS machen",
+                "**Dez–Apr**: Bewerbungs- und Stipendienfristen",
+                "**Mai–Jul**: Zulassungsergebnisse; du bekommst den Zulassungsbescheid und das **JW201- oder JW202-Formular**",
+                "**Jul–Aug**: Studentenvisum beantragen, Flüge buchen",
+                "**Ende Aug–Sep**: Ankunft, Einschreibung, Aufenthaltstitel"
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Unterlagen, die du meist brauchst",
+              "items": [
+                {
+                  "text": "Scan des Reisepasses (noch mindestens 1 Jahr gültig)"
+                },
+                {
+                  "text": "Höchster Abschluss, beglaubigt oder notariell bestätigt (mit englischer oder chinesischer Übersetzung)"
+                },
+                {
+                  "text": "Notenübersichten, beglaubigt"
+                },
+                {
+                  "text": "Studienplan oder Forschungsexposé",
+                  "note": "Etwa 800+ Wörter für den Bachelor, 1.500+ für Master oder PhD"
+                },
+                {
+                  "text": "Zwei Empfehlungsschreiben (von Professor:innen oder außerordentlichen Professor:innen)"
+                },
+                {
+                  "text": "Sprachzertifikat (HSK, oder IELTS bzw. TOEFL für englische Programme)"
+                },
+                {
+                  "text": "Foreigner Physical Examination Form (Gesundheitszeugnis)",
+                  "note": "Muss von einer Ärztin oder einem Arzt vollständig ausgefüllt werden, mit Stempel und Foto. 6 Monate gültig."
+                },
+                {
+                  "text": "Führungszeugnis (von vielen Unis verlangt)"
+                },
+                {
+                  "text": "Passfoto mit weißem Hintergrund"
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Die Anforderungen unterscheiden sich je nach Uni und Stipendium. Halte dich immer an die Liste auf der Zulassungsseite deiner Wunsch-Uni für internationale Studierende."
+            }
+          ]
+        },
+        {
+          "id": "student-visa",
+          "emoji": "🛂",
+          "title": "Studentenvisum (X1 / X2)",
+          "summary": "Welches Visum du brauchst und wie du es bekommst.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "X1 oder X2?",
+              "bullets": [
+                "**X1-Visum**: für ein Studium **länger als 180 Tage** (ganze Studiengänge, Jahresprogramme). Gilt für eine Einreise; innerhalb von 30 Tagen nach Ankunft wandelst du es in einen Aufenthaltstitel um.",
+                "**X2-Visum**: für ein Studium **bis zu 180 Tage** (ein Semester, Summer School). Kein Aufenthaltstitel nötig."
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Manche kurzen Sprach- oder Sommerprogramme kannst du visumfrei besuchen, wenn du berechtigt bist. Frag aber vorher bei der Uni nach. Für ein Studium mit Credits nimm ein Studentenvisum."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "X-Visum beantragen",
+              "items": [
+                {
+                  "text": "Originalen Zulassungsbescheid deiner Uni erhalten"
+                },
+                {
+                  "text": "JW201- oder JW202-Formular erhalten (nur X1)"
+                },
+                {
+                  "text": "Online-Visumantrag ausgefüllt"
+                },
+                {
+                  "text": "Termin beim chinesischen Visa-Antragszentrum gebucht"
+                },
+                {
+                  "text": "Reisepass, Foto, Zulassungsbescheid, JW-Formular und Visumantrag mitgebracht"
+                },
+                {
+                  "text": "Fingerabdrücke abgegeben (falls nötig) und Gebühr bezahlt"
+                },
+                {
+                  "text": "Visum abgeholt und die Angaben geprüft"
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Bewahre das **originale JW202-Formular und den Zulassungsbescheid** gut auf und nimm sie mit nach China. Du brauchst sie wieder für die Einschreibung und den Aufenthaltstitel."
+            },
+            {
+              "type": "links",
+              "items": [
+                {
+                  "label": "Chinesisches Visa-Antragszentrum",
+                  "url": "https://www.visaforchina.cn/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "residence-permit",
+          "emoji": "🪪",
+          "title": "Aufenthaltstitel",
+          "summary": "Was du mit einem X1-Visum in den ersten 30 Tagen erledigen musst.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "paragraphs": [
+                "Mit einem X1-Visum musst du innerhalb von **30 Tagen nach der Einreise** einen **Aufenthaltstitel zu Studienzwecken** (学习类居留许可) beantragen. Das International Office deiner Uni begleitet dich meist durch jeden Schritt, oft in Gruppen."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Die ersten 30 Tage, Schritt für Schritt",
+              "items": [
+                {
+                  "text": "Wohnsitz innerhalb von 24 Stunden anmelden",
+                  "note": "Wohnst du im Wohnheim? Dann erledigt das die Uni. Wohnst du außerhalb? Dann geh mit den Unterlagen deines Vermieters oder deiner Vermieterin und deinem Pass zur örtlichen Polizeistation."
+                },
+                {
+                  "text": "An der Uni einschreiben und Studierendenausweis oder Campus-Karte abholen"
+                },
+                {
+                  "text": "Gesundheitscheck machen (oder dein Attest aus der Heimat anerkennen lassen)",
+                  "note": "Beim örtlichen International Travel Healthcare Center. Manche Städte akzeptieren dein Foreigner Physical Examination Form nach einer Prüfung."
+                },
+                {
+                  "text": "Unterlagen sammeln: Reisepass, Fotos, JW202, Zulassungsbescheid, Wohnsitzanmeldung, Gesundheitszeugnis"
+                },
+                {
+                  "text": "Antrag bei der Ein- und Ausreisebehörde (出入境管理局) einreichen"
+                },
+                {
+                  "text": "Reisepass mit Aufenthaltstitel abholen",
+                  "note": "Die Bearbeitung dauert meist etwa 7–15 Werktage. Dein Pass bleibt in dieser Zeit bei der Behörde."
+                }
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Plane Reisen entsprechend: Während dein Pass bearbeitet wird, kannst du China nicht verlassen. Wer die 30-Tage-Frist verpasst, riskiert ein Bußgeld."
+            },
+            {
+              "type": "text",
+              "heading": "Wenn du ihn hast",
+              "bullets": [
+                "Der Aufenthaltstitel erlaubt mehrfache Einreisen bis zum Ablauf, du kannst also in den Ferien nach Hause fliegen.",
+                "Wenn du umziehst, melde deine neue Adresse innerhalb von 24 Stunden an.",
+                "Verlängere ihn vor Ablauf, wenn dein Studium weitergeht."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "campus-life",
+          "emoji": "🏫",
+          "title": "Campusleben & Ankommen",
+          "summary": "Wohnheim, Handynummer, Bankkonto, Nebenjob.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Wohnen",
+              "paragraphs": [
+                "Die meisten Unis haben Wohnheime für internationale Studierende (Einzel- oder Doppelzimmer). Sie sind günstig und praktisch und machen die Anmeldung einfacher. Wohnungen außerhalb geben dir mehr Freiheit, bedeuten aber Kaution (oft 1 Monat plus 3 Monatsmieten im Voraus) und mehr Papierkram."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Mensen und die Campus-Karte",
+              "paragraphs": [
+                "Uni-Mensen (食堂) sind günstig (eine komplette Mahlzeit kostet oft ¥10–20) und überraschend gut. Du zahlst mit der Campus-Karte oder per QR-Code. Die Karte funktioniert oft auch für Bibliothek, Fitnessstudio und Waschmaschinen."
+              ]
+            },
+            {
+              "type": "checklist",
+              "heading": "Checkliste fürs Ankommen",
+              "items": [
+                {
+                  "text": "Chinesische Handynummer besorgen (Reisepass mitnehmen)",
+                  "note": "Viele Apps und Dienste verlangen eine chinesische +86-Nummer"
+                },
+                {
+                  "text": "Chinesisches Bankkonto eröffnen (z. B. Filiale der Bank of China oder ICBC nahe dem Campus)",
+                  "note": "Nötig für die Auszahlung von Stipendien und um WeChat Pay und Alipay ohne Limits zu nutzen"
+                },
+                {
+                  "text": "Chinesische Bankkarte mit WeChat Pay und Alipay verknüpfen"
+                },
+                {
+                  "text": "WeChat-Gruppen deines Kurses und der internationalen Studierenden beitreten"
+                },
+                {
+                  "text": "Studentische Krankenversicherung abschließen oder aktivieren (oft Pflicht)"
+                },
+                {
+                  "text": "Für Chinesischkurse anmelden oder einen Sprachtandem-Partner suchen"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Arbeiten neben dem Studium",
+              "paragraphs": [
+                "Internationale Studierende dürfen nur mit **Genehmigung ihrer Uni** und einem Vermerk der Ein- und Ausreisebehörde im Aufenthaltstitel jobben oder ein Praktikum machen. Arbeiten ohne Genehmigung, auch privater Englischunterricht, kann zu Bußgeldern oder dem Verlust des Aufenthaltstitels führen."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "In WeChat-Gruppen passiert alles: Kursankündigungen, Second-Hand-Verkäufe, Sportclubs, Ausflüge. Bitte deine Kommiliton:innen gleich am ersten Tag, dich hinzuzufügen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "emoji": "🏮",
+      "title": "Leben & Kultur",
+      "tagline": "Wie der Alltag in China wirklich ist",
+      "intro": "Jenseits der Checklisten: wie die Menschen leben, essen, feiern und denken, und was Ausländer:innen nach der Ankunft am meisten überrascht hat.",
+      "guides": [
+        {
+          "id": "reality",
+          "emoji": "🌆",
+          "title": "Erwartung vs. Realität",
+          "summary": "Wie das Leben in China wirklich ist.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Was die meisten überrascht",
+              "bullets": [
+                "**Es ist unglaublich bequem.** Essen in 30 Minuten geliefert, Züge alle paar Minuten, Pakete am nächsten Tag, alles per Handy bezahlt.",
+                "**Es ist sehr sicher.** Nachts allein durch Großstädte laufen ist normal.",
+                "**Alles ändert sich schnell.** Läden, Apps und sogar Regeln können sich innerhalb von Monaten ändern. Die Leute hier passen sich schnell an, und das lernst du auch.",
+                "**China ist nicht ein Ort.** Shanghai, ein Dorf in Yunnan und Harbin im Winter fühlen sich wie verschiedene Länder an. Essen, Dialekte und Lebensstil unterscheiden sich stark."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Woran man sich gewöhnen muss",
+              "bullets": [
+                "**Die Sprachbarriere.** Außerhalb internationaler Viertel sprechen wenige Englisch. Übersetzungs-Apps helfen sehr, und schon ein bisschen Chinesisch verändert deine Erfahrung.",
+                "**Aufmerksamkeit.** In kleineren Städten wirst du vielleicht angestarrt oder nach Fotos gefragt. Das ist fast immer freundliche Neugier.",
+                "**Digitales Leben.** Du brauchst WeChat für alles, und deine Lieblings-Apps funktionieren ohne VPN nicht.",
+                "**Ausweiskontrollen und Kameras.** Du zeigst deinen Pass für Züge, Hotels, manche Museen und SIM-Karten. Das wird schnell Routine.",
+                "**Menschenmassen.** Besonders an Feiertagen. Beliebte Sehenswürdigkeiten können sehr voll sein."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Am besten verstehst du China, wenn du chinesische Freund:innen findest. Sprachtandems, Uni-Clubs und WeChat-Gruppen sind ein guter Anfang. Die meisten Menschen sind neugierig und helfen gern."
+            }
+          ]
+        },
+        {
+          "id": "etiquette",
+          "emoji": "🤝",
+          "title": "Etikette & soziale Normen",
+          "summary": "Gesicht, Beziehungen, Geschenke und Tischmanieren.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Zwei Schlüsselbegriffe",
+              "bullets": [
+                "**Gesicht (面子 miànzi)**: Würde und Ansehen einer Person. Kritisiere niemanden vor anderen und bring niemanden in eine Lage, in der er oder sie nicht Ja sagen kann. Indirekte Kommunikation ist üblich: „Vielleicht“ oder „Das ist etwas schwierig“ heißt oft Nein.",
+                "**Beziehungen (关系 guānxi)**: Netzwerke aus Vertrauen und Gefallen. Beziehungen brauchen Zeit und entstehen beim Essen, durch Hilfe und indem man in Kontakt bleibt."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Am Esstisch",
+              "bullets": [
+                "Gerichte werden geteilt. Meist bestellt der Gastgeber oder die Gastgeberin, und es ist höflich, von allem ein bisschen zu probieren.",
+                "Steck deine Stäbchen nicht senkrecht in den Reis, das erinnert an Räucherstäbchen bei Beerdigungen.",
+                "Beim Anstoßen hältst du dein Glas etwas **tiefer** als das von älteren Personen oder Gastgebenden, als Zeichen von Respekt.",
+                "Oft wird regelrecht „gekämpft“, wer bezahlt. Anbieten ist höflich; beim nächsten Mal bist du mit Einladen dran."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Geschenke und Umgangsformen",
+              "bullets": [
+                "Gib und nimm Geschenke, Visitenkarten und Dokumente **mit beiden Händen**.",
+                "Gute Geschenke: etwas aus deinem Heimatland, Obst, Tee. Vermeide Uhren (送钟 klingt wie „zur Beerdigung gehen“) und Viererpacks (四 klingt wie „Tod“).",
+                "Geschenke werden oft nicht vor den Schenkenden ausgepackt.",
+                "Kein Trinkgeld: In Restaurants und Taxis wird es nicht erwartet.",
+                "Fragen nach Alter, Gehalt oder ob du verheiratet bist, sind ein Zeichen von Interesse, nicht unhöflich."
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Höfliche Sätze",
+              "items": [
+                {
+                  "meaning": "Prost! (wörtlich „trockenes Glas“)",
+                  "zh": "干杯！",
+                  "pinyin": "Gānbēi!"
+                },
+                {
+                  "meaning": "Guten Appetit (andere zum Anfangen einladen)",
+                  "zh": "请慢用",
+                  "pinyin": "Qǐng màn yòng"
+                },
+                {
+                  "meaning": "Ach was, nicht doch (Antwort auf Komplimente)",
+                  "zh": "哪里哪里",
+                  "pinyin": "Nǎlǐ nǎlǐ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "emoji": "🥟",
+          "title": "Esskultur",
+          "summary": "Regionale Küchen, wie man bestellt und was du probieren solltest.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "„Chinesisches Essen“ sind viele Küchen",
+              "bullets": [
+                "**Sichuan (川菜)**: betäubend-scharf, mit Sichuanpfeffer. Probier Mapo Tofu und Hotpot in Chengdu oder Chongqing.",
+                "**Kantonesisch (粤菜)**: frisch und mild gewürzt. Probier Dim Sum (早茶) in Guangzhou oder Hongkong.",
+                "**Hunan (湘菜)**: noch schärfer als Sichuan, mit frischen Chilis.",
+                "**Nordchinesische Küche**: Weizen statt Reis, also Teigtaschen, Nudeln und Dampfbrötchen. Probier Peking-Ente in Peking und Biangbiang-Nudeln in Xi'an.",
+                "**Shanghai und Jiangnan**: süßere Aromen. Probier Xiaolongbao (Suppenteigtaschen)."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "So funktioniert Bestellen",
+              "bullets": [
+                "Viele Restaurants haben einen **QR-Code auf dem Tisch**: Mit WeChat oder Alipay scannen, auf dem Handy bestellen und bezahlen. Nutz die Kamera-Übersetzung für die Speisekarte.",
+                "Bilderspeisekarten sind üblich; einfach drauf zeigen ist völlig okay.",
+                "Heißes Wasser oder Tee gibt es standardmäßig. Frag nach Eis (加冰 jiā bīng), wenn du kalte Getränke willst."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Such dir volle Lokale mit vielen Einheimischen und check die Bewertungen auf Dianping. Frühstücks-Streetfood (Jianbing, Baozi, Sojamilch und Youtiao) ist günstig, schnell und lecker."
+            },
+            {
+              "type": "phrases",
+              "heading": "Bestellen",
+              "items": [
+                {
+                  "meaning": "Ein bisschen scharf",
+                  "zh": "微辣",
+                  "pinyin": "Wēi là"
+                },
+                {
+                  "meaning": "Was empfehlen Sie?",
+                  "zh": "你推荐什么？",
+                  "pinyin": "Nǐ tuījiàn shénme?"
+                },
+                {
+                  "meaning": "Ich bin allergisch gegen Erdnüsse",
+                  "zh": "我对花生过敏",
+                  "pinyin": "Wǒ duì huāshēng guòmǐn"
+                },
+                {
+                  "meaning": "Zum Mitnehmen, bitte",
+                  "zh": "打包",
+                  "pinyin": "Dǎbāo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "holidays",
+          "emoji": "🧧",
+          "title": "Feste & Feiertage",
+          "summary": "Die großen Feiertage und wann du besser nicht reist.",
+          "minutes": 4,
+          "blocks": [
+            {
+              "type": "text",
+              "heading": "Die wichtigsten Feiertage",
+              "bullets": [
+                "**Frühlingsfest / Chinesisches Neujahr (春节)**: Januar oder Februar. Der größte Feiertag: Familientreffen, rote Umschläge (红包), Feuerwerk. Viele Läden schließen, und rundherum findet die größte Völkerwanderung der Welt statt.",
+                "**Laternenfest (元宵节)**: 15 Tage nach Neujahr. Laternen und süße Reisbällchen (Tangyuan).",
+                "**Qingming-Fest (清明节)**: Anfang April. Gräberpflege und Gedenken an die Vorfahren.",
+                "**Tag der Arbeit (劳动节)**: 1. Mai, mehrere freie Tage mit viel Reiseverkehr.",
+                "**Drachenbootfest (端午节)**: Mai oder Juni. Drachenbootrennen und Zongzi (Klebreis in Blättern).",
+                "**Mondfest (中秋节)**: September oder Oktober. Mondkuchen und Familientreffen bei Vollmond.",
+                "**Nationalfeiertag, Goldene Woche (国庆节)**: 1.–7. Oktober. Eine ganze Woche frei für die meisten, die reisestärkste Zeit des Jahres."
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Vermeide Reisen während des Frühlingsfests, rund um den 1. Mai und in der Goldenen Woche, wenn du kannst. Züge und Flüge sind wochenlang ausgebucht, Preise steigen und berühmte Orte sind extrem voll."
+            },
+            {
+              "type": "text",
+              "heading": "Nachholtage",
+              "paragraphs": [
+                "China verschiebt oft Wochenenden, um längere Feiertage zu schaffen. Du musst dann eventuell an einem Samstag oder Sonntag arbeiten oder zur Uni (调休 tiáoxiū). Schau jedes Jahr in den offiziellen Feiertagskalender."
+              ]
+            },
+            {
+              "type": "phrases",
+              "heading": "Glückwünsche",
+              "items": [
+                {
+                  "meaning": "Frohes neues Jahr (Frühlingsfest)",
+                  "zh": "新年快乐",
+                  "pinyin": "Xīnnián kuàilè"
+                },
+                {
+                  "meaning": "Viel Wohlstand!",
+                  "zh": "恭喜发财",
+                  "pinyin": "Gōngxǐ fācái"
+                },
+                {
+                  "meaning": "Frohes Mondfest",
+                  "zh": "中秋快乐",
+                  "pinyin": "Zhōngqiū kuàilè"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "daily-life",
+          "emoji": "🛒",
+          "title": "Alltag",
+          "summary": "Einkaufen, Lieferdienste, Wohnungssuche und Arztbesuch.",
+          "minutes": 5,
+          "blocks": [
+            {
+              "type": "apps",
+              "heading": "Einkaufen & Lebensmittel",
+              "items": [
+                {
+                  "id": "taobao",
+                  "name": "Taobao",
+                  "zh": "淘宝",
+                  "desc": "Fast alles online kaufen, oft am nächsten Tag an einen Paketschrank oder eine Abholstation geliefert. Den Abholcode bekommst du per SMS.",
+                  "badges": [
+                    "Meist Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id387682726"
+                },
+                {
+                  "id": "jd",
+                  "name": "JD.com",
+                  "zh": "京东",
+                  "desc": "Online-Shopping mit eigenem schnellen Liefernetz. Gut für Elektronik und alles, wo du sicher Originalware willst.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id414245413"
+                },
+                {
+                  "id": "pinduoduo",
+                  "name": "Pinduoduo",
+                  "zh": "拼多多",
+                  "desc": "Sehr günstiges Gruppen-Shopping. Tolle Preise für Alltagsdinge und Obst, die Qualität schwankt.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id1044283059"
+                },
+                {
+                  "id": "hema",
+                  "name": "Hema (Freshippo)",
+                  "zh": "盒马",
+                  "desc": "Der Supermarkt von Alibaba: frische Lebensmittel in unter einer Stunde geliefert, oder direkt im Laden einkaufen.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id1063183999"
+                },
+                {
+                  "id": "meituan",
+                  "name": "Meituan",
+                  "zh": "美团",
+                  "desc": "Essenslieferung, Lebensmittel, Hotel- und Restaurantangebote. Die Lieferung kommt meist in etwa 30 Minuten. Nur auf Chinesisch.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id423084029"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "paragraphs": [
+                "Convenience Stores (FamilyMart, Lawson, 7-Eleven) gibt es überall, mit warmen Mahlzeiten."
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Eine Wohnung mieten",
+              "bullets": [
+                "Übliche Zahlung: „押一付三“ (yā yī fù sān): eine Monatsmiete Kaution plus drei Monatsmieten im Voraus.",
+                "Stell sicher, dass dein Vermieter oder deine Vermieterin die Unterlagen für die Anmeldung bei der Polizei liefern kann.",
+                "Kläre vor der Unterschrift Wasser, Strom, Gas und Internet; das wird oft über WeChat oder Alipay bezahlt."
+              ]
+            },
+            {
+              "type": "apps",
+              "heading": "Apps für die Wohnungssuche",
+              "items": [
+                {
+                  "id": "lianjia",
+                  "name": "Lianjia",
+                  "zh": "链家",
+                  "desc": "Eine der größten Immobilienagenturen. Mietwohnungen mit Fotos und Grundrissen suchen; Makler:innen verlangen eine Gebühr.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id405882753"
+                },
+                {
+                  "id": "ziroom",
+                  "name": "Ziroom",
+                  "zh": "自如",
+                  "desc": "Möblierte Zimmer und Wohnungen, auch mit monatlicher Zahlung. Beliebt bei jungen Berufstätigen und Studierenden.",
+                  "badges": [
+                    "Nur Chinesisch"
+                  ],
+                  "url": "https://apps.apple.com/app/id685872176"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "heading": "Zum Arzt gehen",
+              "paragraphs": [
+                "Bei kleinen Beschwerden helfen Apotheken (药店) mit vielen Medikamenten. In öffentlichen Krankenhäusern meldest du dich zuerst für eine Abteilung an (挂号), oft über den WeChat-Account des Krankenhauses, und wartest dann auf deine Nummer. Viele große Krankenhäuser haben eine internationale Abteilung (国际部) mit englischsprachigem Personal."
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Bitte beim ersten Mal deinen Vermieter oder chinesische Freund:innen, dir beim Einrichten von Nebenkosten und Paketzustellung in den chinesischen Apps zu helfen. Danach ist es einfach."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
