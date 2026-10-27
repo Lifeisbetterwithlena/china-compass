@@ -75,6 +75,11 @@ class AppState extends ChangeNotifier {
     'apps:wechat:1': 'payments:wechat-pay:2', // get verified
     'apps:alipay:0': 'apps:downloads:1', // install Alipay
     'apps:alipay:1': 'payments:alipay:2', // link your card
+    // "Internet & VPN": the offline-maps step was removed, later steps moved up.
+    'internet:get-connected:0': 'internet:connect:0',
+    'internet:get-connected:1': 'internet:connect:1',
+    'internet:get-connected:2': 'internet:removed:0', // offline maps: no longer a step
+    'internet:get-connected:3': 'internet:connect:2',
   };
 
   /// New name for a ticked (`checked`) or saved (`saved`, `step:` prefix) key, or null.
@@ -91,7 +96,7 @@ class AppState extends ChangeNotifier {
   }
 
   static void _migrateKeys(SharedPreferences prefs) {
-    const flag = 'migrated_checklist_ids_v5';
+    const flag = 'migrated_checklist_ids_v6';
     if (prefs.getBool(flag) ?? false) return;
     final checked = prefs.getStringList(_checkedKey);
     if (checked != null) {

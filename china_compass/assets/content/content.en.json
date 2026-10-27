@@ -33,7 +33,7 @@
                 },
                 {
                   "text": "Booked your first nights of accommodation",
-                  "note": "Hotels register you with the police automatically. Staying with friends? You must register at the local police station within 24 hours."
+                  "note": "A hotel for the first nights also takes care of your police registration."
                 },
                 {
                   "text": "Printed or saved your return or onward ticket"
@@ -43,10 +43,21 @@
                 },
                 {
                   "text": "Filled in the electronic arrival card online",
-                  "note": "The arrival card is now fully electronic, and paper cards are no longer handed out. Fill it in before you land: [online arrival card](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                  "note": "You can fill it in **up to 72 hours (3 days) before you land**, not earlier: [online arrival card](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home), the **NIA 12367** app or the mini program in WeChat or Alipay. You can also do it right before immigration at the airport: scan the QR code on the signs or use a kiosk."
                 }
               ],
               "id": "before-fly"
+            },
+            {
+              "type": "checklist",
+              "id": "after-landing",
+              "heading": "After you land",
+              "items": [
+                {
+                  "text": "Register your address within 24 hours",
+                  "note": "Staying in a hotel? It does this for you at check-in. Staying with friends or in a rented flat? Go to the local police station with your passport."
+                }
+              ]
             },
             {
               "type": "visa_regions",
@@ -594,12 +605,9 @@
               ],
               "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
               "popular": [
-                "US",
-                "GB",
                 "DE",
-                "FR",
-                "CA",
-                "AU"
+                "US",
+                "ES"
               ],
               "heading": "Check your visa regulations"
             },
@@ -621,8 +629,24 @@
                 {
                   "heading": "Arrival",
                   "paragraphs": [
+                    "Fill in the online arrival card within **72 hours before you land**, or right before immigration at the airport (QR code or kiosk). You'll need your flight number and your first address in China.",
                     "Have your hotel address in **Chinese characters** saved on your phone. You need it for the arrival card, and taxi drivers rarely read English."
                   ]
+                },
+                {
+                  "heading": "Registration within 24 hours",
+                  "paragraphs": [
+                    "Every foreigner in China has to register where they stay with the local police **within 24 hours of arriving** (72 hours in rural areas). This applies again every time you change your address."
+                  ],
+                  "bullets": [
+                    "**Hotel:** done automatically at check-in, nothing to do.",
+                    "**Friends, a rented flat or a homestay:** go to the local police station (派出所 pàichūsuǒ) with your passport. Bring your host, or their ID and the rental contract.",
+                    "You get a registration slip. Keep it: you'll need it again, for example for a residence permit."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Not registering can lead to a warning or a fine, and can cause problems when you apply for a visa extension or residence permit."
+                  }
                 }
               ]
             },
@@ -667,13 +691,10 @@
                   "text": "Installed and tested the VPN at home (if using one)"
                 },
                 {
-                  "text": "Downloaded offline Google Maps or Apple Maps as backup"
-                },
-                {
                   "text": "Told family to reach you on WeChat as well as WhatsApp"
                 }
               ],
-              "id": "get-connected"
+              "id": "connect"
             },
             {
               "type": "info",
@@ -747,9 +768,6 @@
                 },
                 {
                   "text": "Add your Visa or Mastercard"
-                },
-                {
-                  "text": "Try the Transport mini-program for metro QR codes in your city"
                 }
               ],
               "id": "alipay"
@@ -874,6 +892,10 @@
                 {
                   "text": "A translation app with offline Chinese",
                   "note": "e.g. Google Translate or Baidu Translate"
+                },
+                {
+                  "text": "RedNote (Xiaohongshu)",
+                  "note": "To find cafés, food and hidden spots in your city"
                 }
               ]
             },
@@ -997,6 +1019,69 @@
                   ]
                 },
                 {
+                  "id": "translation",
+                  "name": "Language & translation",
+                  "apps": [
+                    {
+                      "id": "googletranslate",
+                      "name": "Google Translate",
+                      "desc": "Excellent camera translation: point your phone at menus, signs and packaging, or translate a photo. Download Chinese before you travel so it also works offline; everything else needs a VPN in China.",
+                      "url": "https://apps.apple.com/app/id414706506",
+                      "tags": [
+                        "nice",
+                        "english",
+                        "vpn",
+                        "offline"
+                      ],
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ]
+                    },
+                    {
+                      "id": "baidutranslate",
+                      "name": "Baidu Translate",
+                      "desc": "Camera, voice and text translation that works without a VPN. Apple Translate is a good alternative: download Chinese for offline use.",
+                      "url": "https://apps.apple.com/app/id605670941",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese",
+                        "novpn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "explore",
+                  "name": "Explore & inspiration",
+                  "apps": [
+                    {
+                      "id": "rednote",
+                      "name": "RedNote (Xiaohongshu)",
+                      "desc": "The best way to discover a city: search for “Shanghai” (or any place) to find cafés, restaurants, hidden spots and what's popular right now, with photos and honest reviews from locals. Works in English, and posts can be translated.",
+                      "url": "https://apps.apple.com/app/id741292507",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "id": "food",
                   "name": "Food & restaurants",
                   "apps": [
@@ -1045,66 +1130,8 @@
                   ]
                 },
                 {
-                  "id": "translation",
-                  "name": "Language & translation",
-                  "apps": [
-                    {
-                      "id": "googletranslate",
-                      "name": "Google Translate",
-                      "desc": "Excellent camera translation: point your phone at menus, signs and packaging, or translate a photo. Download Chinese before you travel so it also works offline; everything else needs a VPN in China.",
-                      "url": "https://apps.apple.com/app/id414706506",
-                      "tags": [
-                        "nice",
-                        "english",
-                        "vpn",
-                        "offline"
-                      ],
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ]
-                    },
-                    {
-                      "id": "pleco",
-                      "name": "Pleco",
-                      "desc": "The best Chinese–English dictionary. Look up characters by drawing them, or point your camera at text.",
-                      "url": "https://apps.apple.com/app/id341922306",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "english",
-                        "offline"
-                      ]
-                    },
-                    {
-                      "id": "baidutranslate",
-                      "name": "Baidu Translate",
-                      "desc": "Camera, voice and text translation that works without a VPN. Apple Translate is a good alternative: download Chinese for offline use.",
-                      "url": "https://apps.apple.com/app/id605670941",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "chinese",
-                        "novpn"
-                      ]
-                    }
-                  ]
-                },
-                {
                   "id": "shopping",
-                  "name": "Shopping & inspiration",
+                  "name": "Shopping",
                   "apps": [
                     {
                       "id": "taobao",
@@ -1158,22 +1185,6 @@
                       "name": "Hema (Freshippo)",
                       "desc": "Alibaba's supermarket: fresh groceries delivered in under an hour, or shop in its stores.",
                       "url": "https://apps.apple.com/app/id1063183999",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "chinese"
-                      ]
-                    },
-                    {
-                      "id": "rednote",
-                      "name": "RedNote (Xiaohongshu)",
-                      "desc": "Where young Chinese people look for travel tips, cafés, hidden spots and reviews. Think Instagram meets Pinterest.",
-                      "url": "https://apps.apple.com/app/id741292507",
                       "stores": [
                         "us",
                         "gb",

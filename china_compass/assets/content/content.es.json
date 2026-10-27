@@ -33,7 +33,7 @@
                 },
                 {
                   "text": "Reservado el alojamiento de las primeras noches",
-                  "note": "Los hoteles te registran automáticamente en la policía. ¿Te alojas con amigos? Debes registrarte en la comisaría local en un plazo de 24 horas."
+                  "note": "Un hotel para las primeras noches también se encarga de tu registro en la policía."
                 },
                 {
                   "text": "Billete de vuelta o de continuación impreso o guardado"
@@ -43,10 +43,21 @@
                 },
                 {
                   "text": "Tarjeta de llegada electrónica rellenada en línea",
-                  "note": "La tarjeta de llegada ahora es totalmente electrónica y ya no se reparten tarjetas en papel. Rellénala antes de aterrizar: [tarjeta de llegada en línea](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                  "note": "Puedes rellenarla **como mucho 72 horas (3 días) antes de aterrizar**, no antes: [tarjeta de llegada en línea](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home), la app **NIA 12367** o el miniprograma de WeChat o Alipay. También puedes hacerlo justo antes del control de inmigración en el aeropuerto: escanea el código QR de los carteles o usa un quiosco."
                 }
               ],
               "id": "before-fly"
+            },
+            {
+              "type": "checklist",
+              "id": "after-landing",
+              "heading": "Al aterrizar",
+              "items": [
+                {
+                  "text": "Registra tu dirección en 24 horas",
+                  "note": "¿Te alojas en un hotel? Lo hace por ti al registrarte. ¿Con amigos o en un piso alquilado? Ve a la comisaría local con tu pasaporte."
+                }
+              ]
             },
             {
               "type": "visa_regions",
@@ -594,12 +605,9 @@
               ],
               "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
               "popular": [
-                "ES",
-                "MX",
-                "AR",
+                "DE",
                 "US",
-                "CL",
-                "GB"
+                "ES"
               ],
               "heading": "Consulta tu normativa de visado"
             },
@@ -621,8 +629,24 @@
                 {
                   "heading": "Llegada",
                   "paragraphs": [
+                    "Rellena la tarjeta de llegada en línea **en las 72 horas antes de aterrizar**, o justo antes del control de inmigración en el aeropuerto (código QR o quiosco). Necesitarás tu número de vuelo y tu primera dirección en China.",
                     "Guarda la dirección de tu hotel en **caracteres chinos** en el móvil. La necesitas para la tarjeta de llegada, y los taxistas rara vez leen inglés."
                   ]
+                },
+                {
+                  "heading": "Registro en 24 horas",
+                  "paragraphs": [
+                    "Todo extranjero en China debe registrar su alojamiento en la policía local **en las 24 horas siguientes a su llegada** (72 horas en zonas rurales). Vuelve a ser obligatorio cada vez que cambias de dirección."
+                  ],
+                  "bullets": [
+                    "**Hotel:** se hace automáticamente al registrarte, no tienes que hacer nada.",
+                    "**Con amigos, en un piso alquilado o en una casa particular:** ve a la comisaría local (派出所 pàichūsuǒ) con tu pasaporte. Lleva a tu anfitrión, o su documento de identidad y el contrato de alquiler.",
+                    "Te darán un justificante de registro. Guárdalo: lo necesitarás de nuevo, por ejemplo para el permiso de residencia."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "No registrarte puede acarrear un aviso o una multa, y causar problemas al pedir una prórroga del visado o el permiso de residencia."
+                  }
                 }
               ]
             },
@@ -667,13 +691,10 @@
                   "text": "VPN instalada y probada en casa (si usas una)"
                 },
                 {
-                  "text": "Mapas sin conexión de Google Maps o Mapas de Apple descargados como respaldo"
-                },
-                {
                   "text": "Avisado a la familia de que también pueden contactarte por WeChat"
                 }
               ],
-              "id": "get-connected"
+              "id": "connect"
             },
             {
               "type": "info",
@@ -747,9 +768,6 @@
                 },
                 {
                   "text": "Añade tu Visa o Mastercard"
-                },
-                {
-                  "text": "Prueba el miniprograma de Transporte para los códigos QR del metro de tu ciudad"
                 }
               ],
               "id": "alipay"
@@ -874,6 +892,10 @@
                 {
                   "text": "Una app de traducción con chino sin conexión",
                   "note": "p. ej. Traductor de Google o Baidu Translate"
+                },
+                {
+                  "text": "RedNote (Xiaohongshu)",
+                  "note": "Para encontrar cafeterías, comida y rincones escondidos en tu ciudad"
                 }
               ]
             },
@@ -997,6 +1019,69 @@
                   ]
                 },
                 {
+                  "id": "translation",
+                  "name": "Idioma y traducción",
+                  "apps": [
+                    {
+                      "id": "googletranslate",
+                      "name": "Traductor de Google",
+                      "desc": "Excelente traducción con la cámara: apunta el móvil a cartas, carteles y envases, o traduce una foto. Descarga el chino antes de viajar para usarlo sin conexión; todo lo demás necesita VPN en China.",
+                      "url": "https://apps.apple.com/app/id414706506",
+                      "tags": [
+                        "nice",
+                        "english",
+                        "vpn",
+                        "offline"
+                      ],
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ]
+                    },
+                    {
+                      "id": "baidutranslate",
+                      "name": "Baidu Translate",
+                      "desc": "Traducción por cámara, voz y texto que funciona sin VPN. El Traductor de Apple es una buena alternativa: descarga el chino para usarlo sin conexión.",
+                      "url": "https://apps.apple.com/app/id605670941",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese",
+                        "novpn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "explore",
+                  "name": "Descubrir e inspirarse",
+                  "apps": [
+                    {
+                      "id": "rednote",
+                      "name": "RedNote (Xiaohongshu)",
+                      "desc": "La mejor forma de descubrir una ciudad: busca «Shanghái» (o cualquier lugar) para encontrar cafeterías, restaurantes, rincones escondidos y lo que está de moda, con fotos y reseñas sinceras de la gente local. Funciona en inglés y las publicaciones se pueden traducir.",
+                      "url": "https://apps.apple.com/app/id741292507",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english"
+                      ]
+                    }
+                  ]
+                },
+                {
                   "id": "food",
                   "name": "Comida y restaurantes",
                   "apps": [
@@ -1045,66 +1130,8 @@
                   ]
                 },
                 {
-                  "id": "translation",
-                  "name": "Idioma y traducción",
-                  "apps": [
-                    {
-                      "id": "googletranslate",
-                      "name": "Traductor de Google",
-                      "desc": "Excelente traducción con la cámara: apunta el móvil a cartas, carteles y envases, o traduce una foto. Descarga el chino antes de viajar para usarlo sin conexión; todo lo demás necesita VPN en China.",
-                      "url": "https://apps.apple.com/app/id414706506",
-                      "tags": [
-                        "nice",
-                        "english",
-                        "vpn",
-                        "offline"
-                      ],
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ]
-                    },
-                    {
-                      "id": "pleco",
-                      "name": "Pleco",
-                      "desc": "El mejor diccionario chino-inglés. Busca caracteres dibujándolos o apuntando la cámara a un texto.",
-                      "url": "https://apps.apple.com/app/id341922306",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "english",
-                        "offline"
-                      ]
-                    },
-                    {
-                      "id": "baidutranslate",
-                      "name": "Baidu Translate",
-                      "desc": "Traducción por cámara, voz y texto que funciona sin VPN. El Traductor de Apple es una buena alternativa: descarga el chino para usarlo sin conexión.",
-                      "url": "https://apps.apple.com/app/id605670941",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "chinese",
-                        "novpn"
-                      ]
-                    }
-                  ]
-                },
-                {
                   "id": "shopping",
-                  "name": "Compras e inspiración",
+                  "name": "Compras",
                   "apps": [
                     {
                       "id": "taobao",
@@ -1158,22 +1185,6 @@
                       "name": "Hema (Freshippo)",
                       "desc": "El supermercado de Alibaba: productos frescos a domicilio en menos de una hora, o compra en sus tiendas.",
                       "url": "https://apps.apple.com/app/id1063183999",
-                      "stores": [
-                        "us",
-                        "gb",
-                        "de",
-                        "es"
-                      ],
-                      "tags": [
-                        "nice",
-                        "chinese"
-                      ]
-                    },
-                    {
-                      "id": "rednote",
-                      "name": "RedNote (Xiaohongshu)",
-                      "desc": "Donde los jóvenes chinos buscan consejos de viaje, cafeterías, rincones escondidos y reseñas. Como una mezcla de Instagram y Pinterest.",
-                      "url": "https://apps.apple.com/app/id741292507",
                       "stores": [
                         "us",
                         "gb",

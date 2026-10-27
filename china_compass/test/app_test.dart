@@ -129,7 +129,7 @@ void main() {
     await tester.enterText(find.widgetWithText(TextField, 'Search apps or categories, e.g. translation'), 'translation');
     await tester.pumpAndSettle();
     expect(find.text('Google Translate'), findsOneWidget);
-    expect(find.text('Pleco'), findsOneWidget);
+    expect(find.text('Baidu Translate'), findsOneWidget);
     expect(find.text('Amap (Gaode Maps)'), findsNothing);
     await tester.enterText(find.byType(TextField), 'vpn needed');
     await tester.pumpAndSettle();
@@ -253,7 +253,8 @@ void main() {
   testWidgets('visa page: checklist, then search, then one info card with the transit rule', (tester) async {
     final state = await _pumpApp(tester, 'en', height: 3000);
     final entry = state.content!.findGuide('entry')!.guide;
-    expect(entry.blocks.map((b) => b.type), ['checklist', 'visa_regions', 'info', 'links']);
+    expect(entry.blocks.map((b) => b.type), ['checklist', 'checklist', 'visa_regions', 'info', 'links']);
+    expect(entry.blocks[1].id, 'after-landing', reason: '24-hour registration as a to-do');
 
     // Every country in every language has an official https source.
     for (final lang in ['en', 'de', 'es']) {
@@ -277,6 +278,13 @@ void main() {
     expect(official.dy, greaterThan(search.dy));
     expect(info.dy, greaterThan(official.dy));
     expect(transit.dy, greaterThan(info.dy), reason: 'transit is explained inside the one info card');
+    expect(tester.getTopLeft(find.text('After you land')).dy, lessThan(search.dy));
+    expect(find.text('Registration within 24 hours'), findsOneWidget);
+    // Only Germany, the USA and Spain before searching.
+    expect(find.text('Germany'), findsOneWidget);
+    expect(find.text('United States'), findsOneWidget);
+    expect(find.text('Spain'), findsOneWidget);
+    expect(find.text('United Kingdom'), findsNothing);
   });
 
   testWidgets('Paying in China links to WeChat and Alipay detail pages', (tester) async {
@@ -358,6 +366,10 @@ void main() {
     expect(AppState.migratedKey('checked', 'apps:wechat:0'), 'apps:downloads:0');
     expect(AppState.migratedKey('saved', 'step:apps:alipay:1'), 'step:payments:alipay:2');
     expect(AppState.migratedKey('checked', 'apps:downloads:2'), isNull);
+    // "Internet & VPN": offline maps removed, the last step moved up.
+    expect(AppState.migratedKey('checked', 'internet:get-connected:3'), 'internet:connect:2');
+    expect(AppState.migratedKey('checked', 'internet:4:3'), 'internet:connect:2'); // oldest layout
+    expect(AppState.migratedKey('checked', 'internet:connect:2'), isNull);
 
     // A later launch must not move anything again.
     state.toggle('entry:3:1', true);

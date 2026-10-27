@@ -91,17 +91,17 @@ void main() {
   test('ticks made before signing in move into the account', () async {
     final server = FakeServer();
     final phone = await device(server, signedIn: false, prefs: {
-      'checked': ['internet:get-connected:0', 'internet:get-connected:1'],
+      'checked': ['internet:connect:0', 'internet:connect:1'],
     });
-    expect(phone.checked, {'internet:get-connected:0', 'internet:get-connected:1'});
+    expect(phone.checked, {'internet:connect:0', 'internet:connect:1'});
 
     final code = await phone.auth.sendCode(email);
     await phone.auth.verify(email, code!);
     await settle();
 
     expect(phone.signedIn, isTrue);
-    expect(phone.checked, containsAll(['internet:get-connected:0', 'internet:get-connected:1']));
-    expect(server.rows[userId]!.keys, containsAll(['checked|internet:get-connected:0', 'checked|internet:get-connected:1']));
+    expect(phone.checked, containsAll(['internet:connect:0', 'internet:connect:1']));
+    expect(server.rows[userId]!.keys, containsAll(['checked|internet:connect:0', 'checked|internet:connect:1']));
     phone.dispose();
   });
 

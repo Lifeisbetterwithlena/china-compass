@@ -111,9 +111,9 @@ void main() {
     await _shot('10_daily_life_de');
   });
 
-  for (final id in ['getting-around']) {
+  for (final id in ['entry']) {
     testWidgets('guide $id', (t) async {
-      await _app(t, height: 2600);
+      await _app(t, height: 3600);
       await _push(t, GuideScreen(guideId: id));
       await _shot('guide_$id');
     });
@@ -139,7 +139,7 @@ void main() {
   });
 
   testWidgets('apps', (t) async {
-    await _app(t, height: 2600);
+    await _app(t, height: 3600);
     await _push(t, const GuideScreen(guideId: 'apps'));
     await _shot('3_apps');
   });
