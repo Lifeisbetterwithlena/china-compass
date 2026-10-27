@@ -19,6 +19,7 @@ class LanguageButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (enabledLanguages.length < 2) return const SizedBox.shrink();
     final state = AppScope.of(context);
     final current = languageFor(state.lang);
     final scheme = Theme.of(context).colorScheme;
@@ -67,6 +68,7 @@ class LanguageTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (enabledLanguages.length < 2) return const SizedBox.shrink();
     final state = AppScope.of(context);
     final current = languageFor(state.lang);
     return Card(
@@ -132,7 +134,7 @@ Future<void> showLanguagePicker(BuildContext context) {
                 },
                 child: Column(
                   children: [
-                    for (final lang in appLanguages) _LanguageOption(lang: lang, selected: lang.code == state.lang),
+                    for (final lang in enabledLanguages) _LanguageOption(lang: lang, selected: lang.code == state.lang),
                   ],
                 ),
               ),

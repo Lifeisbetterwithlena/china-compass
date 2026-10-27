@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
 import '../state/app_state.dart';
+import '../widgets/app_card.dart';
 import '../widgets/blocks.dart';
 import '../widgets/common.dart';
 import '../widgets/icons.dart';
 import '../widgets/language_switcher.dart';
 
 class GuideScreen extends StatelessWidget {
-  const GuideScreen({super.key, required this.guideId});
+  const GuideScreen({super.key, required this.guideId, this.appQuery});
 
   final String guideId;
+
+  /// Pre-filled search for the app directory on this page.
+  final String? appQuery;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +25,9 @@ class GuideScreen extends StatelessWidget {
     final (:persona, :guide) = found;
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
-    final idx = persona.guides.indexOf(guide);
-    final next = idx + 1 < persona.guides.length ? persona.guides[idx + 1] : null;
+    final siblings = persona?.guides ?? const [];
+    final idx = siblings.indexOf(guide);
+    final next = idx >= 0 && idx + 1 < siblings.length ? siblings[idx + 1] : null;
     final saved = state.isSaved('guide:${guide.id}');
     final p = state.progress([guide]);
 
@@ -47,7 +52,7 @@ class GuideScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                IconTile(guide.id, size: 48),
+                if (guide.appIcon case final app?) AppIcon(id: app, size: 52) else IconTile(guide.id, size: 48),
                 const SizedBox(height: 14),
                 Text(guide.title, style: theme.textTheme.headlineMedium),
                 const SizedBox(height: 8),
@@ -63,7 +68,7 @@ class GuideScreen extends StatelessWidget {
               ],
             ),
           ),
-          for (var i = 0; i < guide.blocks.length; i++) BlockView(guide: guide, index: i),
+          for (var i = 0; i < guide.blocks.length; i++) BlockView(guide: guide, index: i, appQuery: appQuery),
           if (next != null)
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),

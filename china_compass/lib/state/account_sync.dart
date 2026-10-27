@@ -16,6 +16,7 @@ class AccountSync {
     required this.store,
     required this.userId,
     required this.onChanged,
+    this.migrateKey,
     this.retryInterval = const Duration(seconds: 20),
   }) {
     final raw = prefs.getString(_cacheKey);
@@ -25,12 +26,39 @@ class AccountSync {
         _items[item.id] = item;
       }
     }
+    _applyMigrations();
+  }
+
+  /// Renames keys of older app versions (see [migrateKey]); the new key is uploaded
+  /// and the old one marked as removed, so other devices follow along.
+  void _applyMigrations() {
+    final migrate = migrateKey;
+    if (migrate == null) return;
+    for (final item in [..._items.values]) {
+      if (item.deleted) continue;
+      final newKey = migrate(item.kind, item.key);
+      if (newKey == null) continue;
+      final existing = _items['${item.kind}|$newKey'];
+      if (existing == null || existing.updatedAt.isBefore(item.updatedAt)) {
+        _items['${item.kind}|$newKey'] = SyncItem(
+          kind: item.kind,
+          key: newKey,
+          value: item.value,
+          updatedAt: item.updatedAt,
+          dirty: true,
+        );
+      }
+      _items[item.id] = SyncItem(kind: item.kind, key: item.key, deleted: true, updatedAt: DateTime.now().toUtc(), dirty: true);
+    }
   }
 
   final SharedPreferences prefs;
   final SyncStore store;
   final String userId;
   final void Function() onChanged;
+
+  /// Maps an old key to its new name (or null to keep it), for content changes.
+  final String? Function(String kind, String key)? migrateKey;
   final Duration retryInterval;
 
   final _items = <String, SyncItem>{};
@@ -101,6 +129,7 @@ class AccountSync {
           _items[remote.id] = remote.copyWith(dirty: false);
         }
       }
+      _applyMigrations();
       final toPush = [for (final i in _items.values) if (i.dirty) i];
       await store.upsert(userId, toPush);
       for (final pushed in toPush) {

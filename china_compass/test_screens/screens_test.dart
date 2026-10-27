@@ -100,6 +100,20 @@ void main() {
     await _shot('10_daily_life_de');
   });
 
+  for (final id in ['getting-around']) {
+    testWidgets('guide $id', (t) async {
+      await _app(t, height: 2600);
+      await _push(t, GuideScreen(guideId: id));
+      await _shot('guide_$id');
+    });
+  }
+
+  testWidgets('apps in German', (t) async {
+    await _app(t, lang: 'de', height: 2400);
+    await _push(t, const GuideScreen(guideId: 'payments'));
+    await _shot('de_payments');
+  });
+
   testWidgets('travel path', (t) async {
     await _app(t, height: 1300);
     await t.tap(find.text('Travel').last);
@@ -134,8 +148,8 @@ void main() {
   testWidgets('profile', (t) async {
     await _app(t, lang: 'de', height: 1100, prefs: {
       'demo_email': 'lena@example.com',
-      'saved:lena@example.com': ['step:entry:3:0', 'step:entry:3:5', 'step:payments:1:1', 'guide:scholarships'],
-      'checked': ['entry:3:0'],
+      'saved:lena@example.com': ['step:entry:before-fly:0', 'step:entry:before-fly:5', 'step:payments:1:1', 'guide:scholarships'],
+      'checked': ['entry:before-fly:0'],
     });
     await t.tap(find.text('Profil').last);
     await t.pumpAndSettle();

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 /// Modern, calm design: light canvas, white rounded surfaces, a deep navy "ink"
 /// for controls, and soft per-topic colors (see widgets/icons.dart) for orientation.
 const ink = Color(0xFF1B2140);
-const gold = Color(0xFFF5B83D);
+const accent = Color(0xFF8B5CF6); // neon violet: title bar, tab dot, progress rings
 const fontFamily = 'PlusJakartaSans';
 
 ThemeData buildTheme(Brightness brightness) {

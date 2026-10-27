@@ -3,12 +3,22 @@ import 'package:flutter/widgets.dart';
 /// A language the app supports. Names are shown in the language itself (endonym)
 /// so people can always find their own language, whatever is currently selected.
 class AppLanguage {
-  const AppLanguage({required this.code, required this.nativeName, required this.englishName, required this.flag});
+  const AppLanguage({
+    required this.code,
+    required this.nativeName,
+    required this.englishName,
+    required this.flag,
+    this.enabled = true,
+  });
 
   final String code;
   final String nativeName;
   final String englishName;
   final FlagKind flag;
+
+  /// Hidden languages keep their files but can't be picked (e.g. while the
+  /// English guide structure is being reworked).
+  final bool enabled;
 
   Locale get locale => Locale(code);
 }
@@ -21,11 +31,36 @@ const appLanguages = [
   AppLanguage(code: 'es', nativeName: 'Español', englishName: 'Spanish', flag: FlagKind.spain),
 ];
 
+/// Languages people can choose.
+List<AppLanguage> get enabledLanguages => [for (final l in appLanguages) if (l.enabled) l];
+
+bool isEnabledLanguage(String code) => enabledLanguages.any((l) => l.code == code);
+
 AppLanguage languageFor(String code) =>
     appLanguages.firstWhere((l) => l.code == code, orElse: () => appLanguages.first);
 
 const _strings = <String, Map<String, String>>{
   'en': {
+    'playPhrase': 'Listen',
+    'setUpIn': 'Set up in {guide}',
+    'tagVpn': 'VPN needed',
+    'appSearch': 'Search apps or categories, e.g. translation',
+    'appFilterAll': 'All',
+    'noApps': 'No apps found for “{q}”.',
+    'tagMust': 'Must-have',
+    'tagNice': 'Nice to have',
+    'tagEnglish': 'English',
+    'tagChinese': 'Chinese only',
+    'tagChinaStore': 'China App Store only',
+    'tagCards': 'Foreign cards OK',
+    'tagOffline': 'Works offline',
+    'tagNoVpn': 'No VPN needed',
+    'tagOfficial': 'Official',
+    'goodToKnow': 'Good to know',
+    'visaPopular': 'Most common nationalities',
+    'visaAllCountries': 'All countries',
+    'visaShowAll': 'Show all {n} countries',
+    'visaShowLess': 'Show fewer',
     'syncSynced': 'Saved to your account',
     'syncSyncing': 'Saving…',
     'syncPending': 'Offline: your changes will be saved when you are back online',
@@ -82,7 +117,6 @@ const _strings = <String, Map<String, String>>{
     'visaNoMatch': 'Not on the list? You most likely need a visa. Check the official rules, or ask the Chinese embassy in your country.',
     'visaCheckRules': 'Check current rules',
     'visaOfficialSource': 'Official rules: National Immigration Administration',
-    'regionSummary': '{free} visa-free · {transit} transit only',
     // Login
     'signIn': 'Sign in',
     'signInTitle': 'Sign in with email',
@@ -116,6 +150,26 @@ const _strings = <String, Map<String, String>>{
     'demoAccount': 'Demo mode: saved on this device only',
   },
   'de': {
+    'playPhrase': 'Anhören',
+    'setUpIn': 'Einrichten in „{guide}“',
+    'tagVpn': 'VPN nötig',
+    'appSearch': 'Apps oder Kategorien suchen, z. B. Übersetzung',
+    'appFilterAll': 'Alle',
+    'noApps': 'Keine Apps gefunden für „{q}“.',
+    'tagMust': 'Pflicht',
+    'tagNice': 'Nice to have',
+    'tagEnglish': 'Englisch',
+    'tagChinese': 'Nur Chinesisch',
+    'tagChinaStore': 'Nur im China App Store',
+    'tagCards': 'Ausländische Karten OK',
+    'tagOffline': 'Offline nutzbar',
+    'tagNoVpn': 'Ohne VPN',
+    'tagOfficial': 'Offiziell',
+    'goodToKnow': 'Gut zu wissen',
+    'visaPopular': 'Häufigste Staatsangehörigkeiten',
+    'visaAllCountries': 'Alle Länder',
+    'visaShowAll': 'Alle {n} Länder anzeigen',
+    'visaShowLess': 'Weniger anzeigen',
     'syncSynced': 'In deinem Konto gespeichert',
     'syncSyncing': 'Wird gespeichert…',
     'syncPending': 'Offline: Deine Änderungen werden gespeichert, sobald du wieder online bist',
@@ -170,7 +224,6 @@ const _strings = <String, Map<String, String>>{
     'visaNoMatch': 'Nicht in der Liste? Dann brauchst du sehr wahrscheinlich ein Visum. Prüf die offiziellen Regeln oder frag bei der chinesischen Botschaft in deinem Land nach.',
     'visaCheckRules': 'Aktuelle Regeln prüfen',
     'visaOfficialSource': 'Offizielle Regeln: National Immigration Administration',
-    'regionSummary': '{free} visumfrei · {transit} nur Transit',
     'signIn': 'Anmelden',
     'signInTitle': 'Mit E-Mail anmelden',
     'signInText': 'Wir schicken dir einen 6-stelligen Code. Kein Passwort nötig.',
@@ -202,6 +255,26 @@ const _strings = <String, Map<String, String>>{
     'demoAccount': 'Demo-Modus: nur auf diesem Gerät gespeichert',
   },
   'es': {
+    'playPhrase': 'Escuchar',
+    'setUpIn': 'Configúrala en «{guide}»',
+    'tagVpn': 'Necesita VPN',
+    'appSearch': 'Busca apps o categorías, p. ej. traducción',
+    'appFilterAll': 'Todas',
+    'noApps': 'No hay apps para «{q}».',
+    'tagMust': 'Imprescindible',
+    'tagNice': 'Opcional',
+    'tagEnglish': 'Inglés',
+    'tagChinese': 'Solo en chino',
+    'tagChinaStore': 'Solo App Store de China',
+    'tagCards': 'Acepta tarjetas extranjeras',
+    'tagOffline': 'Sin conexión',
+    'tagNoVpn': 'Sin VPN',
+    'tagOfficial': 'Oficial',
+    'goodToKnow': 'Conviene saber',
+    'visaPopular': 'Nacionalidades más comunes',
+    'visaAllCountries': 'Todos los países',
+    'visaShowAll': 'Ver los {n} países',
+    'visaShowLess': 'Ver menos',
     'syncSynced': 'Guardado en tu cuenta',
     'syncSyncing': 'Guardando…',
     'syncPending': 'Sin conexión: tus cambios se guardarán cuando vuelvas a estar en línea',
@@ -256,7 +329,6 @@ const _strings = <String, Map<String, String>>{
     'visaNoMatch': '¿No está en la lista? Lo más probable es que necesites visado. Consulta las normas oficiales o pregunta en la embajada china de tu país.',
     'visaCheckRules': 'Ver normas actuales',
     'visaOfficialSource': 'Normas oficiales: Administración Nacional de Inmigración',
-    'regionSummary': '{free} sin visado · {transit} solo tránsito',
     'signIn': 'Iniciar sesión',
     'signInTitle': 'Inicia sesión con tu correo',
     'signInText': 'Te enviaremos un código de 6 dígitos. Sin contraseña.',

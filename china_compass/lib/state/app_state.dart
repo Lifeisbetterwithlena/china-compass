@@ -22,6 +22,7 @@ class AppState extends ChangeNotifier {
       : store = store ?? LocalOnlySyncStore(),
         lang = _initialLang(_prefs) {
     _migrate(_prefs);
+    _migrateKeys(_prefs);
     _guestChecked.addAll(_prefs.getStringList(_checkedKey) ?? []);
     auth.addListener(_onAuthChanged);
     _onAuthChanged();
@@ -38,6 +39,67 @@ class AppState extends ChangeNotifier {
     if (checked != null) prefs.setStringList(_checkedKey, [for (final k in checked) move(k, '')]);
     for (final key in prefs.getKeys().where((k) => k.startsWith('saved:'))) {
       prefs.setStringList(key, [for (final k in prefs.getStringList(key) ?? const <String>[]) move(k, 'step:')]);
+    }
+    prefs.setBool(flag, true);
+  }
+
+  /// Checklists used to be identified by their position in the guide. They now have
+  /// stable ids; old position-based keys (`guide:index:item`) are renamed once, on the
+  /// device and in the account. Keys: old `guide:index` → new `guide:id`.
+  static const _movedChecklists = {
+    'entry:2': 'entry:before-fly',
+    'internet:4': 'internet:get-connected',
+    'payments:1': 'payments:alipay',
+    'payments:2': 'payments:wechat-pay',
+    'apps:2': 'apps:wechat',
+    'apps:3': 'apps:alipay',
+    'apps:8': 'apps:install',
+    'safety:3': 'safety:prepare',
+    'programs:3': 'programs:research',
+    'scholarships:4': 'scholarships:funding',
+    'apply:1': 'apply:documents',
+    'student-visa:2': 'student-visa:x-visa',
+    'residence-permit:1': 'residence-permit:first-30-days',
+    'campus-life:2': 'campus-life:settle-in',
+  };
+
+  /// Single steps that moved to another checklist (applied after [_movedChecklists]).
+  /// "Essential apps" now has one download list; its WeChat/Alipay set-up steps
+  /// live in "Paying in China".
+  static const _movedSteps = {
+    'apps:install:0': 'apps:downloads:2', // Amap
+    'apps:install:1': 'apps:downloads:3', // DiDi
+    'apps:install:2': 'apps:downloads:4', // Trip.com or 12306
+    'apps:install:3': 'apps:downloads:5', // translation app
+    'apps:wechat:0': 'apps:downloads:0', // install WeChat
+    'apps:wechat:1': 'payments:wechat-pay:2', // get verified
+    'apps:alipay:0': 'apps:downloads:1', // install Alipay
+    'apps:alipay:1': 'payments:alipay:2', // link your card
+  };
+
+  /// New name for a ticked (`checked`) or saved (`saved`, `step:` prefix) key, or null.
+  static String? migratedKey(String kind, String key) {
+    final prefix = kind == 'saved' ? 'step:' : '';
+    if ((kind != 'checked' && kind != 'saved') || !key.startsWith(prefix)) return null;
+    var step = key.substring(prefix.length);
+    final parts = step.split(':');
+    if (parts.length != 3) return null;
+    final moved = _movedChecklists['${parts[0]}:${parts[1]}'];
+    if (moved != null) step = '$moved:${parts[2]}';
+    step = _movedSteps[step] ?? step;
+    return step == key.substring(prefix.length) ? null : '$prefix$step';
+  }
+
+  static void _migrateKeys(SharedPreferences prefs) {
+    const flag = 'migrated_checklist_ids_v5';
+    if (prefs.getBool(flag) ?? false) return;
+    final checked = prefs.getStringList(_checkedKey);
+    if (checked != null) {
+      prefs.setStringList(_checkedKey, [for (final k in checked) migratedKey('checked', k) ?? k]);
+    }
+    for (final key in prefs.getKeys().where((k) => k.startsWith('saved:'))) {
+      prefs.setStringList(
+          key, [for (final k in prefs.getStringList(key) ?? const <String>[]) migratedKey('saved', k) ?? k]);
     }
     prefs.setBool(flag, true);
   }
@@ -59,9 +121,9 @@ class AppState extends ChangeNotifier {
   /// First launch follows the device language; after that the user's choice wins.
   static String _initialLang(SharedPreferences prefs) {
     final saved = prefs.getString(_langKey);
-    if (saved != null && appLanguages.any((l) => l.code == saved)) return saved;
+    if (saved != null && isEnabledLanguage(saved)) return saved;
     final device = PlatformDispatcher.instance.locale.languageCode;
-    return appLanguages.any((l) => l.code == device) ? device : 'en';
+    return isEnabledLanguage(device) ? device : 'en';
   }
 
   String t(String key, [Map<String, Object> vars = const {}]) => tr(lang, key, vars);
@@ -105,7 +167,13 @@ class AppState extends ChangeNotifier {
     _account?.dispose();
     _account = null;
     if (userId != null) {
-      final account = AccountSync(prefs: _prefs, store: store, userId: userId, onChanged: notifyListeners);
+      final account = AccountSync(
+        prefs: _prefs,
+        store: store,
+        userId: userId,
+        onChanged: notifyListeners,
+        migrateKey: migratedKey,
+      );
       _account = account;
       _importDeviceProgress(account);
       unawaited(account.sync().then((_) => _applyAccountLanguage(account)));
@@ -133,7 +201,7 @@ class AppState extends ChangeNotifier {
   Future<void> _applyAccountLanguage(AccountSync account) async {
     final code = account.setting('lang');
     if (_account != account) return;
-    if (code != null && appLanguages.any((l) => l.code == code)) {
+    if (code != null && isEnabledLanguage(code)) {
       await setLang(code, remember: false);
     } else {
       account.set('setting', 'lang', value: lang);

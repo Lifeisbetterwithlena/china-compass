@@ -8,3 +8,6 @@
 china_compass/build/
 china_compass/.dart_tool/
 china_compass/test_screens/goldens/
+
+# Secret keys for local tools (never commit)
+china_compass/tool/*.env

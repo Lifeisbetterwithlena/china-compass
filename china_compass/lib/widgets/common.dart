@@ -19,8 +19,9 @@ List<Widget> appBarActions(BuildContext context) => [
       const SizedBox(width: 6),
     ];
 
-void openGuide(BuildContext context, String id) =>
-    Navigator.of(context).push(MaterialPageRoute(builder: (_) => GuideScreen(guideId: id)));
+/// Opens a guide; [appQuery] pre-fills the app directory search (e.g. from "Related apps").
+void openGuide(BuildContext context, String id, {String? appQuery}) => Navigator.of(context)
+    .push(MaterialPageRoute(builder: (_) => GuideScreen(guideId: id, appQuery: appQuery)));
 
 /// Saves or removes [key]; asks the user to sign in first if needed.
 Future<void> toggleSavedWithLogin(BuildContext context, String key) async {

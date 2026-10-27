@@ -44,13 +44,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView(
           padding: const EdgeInsets.only(bottom: 120),
           children: [
-            // Header: title with a gold accent bar, language and search on the right.
+            // Header: title with an accent bar, language and search on the right.
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 16, 16, 0),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Gold accent bar as tall as the title, however many lines it takes.
+                  // Accent bar as tall as the title, however many lines it takes.
                   Expanded(
                     child: IntrinsicHeight(
                       child: Row(
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Container(
                             width: 4,
                             margin: const EdgeInsets.only(top: 4, bottom: 4, right: 14),
-                            decoration: BoxDecoration(color: gold, borderRadius: BorderRadius.circular(2)),
+                            decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(2)),
                           ),
                           Expanded(child: Text(state.t('heroTitle'), style: theme.textTheme.headlineLarge)),
                         ],
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 duration: const Duration(milliseconds: 200),
                                 width: i == _page ? 6 : 0,
                                 height: 6,
-                                decoration: const BoxDecoration(color: gold, shape: BoxShape.circle),
+                                decoration: const BoxDecoration(color: accent, shape: BoxShape.circle),
                               ),
                             ],
                           ),
@@ -277,7 +277,7 @@ class _PathCard extends StatelessWidget {
                               value: p.done / p.total,
                               strokeWidth: 4,
                               strokeCap: StrokeCap.round,
-                              color: gold,
+                              color: accent,
                               backgroundColor: Colors.white.withValues(alpha: 0.25),
                             ),
                           ),

@@ -59,14 +59,14 @@ void main() {
   test('a tick on one phone shows up on another phone', () async {
     final server = FakeServer();
     final phoneA = await device(server);
-    phoneA.toggle('entry:2:0', true);
+    phoneA.toggle('safety:prepare:1', true);
     phoneA.toggleSaved('guide:scholarships');
     await settle();
     expect(phoneA.syncStatus, SyncStatus.synced);
     phoneA.dispose();
 
     final phoneB = await device(server);
-    expect(phoneB.checked, contains('entry:2:0'));
+    expect(phoneB.checked, contains('safety:prepare:1'));
     expect(phoneB.saved, contains('guide:scholarships'));
     phoneB.dispose();
   });
@@ -75,54 +75,54 @@ void main() {
     final server = FakeServer();
     final phone = await device(server);
     server.online = false;
-    phone.toggle('payments:1:0', true);
+    phone.toggle('payments:alipay:0', true);
     await settle();
-    expect(phone.checked, contains('payments:1:0'), reason: 'works offline');
+    expect(phone.checked, contains('payments:alipay:0'), reason: 'works offline');
     expect(phone.syncStatus, SyncStatus.pending);
-    expect(server.rows[userId]?['checked|payments:1:0'], isNull);
+    expect(server.rows[userId]?['checked|payments:alipay:0'], isNull);
 
     server.online = true;
     await phone.syncNow();
     expect(phone.syncStatus, SyncStatus.synced);
-    expect(server.rows[userId]!['checked|payments:1:0']!.deleted, isFalse);
+    expect(server.rows[userId]!['checked|payments:alipay:0']!.deleted, isFalse);
     phone.dispose();
   });
 
   test('ticks made before signing in move into the account', () async {
     final server = FakeServer();
     final phone = await device(server, signedIn: false, prefs: {
-      'checked': ['internet:4:0', 'internet:4:1'],
+      'checked': ['internet:get-connected:0', 'internet:get-connected:1'],
     });
-    expect(phone.checked, {'internet:4:0', 'internet:4:1'});
+    expect(phone.checked, {'internet:get-connected:0', 'internet:get-connected:1'});
 
     final code = await phone.auth.sendCode(email);
     await phone.auth.verify(email, code!);
     await settle();
 
     expect(phone.signedIn, isTrue);
-    expect(phone.checked, containsAll(['internet:4:0', 'internet:4:1']));
-    expect(server.rows[userId]!.keys, containsAll(['checked|internet:4:0', 'checked|internet:4:1']));
+    expect(phone.checked, containsAll(['internet:get-connected:0', 'internet:get-connected:1']));
+    expect(server.rows[userId]!.keys, containsAll(['checked|internet:get-connected:0', 'checked|internet:get-connected:1']));
     phone.dispose();
   });
 
   test('unticking on one phone removes the tick on the other (newest change wins)', () async {
     final server = FakeServer();
     final phoneA = await device(server);
-    phoneA.toggle('apply:1:0', true);
+    phoneA.toggle('apply:documents:0', true);
     await settle();
-    phoneA.toggle('apply:1:0', false);
+    phoneA.toggle('apply:documents:0', false);
     await settle();
     phoneA.dispose();
 
     final phoneB = await device(server);
-    expect(phoneB.checked, isNot(contains('apply:1:0')));
+    expect(phoneB.checked, isNot(contains('apply:documents:0')));
     phoneB.dispose();
   });
 
   test('sign-out clears the device; signing in again restores everything', () async {
     final server = FakeServer();
     final phone = await device(server);
-    phone.toggle('safety:3:0', true);
+    phone.toggle('safety:prepare:0', true);
     await settle();
     await phone.signOut();
 
@@ -133,7 +133,7 @@ void main() {
     phone.dispose();
 
     final again = await device(server);
-    expect(again.checked, contains('safety:3:0'));
+    expect(again.checked, contains('safety:prepare:0'));
     again.dispose();
   });
 
@@ -149,10 +149,27 @@ void main() {
     phoneB.dispose();
   });
 
+  test('ticks saved by an older app version are renamed in the account', () async {
+    final server = FakeServer();
+    final old = DateTime.utc(2026, 10, 1);
+    server.rows[userId] = {
+      'checked|entry:2:0': SyncItem(kind: 'checked', key: 'entry:2:0', updatedAt: old),
+      'saved|step:entry:2:3': SyncItem(kind: 'saved', key: 'step:entry:2:3', updatedAt: old),
+    };
+    final phone = await device(server);
+    expect(phone.checked, contains('entry:before-fly:0'));
+    expect(phone.checked, isNot(contains('entry:2:0')));
+    expect(phone.saved, contains('step:entry:before-fly:3'));
+    await settle();
+    expect(server.rows[userId]!['checked|entry:before-fly:0']!.deleted, isFalse);
+    expect(server.rows[userId]!['checked|entry:2:0']!.deleted, isTrue, reason: 'other phones learn about the rename');
+    phone.dispose();
+  });
+
   test('delete account removes server data and signs out', () async {
     final server = FakeServer();
     final phone = await device(server);
-    phone.toggle('entry:2:1', true);
+    phone.toggle('entry:before-fly:1', true);
     await settle();
     await phone.deleteAccount();
 

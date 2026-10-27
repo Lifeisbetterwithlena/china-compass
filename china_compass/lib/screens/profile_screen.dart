@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/strings.dart';
 import '../state/account_sync.dart';
 import '../state/app_state.dart';
 import '../widgets/blocks.dart';
@@ -19,7 +20,7 @@ class ProfileScreen extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 4, 16, 120),
         children: [
           if (state.signedIn) ..._signedIn(context, state) else _SignedOut(state: state),
-          SectionLabel(state.t('settings')),
+          if (state.signedIn || enabledLanguages.length > 1) SectionLabel(state.t('settings')),
           const LanguageTile(),
           if (state.signedIn) ...[
             const SizedBox(height: 10),

@@ -21,16 +21,35 @@
           "minutes": 5,
           "blocks": [
             {
-              "type": "text",
-              "heading": "Do you need a visa?",
-              "paragraphs": [
-                "China has opened up a lot. Citizens of **50 countries** can currently enter **visa-free for up to 30 days** for tourism, business, visiting friends and family, exchanges or transit. This includes most of Europe and, since **17 February 2026, the UK and Canada**. Another 29 countries have mutual visa-exemption agreements with China. Most of these rules currently run until **31 December 2026**, so check whether they've been extended before you book.",
-                "If your country isn't covered, or you plan to stay longer than 30 days, you need a visa: a tourist visa (**L visa**), or a student visa (**X visa**) for studying."
-              ]
+              "type": "checklist",
+              "heading": "Before you fly",
+              "items": [
+                {
+                  "text": "Passport valid for at least 6 months, with blank pages"
+                },
+                {
+                  "text": "Checked your visa-free eligibility or got your visa",
+                  "note": "Confirm on the website of the Chinese embassy in your country"
+                },
+                {
+                  "text": "Booked your first nights of accommodation",
+                  "note": "Hotels register you with the police automatically. Staying with friends? You must register at the local police station within 24 hours."
+                },
+                {
+                  "text": "Printed or saved your return or onward ticket"
+                },
+                {
+                  "text": "Bought travel health insurance"
+                },
+                {
+                  "text": "Filled in the electronic arrival card online",
+                  "note": "The arrival card is now fully electronic, and paper cards are no longer handed out. Fill it in before you land: [online arrival card](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                }
+              ],
+              "id": "before-fly"
             },
             {
               "type": "visa_regions",
-              "heading": "Which rule applies to you?",
               "items": [
                 {
                   "id": "europe",
@@ -573,39 +592,39 @@
                   ]
                 }
               ],
-              "intro": "No visa-free entry for your country? You may still stay up to **10 days** without a visa if you fly on to a third country, e.g. Germany → Shanghai → Tokyo. You must enter and leave through a designated port.",
-              "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html"
+              "source": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+              "popular": [
+                "US",
+                "GB",
+                "DE",
+                "FR",
+                "CA",
+                "AU"
+              ],
+              "heading": "Check your visa regulations"
             },
             {
-              "type": "checklist",
-              "heading": "Before you fly",
-              "items": [
+              "type": "info",
+              "sections": [
                 {
-                  "text": "Passport valid for at least 6 months, with blank pages"
+                  "heading": "Visa-free entry",
+                  "paragraphs": [
+                    "Citizens of **50 countries**, including most of Europe, the UK and Canada, can currently enter China **visa-free for up to 30 days** (rules run until 31 December 2026). Everyone else needs a visa: a tourist visa (**L**) or a student visa (**X**)."
+                  ]
                 },
                 {
-                  "text": "Checked your visa-free eligibility or got your visa",
-                  "note": "Confirm on the website of the Chinese embassy in your country"
+                  "heading": "240-hour visa-free transit",
+                  "paragraphs": [
+                    "No visa-free entry for your country? You may still stay up to **10 days** without a visa if you fly on to a third country, e.g. Germany → Shanghai → Tokyo. You must enter and leave through a designated port."
+                  ]
                 },
                 {
-                  "text": "Booked your first nights of accommodation",
-                  "note": "Hotels register you with the police automatically. Staying with friends? You must register at the local police station within 24 hours."
-                },
-                {
-                  "text": "Printed or saved your return or onward ticket"
-                },
-                {
-                  "text": "Bought travel health insurance"
-                },
-                {
-                  "text": "Filled in the electronic arrival card online",
-                  "note": "The arrival card is now fully electronic, and paper cards are no longer handed out. Fill it in before you land: [online arrival card](https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home)"
+                  "heading": "Arrival",
+                  "paragraphs": [
+                    "Have your hotel address in **Chinese characters** saved on your phone. You need it for the arrival card, and taxi drivers rarely read English."
+                  ]
                 }
               ]
-            },
-            {
-              "type": "tip",
-              "text": "Have your hotel address in **Chinese characters** saved on your phone. You need it for the arrival card, and taxi drivers rarely read English."
             },
             {
               "type": "links",
@@ -638,39 +657,8 @@
           "minutes": 4,
           "blocks": [
             {
-              "type": "text",
-              "heading": "The Great Firewall",
-              "paragraphs": [
-                "Many foreign services don't work on Chinese networks (hotel Wi-Fi, local SIM cards). Blocked services include:"
-              ],
-              "bullets": [
-                "Google (Search, Gmail, Maps, Drive, YouTube)",
-                "WhatsApp, Instagram, Facebook, X/Twitter, Telegram",
-                "Many news sites, and some AI tools"
-              ]
-            },
-            {
-              "type": "text",
-              "paragraphs": [
-                "Usually fine without a VPN: Apple services (iMessage, iCloud, Apple Maps), Microsoft/Outlook, Booking.com, Airbnb, and of course all Chinese apps."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Your options",
-              "bullets": [
-                "**Roaming or a travel eSIM (easiest for short trips).** Mobile data from a foreign SIM or eSIM is routed abroad, so Google and WhatsApp usually just work. Choose an eSIM provider that explicitly supports China.",
-                "**VPN.** Install and test it **before** you arrive, because VPN websites and app store pages are blocked inside China. Reliability changes often; ask people who are already there which one works right now.",
-                "**Local SIM card (China Mobile, China Unicom, China Telecom).** Cheap and fast, needed for long stays. Bring your passport, because SIMs are registered to your real name."
-              ]
-            },
-            {
-              "type": "warning",
-              "text": "Using unapproved VPNs is a legal grey area in China. Enforcement against individual visitors is rare, but don't advertise it, and stay away from sensitive political content."
-            },
-            {
               "type": "checklist",
-              "heading": "Checklist",
+              "heading": "Get connected",
               "items": [
                 {
                   "text": "Chose roaming, a China-compatible eSIM or a VPN"
@@ -684,6 +672,41 @@
                 {
                   "text": "Told family to reach you on WeChat as well as WhatsApp"
                 }
+              ],
+              "id": "get-connected"
+            },
+            {
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "The Great Firewall",
+                  "paragraphs": [
+                    "Many foreign services don't work on Chinese networks (hotel Wi-Fi, local SIM cards). Blocked services include:"
+                  ],
+                  "bullets": [
+                    "Google (Search, Gmail, Maps, Drive, YouTube)",
+                    "WhatsApp, Instagram, Facebook, X/Twitter, Telegram",
+                    "Many news sites, and some AI tools"
+                  ]
+                },
+                {
+                  "heading": "What still works",
+                  "paragraphs": [
+                    "Usually fine without a VPN: Apple services (iMessage, iCloud, Apple Maps), Microsoft/Outlook, Booking.com, Airbnb, and of course all Chinese apps."
+                  ]
+                },
+                {
+                  "heading": "Your options",
+                  "bullets": [
+                    "**Roaming or a travel eSIM (easiest for short trips).** Mobile data from a foreign SIM or eSIM is routed abroad, so Google and WhatsApp usually just work. Choose an eSIM provider that explicitly supports China.",
+                    "**VPN.** Install and test it **before** you arrive, because VPN websites and app store pages are blocked inside China. Reliability changes often; ask people who are already there which one works right now.",
+                    "**Local SIM card (China Mobile, China Unicom, China Telecom).** Cheap and fast, needed for long stays. Bring your passport, because SIMs are registered to your real name."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Using unapproved VPNs is a legal grey area in China. Enforcement against individual visitors is rare, but don't advertise it, and stay away from sensitive political content."
+                  }
+                }
               ]
             }
           ]
@@ -691,31 +714,27 @@
         {
           "id": "payments",
           "emoji": "💳",
-          "title": "Alipay & WeChat Pay",
-          "summary": "China is nearly cashless. Set up mobile payment before you go.",
+          "title": "Paying in China",
+          "summary": "China is nearly cashless: set up Alipay and WeChat Pay before you go.",
           "minutes": 5,
           "blocks": [
-            {
-              "type": "text",
-              "paragraphs": [
-                "Almost everything, from street food to the metro, is paid by scanning a QR code. Foreign Visa and Mastercard cards can now be linked directly to both apps, so you don't need a Chinese bank account."
-              ]
-            },
             {
               "type": "app",
               "app": {
                 "id": "alipay",
                 "name": "Alipay",
                 "desc": "The easiest way for visitors to pay. Link a Visa or Mastercard, pay by QR code, and use mini-programs for metro, DiDi and more.",
-                "badges": [
-                  "Must-have",
-                  "Foreign cards OK"
-                ],
                 "url": "https://apps.apple.com/app/id333206289",
                 "stores": [
                   "us",
+                  "gb",
                   "de",
                   "es"
+                ],
+                "tags": [
+                  "must",
+                  "english",
+                  "cards"
                 ]
               },
               "items": [
@@ -732,7 +751,8 @@
                 {
                   "text": "Try the Transport mini-program for metro QR codes in your city"
                 }
-              ]
+              ],
+              "id": "alipay"
             },
             {
               "type": "app",
@@ -740,20 +760,22 @@
                 "id": "wechat",
                 "name": "WeChat",
                 "desc": "Messaging, payments, mini-programs and contact sharing. Everyone in China uses it. A foreign number may need an existing user to verify you.",
-                "badges": [
-                  "Must-have",
-                  "English UI"
-                ],
                 "url": "https://apps.apple.com/app/id414478124",
                 "stores": [
                   "us",
+                  "gb",
                   "de",
                   "es"
+                ],
+                "tags": [
+                  "must",
+                  "english",
+                  "cards"
                 ]
               },
               "items": [
                 {
-                  "text": "Create a WeChat account (see the Essential apps guide)"
+                  "text": "Create a WeChat account"
                 },
                 {
                   "text": "Go to Me → Services → Wallet → Cards and add your foreign card"
@@ -761,20 +783,43 @@
                 {
                   "text": "Verify your identity with your passport when asked"
                 }
+              ],
+              "id": "wechat-pay"
+            },
+            {
+              "type": "explore",
+              "heading": "Explore in detail",
+              "items": [
+                {
+                  "guide": "wechat-guide"
+                },
+                {
+                  "guide": "alipay-guide"
+                }
               ]
             },
             {
-              "type": "text",
-              "heading": "Fees & limits",
-              "bullets": [
-                "Foreign card payments **up to ¥200** are usually free; above that a small fee (around 3%) may apply.",
-                "There are per-transaction and monthly limits for foreign cards. For big purchases (e.g. a rent deposit) you may need a bank transfer or cash.",
-                "Tell your bank you are traveling to China so payments aren't blocked."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "How paying works",
+                  "paragraphs": [
+                    "Almost everything, from street food to the metro, is paid by scanning a QR code. Foreign Visa and Mastercard cards can now be linked directly to both apps, so you don't need a Chinese bank account."
+                  ]
+                },
+                {
+                  "heading": "Fees & limits",
+                  "bullets": [
+                    "Foreign card payments **up to ¥200** are usually free; above that a small fee (around 3%) may apply.",
+                    "There are per-transaction and monthly limits for foreign cards. For big purchases (e.g. a rent deposit) you may need a bank transfer or cash.",
+                    "Tell your bank you are traveling to China so payments aren't blocked."
+                  ],
+                  "note": {
+                    "type": "tip",
+                    "text": "Bring some cash anyway (a few hundred RMB). It helps in rural areas and for older vendors, and as backup if your card is declined. Bank of China ATMs accept most foreign cards."
+                  }
+                }
               ]
-            },
-            {
-              "type": "tip",
-              "text": "Bring some cash anyway (a few hundred RMB). It helps in rural areas and for older vendors, and as backup if your card is declined. Bank of China ATMs accept most foreign cards."
             },
             {
               "type": "phrases",
@@ -803,270 +848,22 @@
           "id": "apps",
           "emoji": "📱",
           "title": "Essential apps",
-          "summary": "WeChat, Amap, DiDi and the apps locals actually use.",
+          "summary": "WeChat, Alipay, maps, rides, food and translation: the apps you'll actually use.",
           "minutes": 6,
           "blocks": [
             {
-              "type": "text",
-              "paragraphs": [
-                "These are the apps you'll actually use. Swipe through each category and install the must-haves before you fly."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Messaging & payments"
-            },
-            {
-              "type": "app",
-              "app": {
-                "id": "wechat",
-                "name": "WeChat",
-                "desc": "Messaging, payments, mini-programs and contact sharing. Everyone in China uses it. A foreign number may need an existing user to verify you.",
-                "badges": [
-                  "Must-have",
-                  "English UI"
-                ],
-                "url": "https://apps.apple.com/app/id414478124",
-                "stores": [
-                  "us",
-                  "de",
-                  "es"
-                ]
-              },
-              "items": [
-                {
-                  "text": "Install WeChat and sign up with your phone number"
-                },
-                {
-                  "text": "Get your account verified",
-                  "note": "With a foreign number, an **existing WeChat user** may need to scan a QR code to verify you. Ask a friend before you travel."
-                }
-              ]
-            },
-            {
-              "type": "app",
-              "app": {
-                "id": "alipay",
-                "name": "Alipay",
-                "desc": "The easiest way for visitors to pay. Link a Visa or Mastercard, pay by QR code, and use mini-programs for metro, DiDi and more.",
-                "badges": [
-                  "Must-have",
-                  "Foreign cards OK"
-                ],
-                "url": "https://apps.apple.com/app/id333206289",
-                "stores": [
-                  "us",
-                  "de",
-                  "es"
-                ]
-              },
-              "items": [
-                {
-                  "text": "Install Alipay and sign up with your phone number"
-                },
-                {
-                  "text": "Link your card (see the Alipay & WeChat Pay guide)"
-                }
-              ]
-            },
-            {
-              "type": "apps",
-              "heading": "Maps & getting around",
-              "items": [
-                {
-                  "id": "amap",
-                  "name": "Amap (Gaode Maps)",
-                  "desc": "China's best map: live metro, bus and walking directions, and taxi booking. Search with Chinese characters for best results.",
-                  "badges": [
-                    "Must-have",
-                    "English UI"
-                  ],
-                  "url": "https://apps.apple.com/app/id461703208",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "didi",
-                  "name": "DiDi",
-                  "desc": "China's Uber. English mode, automatic chat translation with the driver, and payment with a foreign card. Also available inside Alipay.",
-                  "badges": [
-                    "English UI",
-                    "Foreign cards OK"
-                  ],
-                  "url": "https://apps.apple.com/app/id554499054",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "tripcom",
-                  "name": "Trip.com",
-                  "desc": "Book high-speed trains, flights and hotels in English. Easiest way for foreigners to buy train tickets.",
-                  "badges": [
-                    "English UI",
-                    "Foreign cards OK"
-                  ],
-                  "url": "https://apps.apple.com/app/id681752345",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "railway12306",
-                  "name": "Railway 12306",
-                  "desc": "The official China Railway app. No booking fees and an English version, but registration is a little more work.",
-                  "badges": [
-                    "Official",
-                    "English UI"
-                  ],
-                  "url": "https://apps.apple.com/app/id564818797",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "apps",
-              "heading": "Food & restaurants",
-              "items": [
-                {
-                  "id": "meituan",
-                  "name": "Meituan",
-                  "desc": "Food delivery, groceries, hotel and restaurant deals. Delivery usually arrives in about 30 minutes. Chinese only.",
-                  "badges": [
-                    "Chinese only"
-                  ],
-                  "url": "https://apps.apple.com/app/id423084029",
-                  "stores": [
-                    "us"
-                  ]
-                },
-                {
-                  "id": "eleme",
-                  "name": "Taobao Instant Commerce (Ele.me)",
-                  "desc": "Formerly Ele.me, now renamed. Food and grocery delivery, Meituan's main competitor. Also available inside Alipay.",
-                  "badges": [
-                    "Chinese only"
-                  ],
-                  "url": "https://apps.apple.com/app/id507161324",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "dianping",
-                  "name": "Dianping",
-                  "desc": "China's Yelp: ratings, photos and reviews for restaurants, cafés and sights. Great for finding where locals actually eat.",
-                  "badges": [
-                    "Chinese only"
-                  ],
-                  "url": "https://apps.apple.com/app/id351091731",
-                  "stores": [
-                    "us"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "apps",
-              "heading": "Language & translation",
-              "items": [
-                {
-                  "id": "pleco",
-                  "name": "Pleco",
-                  "desc": "The best Chinese–English dictionary. Look up characters by drawing them, or point your camera at text.",
-                  "badges": [
-                    "English UI",
-                    "Works offline"
-                  ],
-                  "url": "https://apps.apple.com/app/id341922306",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "baidutranslate",
-                  "name": "Baidu Translate",
-                  "desc": "Camera, voice and text translation that works without a VPN. Apple Translate is a good alternative: download Chinese for offline use.",
-                  "badges": [
-                    "No VPN needed"
-                  ],
-                  "url": "https://apps.apple.com/app/id605670941",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "apps",
-              "heading": "Shopping & inspiration",
-              "items": [
-                {
-                  "id": "taobao",
-                  "name": "Taobao",
-                  "desc": "Buy almost anything online, often delivered the next day to a parcel locker or pick-up station. You get the pick-up code by SMS.",
-                  "badges": [
-                    "Chinese mostly"
-                  ],
-                  "url": "https://apps.apple.com/app/id387682726",
-                  "stores": [
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "jd",
-                  "name": "JD.com",
-                  "desc": "Online shopping with its own fast delivery network. Good for electronics and anything where you want guaranteed originals.",
-                  "badges": [
-                    "Chinese only"
-                  ],
-                  "url": "https://apps.apple.com/app/id414245413",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                },
-                {
-                  "id": "rednote",
-                  "name": "RedNote (Xiaohongshu)",
-                  "desc": "Where young Chinese people look for travel tips, cafés, hidden spots and reviews. Think Instagram meets Pinterest.",
-                  "badges": [
-                    "Chinese mostly"
-                  ],
-                  "url": "https://apps.apple.com/app/id741292507",
-                  "stores": [
-                    "us",
-                    "de",
-                    "es"
-                  ]
-                }
-              ]
-            },
-            {
               "type": "checklist",
-              "heading": "Install before you fly",
+              "id": "downloads",
+              "heading": "Download before you fly",
               "items": [
                 {
-                  "text": "Amap (or Apple Maps set up)"
+                  "text": "WeChat"
+                },
+                {
+                  "text": "Alipay"
+                },
+                {
+                  "text": "Amap"
                 },
                 {
                   "text": "DiDi"
@@ -1075,7 +872,353 @@
                   "text": "Trip.com or 12306"
                 },
                 {
-                  "text": "A translation app with offline Chinese"
+                  "text": "A translation app with offline Chinese",
+                  "note": "e.g. Google Translate or Baidu Translate"
+                }
+              ]
+            },
+            {
+              "type": "app_directory",
+              "heading": "All apps",
+              "categories": [
+                {
+                  "id": "payments",
+                  "name": "Messaging & payments",
+                  "apps": [
+                    {
+                      "id": "wechat",
+                      "name": "WeChat",
+                      "desc": "Messaging, payments, mini-programs and contact sharing. Everyone in China uses it. A foreign number may need an existing user to verify you.",
+                      "url": "https://apps.apple.com/app/id414478124",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english",
+                        "cards"
+                      ],
+                      "guide": "payments"
+                    },
+                    {
+                      "id": "alipay",
+                      "name": "Alipay",
+                      "desc": "The easiest way for visitors to pay. Link a Visa or Mastercard, pay by QR code, and use mini-programs for metro, DiDi and more.",
+                      "url": "https://apps.apple.com/app/id333206289",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english",
+                        "cards"
+                      ],
+                      "guide": "payments"
+                    }
+                  ]
+                },
+                {
+                  "id": "transport",
+                  "name": "Maps & getting around",
+                  "apps": [
+                    {
+                      "id": "amap",
+                      "name": "Amap (Gaode Maps)",
+                      "desc": "China's best map: live metro, bus and walking directions, and taxi booking. Search with Chinese characters for best results.",
+                      "url": "https://apps.apple.com/app/id461703208",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english"
+                      ]
+                    },
+                    {
+                      "id": "didi",
+                      "name": "DiDi",
+                      "desc": "China's Uber. English mode, automatic chat translation with the driver, and payment with a foreign card. Also available inside Alipay.",
+                      "url": "https://apps.apple.com/app/id554499054",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english",
+                        "cards"
+                      ]
+                    },
+                    {
+                      "id": "tripcom",
+                      "name": "Trip.com",
+                      "desc": "Book high-speed trains, flights and hotels in English. Easiest way for foreigners to buy train tickets.",
+                      "url": "https://apps.apple.com/app/id681752345",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "must",
+                        "english",
+                        "cards"
+                      ]
+                    },
+                    {
+                      "id": "railway12306",
+                      "name": "Railway 12306",
+                      "desc": "The official China Railway app. No booking fees and an English version, but registration is a little more work.",
+                      "url": "https://apps.apple.com/app/id564818797",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "english",
+                        "official"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "food",
+                  "name": "Food & restaurants",
+                  "apps": [
+                    {
+                      "id": "meituan",
+                      "name": "Meituan",
+                      "desc": "Food delivery, groceries, hotel and restaurant deals. Delivery usually arrives in about 30 minutes. Chinese only.",
+                      "url": "https://apps.apple.com/app/id423084029",
+                      "stores": [
+                        "us"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "eleme",
+                      "name": "Taobao Instant Commerce (Ele.me)",
+                      "desc": "Formerly Ele.me, now renamed. Food and grocery delivery, Meituan's main competitor. Also available inside Alipay.",
+                      "url": "https://apps.apple.com/app/id507161324",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "dianping",
+                      "name": "Dianping",
+                      "desc": "China's Yelp: ratings, photos and reviews for restaurants, cafés and sights. Great for finding where locals actually eat.",
+                      "url": "https://apps.apple.com/app/id351091731",
+                      "stores": [
+                        "us"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "translation",
+                  "name": "Language & translation",
+                  "apps": [
+                    {
+                      "id": "googletranslate",
+                      "name": "Google Translate",
+                      "desc": "Excellent camera translation: point your phone at menus, signs and packaging, or translate a photo. Download Chinese before you travel so it also works offline; everything else needs a VPN in China.",
+                      "url": "https://apps.apple.com/app/id414706506",
+                      "tags": [
+                        "nice",
+                        "english",
+                        "vpn",
+                        "offline"
+                      ],
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ]
+                    },
+                    {
+                      "id": "pleco",
+                      "name": "Pleco",
+                      "desc": "The best Chinese–English dictionary. Look up characters by drawing them, or point your camera at text.",
+                      "url": "https://apps.apple.com/app/id341922306",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "english",
+                        "offline"
+                      ]
+                    },
+                    {
+                      "id": "baidutranslate",
+                      "name": "Baidu Translate",
+                      "desc": "Camera, voice and text translation that works without a VPN. Apple Translate is a good alternative: download Chinese for offline use.",
+                      "url": "https://apps.apple.com/app/id605670941",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese",
+                        "novpn"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "shopping",
+                  "name": "Shopping & inspiration",
+                  "apps": [
+                    {
+                      "id": "taobao",
+                      "name": "Taobao",
+                      "desc": "Buy almost anything online, often delivered the next day to a parcel locker or pick-up station. You get the pick-up code by SMS.",
+                      "url": "https://apps.apple.com/app/id387682726",
+                      "stores": [
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "jd",
+                      "name": "JD.com",
+                      "desc": "Online shopping with its own fast delivery network. Good for electronics and anything where you want guaranteed originals.",
+                      "url": "https://apps.apple.com/app/id414245413",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "pinduoduo",
+                      "name": "Pinduoduo",
+                      "desc": "Very cheap group-buying. Great prices on everyday items and fruit, quality varies.",
+                      "url": "https://apps.apple.com/app/id1044283059",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "hema",
+                      "name": "Hema (Freshippo)",
+                      "desc": "Alibaba's supermarket: fresh groceries delivered in under an hour, or shop in its stores.",
+                      "url": "https://apps.apple.com/app/id1063183999",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "rednote",
+                      "name": "RedNote (Xiaohongshu)",
+                      "desc": "Where young Chinese people look for travel tips, cafés, hidden spots and reviews. Think Instagram meets Pinterest.",
+                      "url": "https://apps.apple.com/app/id741292507",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "housing",
+                  "name": "Housing",
+                  "apps": [
+                    {
+                      "id": "lianjia",
+                      "name": "Lianjia",
+                      "desc": "One of the biggest real-estate agencies. Search rentals with photos and floor plans; agents charge a fee.",
+                      "url": "https://apps.apple.com/app/id405882753",
+                      "stores": [],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    },
+                    {
+                      "id": "ziroom",
+                      "name": "Ziroom",
+                      "desc": "Furnished rooms and apartments with monthly payment options. Popular with young professionals and students.",
+                      "url": "https://apps.apple.com/app/id685872176",
+                      "stores": [
+                        "us",
+                        "gb",
+                        "de",
+                        "es"
+                      ],
+                      "tags": [
+                        "nice",
+                        "chinese"
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -1089,34 +1232,36 @@
           "minutes": 4,
           "blocks": [
             {
-              "type": "text",
-              "heading": "Metro",
-              "paragraphs": [
-                "Big-city metros are clean, cheap (usually ¥2–10) and signed in English. Pay with the metro QR code in Alipay or WeChat, or buy single tickets at machines. Expect a security bag scan at every entrance."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Metro",
+                  "paragraphs": [
+                    "Big-city metros are clean, cheap (usually ¥2–10) and signed in English. Pay with the metro QR code in Alipay or WeChat, or buy single tickets at machines. Expect a security bag scan at every entrance."
+                  ]
+                },
+                {
+                  "heading": "High-speed rail (高铁)",
+                  "paragraphs": [
+                    "The fastest way between cities. Book on Trip.com or 12306 with your passport details; **your passport is your ticket**. Arrive 30–45 minutes early, because stations are huge and there is a security check."
+                  ],
+                  "bullets": [
+                    "G trains are the fastest, then D trains.",
+                    "Tickets sell out around holidays (especially Spring Festival and the first week of October). Book as early as possible.",
+                    "Your seat type is printed on the booking: 二等座 second class, 一等座 first class, 商务座 business class."
+                  ]
+                },
+                {
+                  "heading": "Taxis",
+                  "paragraphs": [
+                    "Use DiDi or hail an official taxi on the street. Show the destination in Chinese characters. Drivers don't expect tips."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Avoid unofficial drivers waiting at airport and train station exits who approach you. Use the official taxi line or DiDi."
+                  }
+                }
               ]
-            },
-            {
-              "type": "text",
-              "heading": "High-speed rail (高铁)",
-              "paragraphs": [
-                "The fastest way between cities. Book on Trip.com or 12306 with your passport details; **your passport is your ticket**. Arrive 30–45 minutes early, because stations are huge and there is a security check."
-              ],
-              "bullets": [
-                "G trains are the fastest, then D trains.",
-                "Tickets sell out around holidays (especially Spring Festival and the first week of October). Book as early as possible.",
-                "Your seat type is printed on the booking: 二等座 second class, 一等座 first class, 商务座 business class."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Taxis",
-              "paragraphs": [
-                "Use DiDi or hail an official taxi on the street. Show the destination in Chinese characters. Drivers don't expect tips."
-              ]
-            },
-            {
-              "type": "warning",
-              "text": "Avoid unofficial drivers waiting at airport and train station exits who approach you. Use the official taxi line or DiDi."
             },
             {
               "type": "phrases",
@@ -1138,6 +1283,17 @@
                   "pinyin": "Qǐng zài zhèlǐ tíng"
                 }
               ]
+            },
+            {
+              "type": "related_apps",
+              "heading": "Related apps",
+              "guide": "apps",
+              "apps": [
+                "amap",
+                "didi",
+                "tripcom",
+                "railway12306"
+              ]
             }
           ]
         },
@@ -1148,10 +1304,6 @@
           "summary": "The 15 phrases you'll actually use.",
           "minutes": 3,
           "blocks": [
-            {
-              "type": "tip",
-              "text": "Mandarin has four tones, and getting them wrong can change the meaning. Don't stress, because people are patient and pointing at the characters on your screen always works."
-            },
             {
               "type": "phrases",
               "heading": "Basics",
@@ -1244,6 +1396,17 @@
                   "pinyin": "Wǒ xūyào kàn yīshēng"
                 }
               ]
+            },
+            {
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Tones",
+                  "paragraphs": [
+                    "Mandarin has four tones, and getting them wrong can change the meaning. Don't stress, because people are patient and pointing at the characters on your screen always works."
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1255,35 +1418,8 @@
           "minutes": 3,
           "blocks": [
             {
-              "type": "text",
-              "heading": "Emergency numbers",
-              "bullets": [
-                "**110**: police",
-                "**120**: ambulance",
-                "**119**: fire",
-                "**12367**: National Immigration Administration hotline (visa questions, multilingual)"
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Staying safe",
-              "paragraphs": [
-                "China's big cities are very safe, even at night. The most common problems are tourist scams: the \"tea ceremony\" or \"art student\" invitation that ends with a huge bill, and unofficial taxis."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Health",
-              "bullets": [
-                "Don't drink tap water. Boiled or bottled water is everywhere, and hotels provide kettles.",
-                "Big cities have international clinics with English-speaking doctors (more expensive, often accept travel insurance).",
-                "Public hospitals are cheap and good but busy, and you register and pay at the counter or by WeChat before seeing a doctor.",
-                "Bring your own medication with the prescription. Some common Western medicines are hard to find."
-              ]
-            },
-            {
               "type": "checklist",
-              "heading": "Checklist",
+              "heading": "Before you go",
               "items": [
                 {
                   "text": "Saved emergency numbers in your phone"
@@ -1296,6 +1432,36 @@
                 },
                 {
                   "text": "Packed medication with prescriptions"
+                }
+              ],
+              "id": "prepare"
+            },
+            {
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Emergency numbers",
+                  "bullets": [
+                    "**110**: police",
+                    "**120**: ambulance",
+                    "**119**: fire",
+                    "**12367**: National Immigration Administration hotline (visa questions, multilingual)"
+                  ]
+                },
+                {
+                  "heading": "Staying safe",
+                  "paragraphs": [
+                    "China's big cities are very safe, even at night. The most common problems are tourist scams: the \"tea ceremony\" or \"art student\" invitation that ends with a huge bill, and unofficial taxis."
+                  ]
+                },
+                {
+                  "heading": "Health",
+                  "bullets": [
+                    "Don't drink tap water. Boiled or bottled water is everywhere, and hotels provide kettles.",
+                    "Big cities have international clinics with English-speaking doctors (more expensive, often accept travel insurance).",
+                    "Public hospitals are cheap and good but busy, and you register and pay at the counter or by WeChat before seeing a doctor.",
+                    "Bring your own medication with the prescription. Some common Western medicines are hard to find."
+                  ]
                 }
               ]
             }
@@ -1318,31 +1484,6 @@
           "minutes": 5,
           "blocks": [
             {
-              "type": "text",
-              "heading": "Types of programs",
-              "bullets": [
-                "**Chinese language program (语言进修)**: one semester to two years of intensive Mandarin, no prior Chinese needed. Great as a first step.",
-                "**Exchange semester**: through a partnership between your home university and a Chinese university. Ask your international office first, because it's usually the easiest route.",
-                "**Bachelor's, Master's or PhD**: full degree programs, taught in Chinese or English."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "English or Chinese?",
-              "paragraphs": [
-                "Many top universities offer English-taught Master's programs (business, engineering, international relations, Chinese studies). Chinese-taught programs usually require **HSK 4** for Bachelor's and **HSK 5** for Master's, and are often cheaper with more scholarship options."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Choosing a university",
-              "bullets": [
-                "**C9 League**: China's top universities (e.g. Peking, Tsinghua, Fudan, Zhejiang, Shanghai Jiao Tong).",
-                "**Double First-Class (双一流)** universities: the government's list of strong universities and disciplines.",
-                "Think about the city as much as the ranking: Beijing and Shanghai are international and expensive; Chengdu, Hangzhou, Xi'an or Kunming are cheaper and you'll use more Chinese."
-              ]
-            },
-            {
               "type": "checklist",
               "heading": "Research checklist",
               "items": [
@@ -1360,6 +1501,34 @@
                 },
                 {
                   "text": "Noted each application deadline"
+                }
+              ],
+              "id": "research"
+            },
+            {
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Types of programs",
+                  "bullets": [
+                    "**Chinese language program (语言进修)**: one semester to two years of intensive Mandarin, no prior Chinese needed. Great as a first step.",
+                    "**Exchange semester**: through a partnership between your home university and a Chinese university. Ask your international office first, because it's usually the easiest route.",
+                    "**Bachelor's, Master's or PhD**: full degree programs, taught in Chinese or English."
+                  ]
+                },
+                {
+                  "heading": "English or Chinese?",
+                  "paragraphs": [
+                    "Many top universities offer English-taught Master's programs (business, engineering, international relations, Chinese studies). Chinese-taught programs usually require **HSK 4** for Bachelor's and **HSK 5** for Master's, and are often cheaper with more scholarship options."
+                  ]
+                },
+                {
+                  "heading": "Choosing a university",
+                  "bullets": [
+                    "**C9 League**: China's top universities (e.g. Peking, Tsinghua, Fudan, Zhejiang, Shanghai Jiao Tong).",
+                    "**Double First-Class (双一流)** universities: the government's list of strong universities and disciplines.",
+                    "Think about the city as much as the ranking: Beijing and Shanghai are international and expensive; Chengdu, Hangzhou, Xi'an or Kunming are cheaper and you'll use more Chinese."
+                  ]
                 }
               ]
             },
@@ -1382,38 +1551,6 @@
           "minutes": 6,
           "blocks": [
             {
-              "type": "text",
-              "paragraphs": [
-                "China offers more scholarships to international students than most people expect. Many cover tuition, housing and a monthly stipend."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Chinese Government Scholarship (CSC)",
-              "paragraphs": [
-                "The biggest one. It covers tuition, a dorm room, medical insurance and a monthly stipend (roughly ¥2,500 for Bachelor's, ¥3,000 for Master's, ¥3,500 for PhD). There are two main routes:"
-              ],
-              "bullets": [
-                "**Type A (bilateral)**: apply through the Chinese embassy or a government agency in your home country. Deadlines are often early (December–March).",
-                "**Type B (university program)**: apply directly to a Chinese university that has CSC places. Each university sets its own deadline, usually January–April.",
-                "You can apply to up to three universities through the CSC system."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Other scholarships",
-              "bullets": [
-                "**International Chinese Language Teachers Scholarship (Confucius Institute)**: for language study and teaching Chinese. Apply through a Confucius Institute or a recommending institution.",
-                "**Provincial and city scholarships**: e.g. Beijing, Shanghai, Jiangsu or Zhejiang Government Scholarships, often partial funding.",
-                "**University scholarships**: most universities have their own, sometimes automatic for strong applicants.",
-                "**Home-country funding**: e.g. DAAD in Germany, or exchange grants from your own university."
-              ]
-            },
-            {
-              "type": "tip",
-              "text": "For Type B, emailing a professor in your field and getting an **acceptance or pre-admission letter** (导师接收函) can greatly improve your chances, especially for Master's and PhD."
-            },
-            {
               "type": "checklist",
               "heading": "Scholarship checklist",
               "items": [
@@ -1431,6 +1568,42 @@
                 },
                 {
                   "text": "Created an account on the CSC online application system"
+                }
+              ],
+              "id": "funding"
+            },
+            {
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Overview",
+                  "paragraphs": [
+                    "China offers more scholarships to international students than most people expect. Many cover tuition, housing and a monthly stipend."
+                  ]
+                },
+                {
+                  "heading": "Chinese Government Scholarship (CSC)",
+                  "paragraphs": [
+                    "The biggest one. It covers tuition, a dorm room, medical insurance and a monthly stipend (roughly ¥2,500 for Bachelor's, ¥3,000 for Master's, ¥3,500 for PhD). There are two main routes:"
+                  ],
+                  "bullets": [
+                    "**Type A (bilateral)**: apply through the Chinese embassy or a government agency in your home country. Deadlines are often early (December–March).",
+                    "**Type B (university program)**: apply directly to a Chinese university that has CSC places. Each university sets its own deadline, usually January–April.",
+                    "You can apply to up to three universities through the CSC system."
+                  ],
+                  "note": {
+                    "type": "tip",
+                    "text": "For Type B, emailing a professor in your field and getting an **acceptance or pre-admission letter** (导师接收函) can greatly improve your chances, especially for Master's and PhD."
+                  }
+                },
+                {
+                  "heading": "Other scholarships",
+                  "bullets": [
+                    "**International Chinese Language Teachers Scholarship (Confucius Institute)**: for language study and teaching Chinese. Apply through a Confucius Institute or a recommending institution.",
+                    "**Provincial and city scholarships**: e.g. Beijing, Shanghai, Jiangsu or Zhejiang Government Scholarships, often partial funding.",
+                    "**University scholarships**: most universities have their own, sometimes automatic for strong applicants.",
+                    "**Home-country funding**: e.g. DAAD in Germany, or exchange grants from your own university."
+                  ]
                 }
               ]
             },
@@ -1456,17 +1629,6 @@
           "summary": "Documents, timeline and admission.",
           "minutes": 5,
           "blocks": [
-            {
-              "type": "text",
-              "heading": "Typical timeline (for September start)",
-              "bullets": [
-                "**Oct–Dec**: research programs, prepare documents, take HSK or IELTS",
-                "**Dec–Apr**: application and scholarship deadlines",
-                "**May–Jul**: admission results; you receive the admission letter and **JW201 or JW202 form**",
-                "**Jul–Aug**: apply for your student visa, book flights",
-                "**Late Aug–Sep**: arrival, registration, residence permit"
-              ]
-            },
             {
               "type": "checklist",
               "heading": "Documents you'll usually need",
@@ -1500,11 +1662,27 @@
                 {
                   "text": "Passport photo with white background"
                 }
-              ]
+              ],
+              "id": "documents"
             },
             {
-              "type": "warning",
-              "text": "Requirements differ between universities and scholarships. Always follow the list on your target university's international student admission page."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Typical timeline (for September start)",
+                  "bullets": [
+                    "**Oct–Dec**: research programs, prepare documents, take HSK or IELTS",
+                    "**Dec–Apr**: application and scholarship deadlines",
+                    "**May–Jul**: admission results; you receive the admission letter and **JW201 or JW202 form**",
+                    "**Jul–Aug**: apply for your student visa, book flights",
+                    "**Late Aug–Sep**: arrival, registration, residence permit"
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Requirements differ between universities and scholarships. Always follow the list on your target university's international student admission page."
+                  }
+                }
+              ]
             }
           ]
         },
@@ -1515,20 +1693,6 @@
           "summary": "Which visa you need and how to get it.",
           "minutes": 4,
           "blocks": [
-            {
-              "type": "text",
-              "heading": "X1 or X2?",
-              "bullets": [
-                "**X1 visa**: for study **longer than 180 days** (degrees, full-year programs). Valid for a single entry; within 30 days of arrival you convert it into a residence permit.",
-                "**X2 visa**: for study **up to 180 days** (one semester, summer school). No residence permit needed."
-              ]
-            },
-            {
-              "type": "text",
-              "paragraphs": [
-                "Some short language or summer programs can be attended visa-free if you're eligible, but check with the university first. For credit-bearing study, use a student visa."
-              ]
-            },
             {
               "type": "checklist",
               "heading": "Apply for your X visa",
@@ -1554,11 +1718,27 @@
                 {
                   "text": "Collected your visa and checked the details"
                 }
-              ]
+              ],
+              "id": "x-visa"
             },
             {
-              "type": "warning",
-              "text": "Keep the **original JW202 form and admission letter** safe and bring them to China. You need them again for registration and the residence permit."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "X1 or X2?",
+                  "bullets": [
+                    "**X1 visa**: for study **longer than 180 days** (degrees, full-year programs). Valid for a single entry; within 30 days of arrival you convert it into a residence permit.",
+                    "**X2 visa**: for study **up to 180 days** (one semester, summer school). No residence permit needed."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Keep the **original JW202 form and admission letter** safe and bring them to China. You need them again for registration and the residence permit."
+                  },
+                  "paragraphs": [
+                    "Some short language or summer programs can be attended visa-free if you're eligible, but check with the university first. For credit-bearing study, use a student visa."
+                  ]
+                }
+              ]
             },
             {
               "type": "links",
@@ -1578,12 +1758,6 @@
           "summary": "What to do in your first 30 days with an X1 visa.",
           "minutes": 5,
           "blocks": [
-            {
-              "type": "text",
-              "paragraphs": [
-                "With an X1 visa you must apply for a **residence permit for study** (学习类居留许可) within **30 days of entering China**. Your university's international office usually guides you through every step, often in groups."
-              ]
-            },
             {
               "type": "checklist",
               "heading": "First 30 days, step by step",
@@ -1609,19 +1783,30 @@
                   "text": "Collect your passport with the permit",
                   "note": "Processing usually takes around 7–15 working days. Your passport is held during this time."
                 }
-              ]
+              ],
+              "id": "first-30-days"
             },
             {
-              "type": "warning",
-              "text": "Plan travel around this: you can't leave China while your passport is being processed. Missing the 30-day deadline can lead to fines."
-            },
-            {
-              "type": "text",
-              "heading": "After you get it",
-              "bullets": [
-                "The permit allows multiple entries until it expires, so you can travel home in the holidays.",
-                "If you move, re-register your address within 24 hours.",
-                "Renew it before it expires if your program continues."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "How it works",
+                  "paragraphs": [
+                    "With an X1 visa you must apply for a **residence permit for study** (学习类居留许可) within **30 days of entering China**. Your university's international office usually guides you through every step, often in groups."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Plan travel around this: you can't leave China while your passport is being processed. Missing the 30-day deadline can lead to fines."
+                  }
+                },
+                {
+                  "heading": "After you get it",
+                  "bullets": [
+                    "The permit allows multiple entries until it expires, so you can travel home in the holidays.",
+                    "If you move, re-register your address within 24 hours.",
+                    "Renew it before it expires if your program continues."
+                  ]
+                }
               ]
             }
           ]
@@ -1633,20 +1818,6 @@
           "summary": "Dorms, phone number, bank account, part-time work.",
           "minutes": 5,
           "blocks": [
-            {
-              "type": "text",
-              "heading": "Housing",
-              "paragraphs": [
-                "Most universities have international student dorms (single or double rooms). They are cheap and convenient, and make your registration easier. Off-campus apartments give you more freedom but come with deposits (often 1 month plus 3 months up front) and more paperwork."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Canteens and the campus card",
-              "paragraphs": [
-                "University canteens (食堂) are cheap (a full meal is often ¥10–20) and surprisingly good. You pay with your campus card or a QR code. The card often also works for the library, gym and laundry."
-              ]
-            },
             {
               "type": "checklist",
               "heading": "Settle-in checklist",
@@ -1671,18 +1842,37 @@
                 {
                   "text": "Register for Chinese language classes or a language exchange partner"
                 }
-              ]
+              ],
+              "id": "settle-in"
             },
             {
-              "type": "text",
-              "heading": "Working while studying",
-              "paragraphs": [
-                "International students may only do part-time work or internships with **approval from their university** and a note added to their residence permit by the Exit-Entry office. Working without this, including teaching English privately, can lead to fines or losing your permit."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Housing",
+                  "paragraphs": [
+                    "Most universities have international student dorms (single or double rooms). They are cheap and convenient, and make your registration easier. Off-campus apartments give you more freedom but come with deposits (often 1 month plus 3 months up front) and more paperwork."
+                  ]
+                },
+                {
+                  "heading": "Canteens and the campus card",
+                  "paragraphs": [
+                    "University canteens (食堂) are cheap (a full meal is often ¥10–20) and surprisingly good. You pay with your campus card or a QR code. The card often also works for the library, gym and laundry."
+                  ]
+                },
+                {
+                  "heading": "WeChat groups",
+                  "paragraphs": [
+                    "WeChat groups are where everything happens: course announcements, second-hand sales, sports clubs, trips. Ask classmates to add you on day one."
+                  ]
+                },
+                {
+                  "heading": "Working while studying",
+                  "paragraphs": [
+                    "International students may only do part-time work or internships with **approval from their university** and a note added to their residence permit by the Exit-Entry office. Working without this, including teaching English privately, can lead to fines or losing your permit."
+                  ]
+                }
               ]
-            },
-            {
-              "type": "tip",
-              "text": "WeChat groups are where everything happens: course announcements, second-hand sales, sports clubs, trips. Ask classmates to add you on day one."
             }
           ]
         }
@@ -1703,29 +1893,32 @@
           "minutes": 5,
           "blocks": [
             {
-              "type": "text",
-              "heading": "What surprises most people",
-              "bullets": [
-                "**It's incredibly convenient.** Food delivery in 30 minutes, trains every few minutes, packages next day, everything paid by phone.",
-                "**It's very safe.** Walking alone at night in big cities is normal.",
-                "**Things change fast.** Shops, apps and even rules can change within months. Locals adapt quickly, and you'll learn to as well.",
-                "**China is not one place.** Shanghai, a village in Yunnan and Harbin in winter feel like different countries. Food, dialects and lifestyle vary a lot."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "What surprises most people",
+                  "bullets": [
+                    "**It's incredibly convenient.** Food delivery in 30 minutes, trains every few minutes, packages next day, everything paid by phone.",
+                    "**It's very safe.** Walking alone at night in big cities is normal.",
+                    "**Things change fast.** Shops, apps and even rules can change within months. Locals adapt quickly, and you'll learn to as well.",
+                    "**China is not one place.** Shanghai, a village in Yunnan and Harbin in winter feel like different countries. Food, dialects and lifestyle vary a lot."
+                  ]
+                },
+                {
+                  "heading": "What takes getting used to",
+                  "bullets": [
+                    "**The language barrier.** Outside international areas few people speak English. Translation apps help a lot, and learning even some Chinese changes your experience.",
+                    "**Attention.** In smaller cities people may stare or ask for photos. It's almost always friendly curiosity.",
+                    "**Digital life.** You need WeChat for everything, and your favorite apps don't work without a VPN.",
+                    "**ID checks and cameras.** You'll show your passport for trains, hotels, some museums and SIM cards. It quickly becomes routine.",
+                    "**Crowds.** Especially on public holidays. Popular sights can be packed."
+                  ],
+                  "note": {
+                    "type": "tip",
+                    "text": "The best way to understand China is to make Chinese friends. Language exchanges, university clubs and WeChat groups are a great start. Most people are curious and happy to help."
+                  }
+                }
               ]
-            },
-            {
-              "type": "text",
-              "heading": "What takes getting used to",
-              "bullets": [
-                "**The language barrier.** Outside international areas few people speak English. Translation apps help a lot, and learning even some Chinese changes your experience.",
-                "**Attention.** In smaller cities people may stare or ask for photos. It's almost always friendly curiosity.",
-                "**Digital life.** You need WeChat for everything, and your favorite apps don't work without a VPN.",
-                "**ID checks and cameras.** You'll show your passport for trains, hotels, some museums and SIM cards. It quickly becomes routine.",
-                "**Crowds.** Especially on public holidays. Popular sights can be packed."
-              ]
-            },
-            {
-              "type": "tip",
-              "text": "The best way to understand China is to make Chinese friends. Language exchanges, university clubs and WeChat groups are a great start. Most people are curious and happy to help."
             }
           ]
         },
@@ -1737,32 +1930,34 @@
           "minutes": 5,
           "blocks": [
             {
-              "type": "text",
-              "heading": "Two key ideas",
-              "bullets": [
-                "**Face (面子 miànzi)**: someone's dignity and reputation. Avoid criticizing people in front of others or putting them in situations where they can't say yes. Indirect communication is common, and \"maybe\" or \"it's a bit difficult\" often means no.",
-                "**Relationships (关系 guānxi)**: networks of trust and favors. Relationships take time and are built over meals, help and staying in touch."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "At the dinner table",
-              "bullets": [
-                "Dishes are shared. The host usually orders, and it's polite to try a bit of everything.",
-                "Don't stick your chopsticks upright in rice, because it resembles incense at funerals.",
-                "When toasting, clink your glass slightly **lower** than an older person's or your host's as a sign of respect.",
-                "People often \"fight\" to pay the bill. Offering is polite; next time it's your turn to invite."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Gifts and everyday manners",
-              "bullets": [
-                "Give and receive gifts, business cards and documents **with both hands**.",
-                "Good gifts: something from your home country, fruit, tea. Avoid clocks (送钟 sounds like attending a funeral), and sets of four (四 sounds like death).",
-                "Gifts are often not opened in front of the giver.",
-                "No tipping: it's not expected in restaurants or taxis.",
-                "Common questions like your age, salary or whether you're married are a sign of interest, not rudeness."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Two key ideas",
+                  "bullets": [
+                    "**Face (面子 miànzi)**: someone's dignity and reputation. Avoid criticizing people in front of others or putting them in situations where they can't say yes. Indirect communication is common, and \"maybe\" or \"it's a bit difficult\" often means no.",
+                    "**Relationships (关系 guānxi)**: networks of trust and favors. Relationships take time and are built over meals, help and staying in touch."
+                  ]
+                },
+                {
+                  "heading": "At the dinner table",
+                  "bullets": [
+                    "Dishes are shared. The host usually orders, and it's polite to try a bit of everything.",
+                    "Don't stick your chopsticks upright in rice, because it resembles incense at funerals.",
+                    "When toasting, clink your glass slightly **lower** than an older person's or your host's as a sign of respect.",
+                    "People often \"fight\" to pay the bill. Offering is polite; next time it's your turn to invite."
+                  ]
+                },
+                {
+                  "heading": "Gifts and everyday manners",
+                  "bullets": [
+                    "Give and receive gifts, business cards and documents **with both hands**.",
+                    "Good gifts: something from your home country, fruit, tea. Avoid clocks (送钟 sounds like attending a funeral), and sets of four (四 sounds like death).",
+                    "Gifts are often not opened in front of the giver.",
+                    "No tipping: it's not expected in restaurants or taxis.",
+                    "Common questions like your age, salary or whether you're married are a sign of interest, not rudeness."
+                  ]
+                }
               ]
             },
             {
@@ -1796,28 +1991,31 @@
           "minutes": 5,
           "blocks": [
             {
-              "type": "text",
-              "heading": "\"Chinese food\" is many cuisines",
-              "bullets": [
-                "**Sichuan (川菜)**: numbing-spicy, with Sichuan pepper. Try mapo tofu and hot pot in Chengdu or Chongqing.",
-                "**Cantonese (粤菜)**: fresh and lightly seasoned. Try dim sum (早茶) in Guangzhou or Hong Kong.",
-                "**Hunan (湘菜)**: even hotter than Sichuan, with fresh chili.",
-                "**Northern food**: wheat instead of rice, so dumplings, noodles and buns. Try Peking duck in Beijing and biangbiang noodles in Xi'an.",
-                "**Shanghai and Jiangnan**: sweeter flavors. Try xiaolongbao (soup dumplings)."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "\"Chinese food\" is many cuisines",
+                  "bullets": [
+                    "**Sichuan (川菜)**: numbing-spicy, with Sichuan pepper. Try mapo tofu and hot pot in Chengdu or Chongqing.",
+                    "**Cantonese (粤菜)**: fresh and lightly seasoned. Try dim sum (早茶) in Guangzhou or Hong Kong.",
+                    "**Hunan (湘菜)**: even hotter than Sichuan, with fresh chili.",
+                    "**Northern food**: wheat instead of rice, so dumplings, noodles and buns. Try Peking duck in Beijing and biangbiang noodles in Xi'an.",
+                    "**Shanghai and Jiangnan**: sweeter flavors. Try xiaolongbao (soup dumplings)."
+                  ]
+                },
+                {
+                  "heading": "How ordering works",
+                  "bullets": [
+                    "Many restaurants have a **QR code on the table**: scan with WeChat or Alipay, order and pay on your phone. Use your camera translation app on the menu.",
+                    "Picture menus are common; pointing is completely fine.",
+                    "Hot water or tea is served by default. Ask for ice (加冰 jiā bīng) if you want cold drinks."
+                  ],
+                  "note": {
+                    "type": "tip",
+                    "text": "Look for busy places full of locals, and check Dianping ratings. Breakfast street food (jianbing, baozi, soy milk and youtiao) is cheap, fast and delicious."
+                  }
+                }
               ]
-            },
-            {
-              "type": "text",
-              "heading": "How ordering works",
-              "bullets": [
-                "Many restaurants have a **QR code on the table**: scan with WeChat or Alipay, order and pay on your phone. Use your camera translation app on the menu.",
-                "Picture menus are common; pointing is completely fine.",
-                "Hot water or tea is served by default. Ask for ice (加冰 jiā bīng) if you want cold drinks."
-              ]
-            },
-            {
-              "type": "tip",
-              "text": "Look for busy places full of locals, and check Dianping ratings. Breakfast street food (jianbing, baozi, soy milk and youtiao) is cheap, fast and delicious."
             },
             {
               "type": "phrases",
@@ -1855,27 +2053,30 @@
           "minutes": 4,
           "blocks": [
             {
-              "type": "text",
-              "heading": "The main holidays",
-              "bullets": [
-                "**Spring Festival / Chinese New Year (春节)**: January or February. The biggest holiday: family reunions, red envelopes (红包), fireworks. Many shops close, and the world's largest migration happens around it.",
-                "**Lantern Festival (元宵节)**: 15 days after New Year. Lanterns and sweet rice balls (tangyuan).",
-                "**Qingming Festival (清明节)**: early April. Tomb sweeping, honoring ancestors.",
-                "**Labor Day (劳动节)**: 1 May, a multi-day holiday with heavy travel.",
-                "**Dragon Boat Festival (端午节)**: May or June. Dragon boat races and zongzi (sticky rice in leaves).",
-                "**Mid-Autumn Festival (中秋节)**: September or October. Mooncakes and family gatherings under the full moon.",
-                "**National Day Golden Week (国庆节)**: 1–7 October. A full week off for most people, and the busiest travel time of the year."
-              ]
-            },
-            {
-              "type": "warning",
-              "text": "Avoid traveling during Spring Festival, the 1 May holiday and Golden Week if you can. Trains and flights sell out weeks ahead, prices go up and famous sights are extremely crowded."
-            },
-            {
-              "type": "text",
-              "heading": "Make-up working days",
-              "paragraphs": [
-                "China often moves weekends to create longer holidays, so you may have to work or attend classes on a Saturday or Sunday (调休 tiáoxiū). Check the official holiday calendar each year."
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "The main holidays",
+                  "bullets": [
+                    "**Spring Festival / Chinese New Year (春节)**: January or February. The biggest holiday: family reunions, red envelopes (红包), fireworks. Many shops close, and the world's largest migration happens around it.",
+                    "**Lantern Festival (元宵节)**: 15 days after New Year. Lanterns and sweet rice balls (tangyuan).",
+                    "**Qingming Festival (清明节)**: early April. Tomb sweeping, honoring ancestors.",
+                    "**Labor Day (劳动节)**: 1 May, a multi-day holiday with heavy travel.",
+                    "**Dragon Boat Festival (端午节)**: May or June. Dragon boat races and zongzi (sticky rice in leaves).",
+                    "**Mid-Autumn Festival (中秋节)**: September or October. Mooncakes and family gatherings under the full moon.",
+                    "**National Day Golden Week (国庆节)**: 1–7 October. A full week off for most people, and the busiest travel time of the year."
+                  ],
+                  "note": {
+                    "type": "warning",
+                    "text": "Avoid traveling during Spring Festival, the 1 May holiday and Golden Week if you can. Trains and flights sell out weeks ahead, prices go up and famous sights are extremely crowded."
+                  }
+                },
+                {
+                  "heading": "Make-up working days",
+                  "paragraphs": [
+                    "China often moves weekends to create longer holidays, so you may have to work or attend classes on a Saturday or Sunday (调休 tiáoxiū). Check the official holiday calendar each year."
+                  ]
+                }
               ]
             },
             {
@@ -1916,84 +2117,78 @@
                   "id": "taobao",
                   "name": "Taobao",
                   "desc": "Buy almost anything online, often delivered the next day to a parcel locker or pick-up station. You get the pick-up code by SMS.",
-                  "badges": [
-                    "Chinese mostly"
-                  ],
                   "url": "https://apps.apple.com/app/id387682726",
                   "stores": [
+                    "gb",
                     "de",
                     "es"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 },
                 {
                   "id": "jd",
                   "name": "JD.com",
                   "desc": "Online shopping with its own fast delivery network. Good for electronics and anything where you want guaranteed originals.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id414245413",
                   "stores": [
                     "us",
+                    "gb",
                     "de",
                     "es"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 },
                 {
                   "id": "pinduoduo",
                   "name": "Pinduoduo",
                   "desc": "Very cheap group-buying. Great prices on everyday items and fruit, quality varies.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id1044283059",
                   "stores": [
                     "us",
+                    "gb",
                     "de",
                     "es"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 },
                 {
                   "id": "hema",
                   "name": "Hema (Freshippo)",
                   "desc": "Alibaba's supermarket: fresh groceries delivered in under an hour, or shop in its stores.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id1063183999",
                   "stores": [
                     "us",
+                    "gb",
                     "de",
                     "es"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 },
                 {
                   "id": "meituan",
                   "name": "Meituan",
                   "desc": "Food delivery, groceries, hotel and restaurant deals. Delivery usually arrives in about 30 minutes. Chinese only.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id423084029",
                   "stores": [
                     "us"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 }
-              ]
-            },
-            {
-              "type": "text",
-              "paragraphs": [
-                "Convenience stores (FamilyMart, Lawson, 7-Eleven) are everywhere and sell hot meals."
-              ]
-            },
-            {
-              "type": "text",
-              "heading": "Renting an apartment",
-              "bullets": [
-                "Typical payment: \"押一付三\" (yā yī fù sān): one month's deposit plus three months' rent up front.",
-                "Make sure the landlord can provide the documents you need to register at the police station.",
-                "Check water, electricity, gas and internet fees before signing; these are often paid through WeChat or Alipay."
               ]
             },
             {
@@ -2004,38 +2199,237 @@
                   "id": "lianjia",
                   "name": "Lianjia",
                   "desc": "One of the biggest real-estate agencies. Search rentals with photos and floor plans; agents charge a fee.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id405882753",
-                  "stores": []
+                  "stores": [],
+                  "tags": [
+                    "nice",
+                    "chinese"
+                  ]
                 },
                 {
                   "id": "ziroom",
                   "name": "Ziroom",
                   "desc": "Furnished rooms and apartments with monthly payment options. Popular with young professionals and students.",
-                  "badges": [
-                    "Chinese only"
-                  ],
                   "url": "https://apps.apple.com/app/id685872176",
                   "stores": [
                     "us",
+                    "gb",
                     "de",
                     "es"
+                  ],
+                  "tags": [
+                    "nice",
+                    "chinese"
                   ]
                 }
               ]
             },
             {
-              "type": "text",
-              "heading": "Seeing a doctor",
+              "type": "info",
+              "sections": [
+                {
+                  "heading": "Shopping",
+                  "paragraphs": [
+                    "Convenience stores (FamilyMart, Lawson, 7-Eleven) are everywhere and sell hot meals."
+                  ]
+                },
+                {
+                  "heading": "Renting an apartment",
+                  "bullets": [
+                    "Typical payment: \"押一付三\" (yā yī fù sān): one month's deposit plus three months' rent up front.",
+                    "Make sure the landlord can provide the documents you need to register at the police station.",
+                    "Check water, electricity, gas and internet fees before signing; these are often paid through WeChat or Alipay."
+                  ],
+                  "note": {
+                    "type": "tip",
+                    "text": "Ask your landlord or a Chinese friend to help set up utilities and parcel delivery in Chinese apps the first time. After that, it's easy."
+                  }
+                },
+                {
+                  "heading": "Seeing a doctor",
+                  "paragraphs": [
+                    "For small issues, pharmacies (药店) can help with many medicines. In public hospitals you first register (挂号) for a department, often on the hospital's WeChat account, then wait for your number. Many large hospitals have an international department (国际部) with English-speaking staff."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "wechat-guide",
+      "appIcon": "wechat",
+      "emoji": "💬",
+      "title": "WeChat in detail",
+      "minutes": 6,
+      "summary": "Mini programs, scanning, paying and translating: use WeChat like a local.",
+      "blocks": [
+        {
+          "type": "checklist",
+          "id": "try-it",
+          "heading": "Try it out",
+          "items": [
+            {
+              "text": "Switch WeChat to English",
+              "note": "Me → Settings → General → Language"
+            },
+            {
+              "text": "Find your QR code so people can add you",
+              "note": "Tap **+** (top right) → Add Contacts → My QR Code"
+            },
+            {
+              "text": "Scan a QR code",
+              "note": "Tap **+** → Scan. It works for payments, menus, adding friends and mini programs."
+            },
+            {
+              "text": "Open a mini program",
+              "note": "Swipe down on the chat list to see recent mini programs, or type a name in the search bar."
+            },
+            {
+              "text": "Translate a message",
+              "note": "Long-press any message → Translate."
+            },
+            {
+              "text": "Show your payment code",
+              "note": "Me → Services (or Pay and Services) → Money → Quick Pay. The cashier scans it."
+            }
+          ]
+        },
+        {
+          "type": "info",
+          "sections": [
+            {
+              "heading": "Mini programs",
               "paragraphs": [
-                "For small issues, pharmacies (药店) can help with many medicines. In public hospitals you first register (挂号) for a department, often on the hospital's WeChat account, then wait for your number. Many large hospitals have an international department (国际部) with English-speaking staff."
+                "Mini programs are small apps inside WeChat: no download, no extra account. Restaurants, museums, bike sharing, ride hailing, train tickets and even hospitals use them."
+              ],
+              "bullets": [
+                "**Find them:** swipe down on the chat list for the ones you used recently, or type the name in WeChat's search bar.",
+                "**Keep favorites:** inside a mini program, tap ··· in the top right to add it to your favorites.",
+                "**Useful ones:** DiDi (rides), Trip.com (trains and hotels), Meituan (food) and your city's metro ride code."
               ]
             },
             {
-              "type": "tip",
-              "text": "Ask your landlord or a Chinese friend to help set up utilities and parcel delivery in Chinese apps the first time. After that, it's easy."
+              "heading": "Ordering in restaurants",
+              "paragraphs": [
+                "Many restaurants have a QR code on the table. Scan it with WeChat (**+** → Scan) to open the restaurant's menu with photos, order and pay on your phone. The order goes straight to the kitchen."
+              ],
+              "note": {
+                "type": "tip",
+                "text": "Menus are often in Chinese only. Take a screenshot and translate it with Apple Translate or Baidu Translate."
+              }
+            },
+            {
+              "heading": "Translating",
+              "bullets": [
+                "**Messages:** long-press a message → Translate.",
+                "**Signs and menus:** in **+** → Scan, switch to Translate (if your version shows it) to translate text with the camera.",
+                "**Writing:** short, simple sentences translate best, for you and for the person reading."
+              ]
+            },
+            {
+              "heading": "Paying",
+              "paragraphs": [
+                "Scan the shop's QR code (**+** → Scan) and enter the amount, or show your own payment code for the cashier to scan."
+              ],
+              "note": {
+                "type": "warning",
+                "text": "Foreign cards have limits per payment and per month. If a payment fails, try Alipay or cash."
+              }
+            },
+            {
+              "heading": "Groups and Moments",
+              "paragraphs": [
+                "WeChat groups are how classes, landlords, clubs and friends organize everything. Moments is WeChat's feed, like a private Instagram for your contacts."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alipay-guide",
+      "appIcon": "alipay",
+      "emoji": "💙",
+      "title": "Alipay in detail",
+      "minutes": 5,
+      "summary": "Metro, shared bikes, rides and more: everything Alipay does besides paying.",
+      "blocks": [
+        {
+          "type": "checklist",
+          "id": "try-it",
+          "heading": "Try it out",
+          "items": [
+            {
+              "text": "Switch Alipay to English",
+              "note": "Account (bottom right) → Settings → General → Language"
+            },
+            {
+              "text": "Find Scan and your payment code",
+              "note": "Both are at the top of the home screen: **Scan** pays a shop's QR code, **Pay/Receive** shows your own code."
+            },
+            {
+              "text": "Set up the metro ride code for your city",
+              "note": "Search for **Transport** in Alipay, choose your city, then hold the code to the metro gate."
+            },
+            {
+              "text": "Unlock a shared bike",
+              "note": "Scan the QR code on a Hellobike (or another shared bike) with Alipay. It opens the bike's mini program and starts the ride."
+            },
+            {
+              "text": "Order a DiDi inside Alipay",
+              "note": "Search for **DiDi** in Alipay: rides in English with automatic chat translation, paid with your linked card."
+            }
+          ]
+        },
+        {
+          "type": "info",
+          "sections": [
+            {
+              "heading": "Mini programs in Alipay",
+              "paragraphs": [
+                "Like WeChat, Alipay is full of mini programs that work without installing anything. Search for them by name in the bar at the top of the home screen."
+              ],
+              "bullets": [
+                "**Transport:** metro and bus ride codes in many cities",
+                "**DiDi:** ride hailing with English",
+                "**Hellobike:** shared bikes",
+                "**Taobao Instant Commerce (Ele.me):** food and grocery delivery",
+                "**Trip.com:** trains, flights and hotels"
+              ]
+            },
+            {
+              "heading": "Shared bikes",
+              "paragraphs": [
+                "Hellobike, Meituan and DiDi bikes stand on almost every street corner. Scan the code on the bike with Alipay, ride, then park and lock it. A ride usually costs a few yuan."
+              ],
+              "note": {
+                "type": "tip",
+                "text": "Park inside the marked bike zones where there are any. Parking elsewhere can cost an extra fee."
+              }
+            },
+            {
+              "heading": "Metro and buses",
+              "paragraphs": [
+                "In many cities you can use Alipay's ride code at metro gates and on buses: open Transport, choose your city and hold the code to the scanner. You pay automatically after the ride."
+              ]
+            },
+            {
+              "heading": "Power banks",
+              "paragraphs": [
+                "Cafés, restaurants and malls have shared power bank stations. Scan the station with Alipay or WeChat, take a power bank and return it at any station of the same brand."
+              ]
+            },
+            {
+              "heading": "Alipay or WeChat?",
+              "bullets": [
+                "**Alipay** is easier for visitors: English, foreign cards, transport and bikes.",
+                "**WeChat** is where people chat, and many restaurants and small shops use it.",
+                "Set up both: if one payment fails, the other usually works."
+              ]
             }
           ]
         }
